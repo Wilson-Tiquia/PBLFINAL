@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace PBL
 {
     public partial class Cases : Form
     {
+    StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+
         public Cases()
         {
             InitializeComponent();
         }
 
+        
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -78,6 +75,8 @@ namespace PBL
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+
             //gives only the specific province/city per region selected
             if (comboBox1.Text == "BARMM")
             {
@@ -249,11 +248,96 @@ namespace PBL
                 comboBox2.Items.Add("GEENRAL SANTOS");
                 comboBox2.Items.Add("SARANGANI");
             }
+            if (comboBox1.SelectedIndex > -1)
+            {
+                listView2.Items.Clear();
+                string tofind = comboBox1.SelectedItem.ToString();
+                while (deathsStreamReader.Peek() != -1)
+                {
+                    string x = deathsStreamReader.ReadLine();
+                    string[] xe = x.Split(',');
+                    if (xe[0] == tofind)
+                    {
+                        ListViewItem lvi = new ListViewItem(xe[0]);
+                        lvi.SubItems.Add(xe[1]);
+                        lvi.SubItems.Add(xe[2]);
+                        listView2.Items.Add(lvi);
+                    }
+
+                }
+                deathsStreamReader.Close();
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Cases_Load(object sender, EventArgs e)
+        {
+
+  
+
+            if (comboBox1.SelectedIndex > 1)
+            {
+                listView2.Items.Clear();
+                string tofind = comboBox1.SelectedItem.ToString();
+                while (deathsStreamReader.Peek() != -1)
+                {
+                    string x = deathsStreamReader.ReadLine();
+                    string[] xe = x.Split(',');
+                    if (xe[0] == tofind)
+                    {
+                        ListViewItem lvi = new ListViewItem(xe[0]);
+                        lvi.SubItems.Add(xe[1]);
+                        lvi.SubItems.Add(xe[2]);
+                        listView2.Items.Add(lvi);
+                    }
+
+                }
+                deathsStreamReader.Close();
+
+            }
+            else
+            {
+                while (deathsStreamReader.Peek() != -1)
+                {
+                    string x = deathsStreamReader.ReadLine();
+                    string[] xe = x.Split(',');
+                    ListViewItem lvi = new ListViewItem(xe[0]);
+                    lvi.SubItems.Add(xe[1]);
+                    lvi.SubItems.Add(xe[2]);
+                    listView2.Items.Add(lvi);
+                }
+                deathsStreamReader.Close();
+            }
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+            if (comboBox2.SelectedIndex > -1)
+            {
+                listView2.Items.Clear();
+                string tofind = comboBox2.SelectedItem.ToString();
+                while (deathsStreamReader.Peek() != -1)
+                {
+                    string x = deathsStreamReader.ReadLine();
+                    string[] xe = x.Split(',');
+                    if (xe[1] == tofind)
+                    {
+                        ListViewItem lvi = new ListViewItem(xe[0]);
+                        lvi.SubItems.Add(xe[1]);
+                        lvi.SubItems.Add(xe[2]);
+                        listView2.Items.Add(lvi);
+                    }
+
+                }
+                deathsStreamReader.Close();
+
+            }
         }
     }
 }
