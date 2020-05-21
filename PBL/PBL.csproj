@@ -149,5 +149,14 @@
   <ItemGroup>
     <None Include="Resources\shapes-and-symbols.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-circle-button-blank-web-internet-icon-vector-13228683-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-circle-button-blank-web-internet-icon-vector-13228674-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

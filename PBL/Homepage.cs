@@ -40,5 +40,35 @@ namespace PBL
             Tests testsForm = new Tests();
             testsForm.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Width = 550;
+            this.Height = 370;
+            pictureBox2.Visible = false;
+            pictureBox4.Visible = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Width = 1290;
+            this.Height = 770;
+            pictureBox4.Visible = false;
+            pictureBox2.Visible = true;
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Minimized;
+            TopMost = false;
+        }
+
+       
+
     }
 }

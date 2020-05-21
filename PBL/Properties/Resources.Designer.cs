@@ -93,6 +93,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("green-circle-button-blank-web-internet-icon-vector-13228683-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap map {
             get {
                 object obj = ResourceManager.GetObject("map", resourceCulture);
@@ -106,6 +116,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap medical {
             get {
                 object obj = ResourceManager.GetObject("medical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap tools_and_utensils {
             get {
                 object obj = ResourceManager.GetObject("tools-and-utensils", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("yellow-circle-button-blank-web-internet-icon-vector-13228674-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
