@@ -133,6 +133,26 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap option_3 {
+            get {
+                object obj = ResourceManager.GetObject("option_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap option2 {
+            get {
+                object obj = ResourceManager.GetObject("option2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview", resourceCulture);

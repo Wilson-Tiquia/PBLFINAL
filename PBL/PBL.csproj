@@ -159,7 +159,13 @@
     <None Include="Resources\red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\option 3.gif" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\option 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
