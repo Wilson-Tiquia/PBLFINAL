@@ -248,6 +248,11 @@ namespace PBL
         {
            
         }
+
+        private void extend_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }
