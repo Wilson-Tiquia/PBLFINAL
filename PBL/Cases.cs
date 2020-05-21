@@ -250,5 +250,10 @@ namespace PBL
                 comboBox2.Items.Add("SARANGANI");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

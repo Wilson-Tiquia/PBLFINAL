@@ -41,8 +41,8 @@ namespace PBL
             casesLabel.Visible = true;
             casesComboBox.Visible = true;
             bar3.Visible = true;
-            colorBehindCases.Visible = true;
-            listOfAddedCases.Visible = true;
+            
+            
             regionComboBox.Text = "";
             provinceCityComboBox.Text = "";
             casesComboBox.Text = "";
@@ -57,8 +57,8 @@ namespace PBL
             casesLabel.Visible = false;
             casesComboBox.Visible = false;
             bar3.Visible = false;
-            colorBehindCases.Visible = false;
-            listOfAddedCases.Visible = false;
+            
+            
             // clear mo laman ng combox
             regionComboBox.Text = "";
             provinceCityComboBox.Text = "";
@@ -263,6 +263,21 @@ namespace PBL
         private void Back_Click(object sender, EventArgs e)
         {
             hideMap();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void provinceCityLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

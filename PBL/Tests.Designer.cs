@@ -31,19 +31,12 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.extend1 = new System.Windows.Forms.PictureBox();
-            this.equipments = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.map = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.extend = new System.Windows.Forms.Panel();
-            this.extend2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -91,75 +84,27 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.extend1 = new System.Windows.Forms.PictureBox();
+            this.equipments = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.map = new System.Windows.Forms.PictureBox();
+            this.extend2 = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
+            this.extend.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.extend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // extend1
-            // 
-            this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(8, 9);
-            this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(38, 32);
-            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend1.TabIndex = 3;
-            this.extend1.TabStop = false;
-            this.extend1.Click += new System.EventHandler(this.extend1_Click);
-            // 
-            // equipments
-            // 
-            this.equipments.Image = global::PBL.Properties.Resources.medical;
-            this.equipments.Location = new System.Drawing.Point(8, 320);
-            this.equipments.Name = "equipments";
-            this.equipments.Size = new System.Drawing.Size(55, 50);
-            this.equipments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.equipments.TabIndex = 3;
-            this.equipments.TabStop = false;
-            this.equipments.Click += new System.EventHandler(this.equipments_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 243);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL.Properties.Resources._case;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 171);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // map
-            // 
-            this.map.Image = global::PBL.Properties.Resources.signs;
-            this.map.Location = new System.Drawing.Point(8, 95);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(55, 50);
-            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map.TabIndex = 3;
-            this.map.TabStop = false;
-            this.map.Click += new System.EventHandler(this.map_Click);
             // 
             // panel2
             // 
@@ -188,18 +133,6 @@
             this.extend.TabIndex = 6;
             this.extend.Visible = false;
             this.extend.Paint += new System.Windows.Forms.PaintEventHandler(this.extend_Paint);
-            // 
-            // extend2
-            // 
-            this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(97, 7);
-            this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(38, 32);
-            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend2.TabIndex = 3;
-            this.extend2.TabStop = false;
-            this.extend2.Visible = false;
-            this.extend2.Click += new System.EventHandler(this.extend2_Click);
             // 
             // label6
             // 
@@ -244,17 +177,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "tests";
             this.label4.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PBL.Properties.Resources.sign;
-            this.pictureBox3.Location = new System.Drawing.Point(1209, -6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 59);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label1
             // 
@@ -696,6 +618,84 @@
             this.chart1.TabIndex = 33;
             this.chart1.Text = "chart1";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PBL.Properties.Resources.sign;
+            this.pictureBox3.Location = new System.Drawing.Point(1209, -6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(77, 59);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // extend1
+            // 
+            this.extend1.Image = global::PBL.Properties.Resources._interface;
+            this.extend1.Location = new System.Drawing.Point(8, 9);
+            this.extend1.Name = "extend1";
+            this.extend1.Size = new System.Drawing.Size(38, 32);
+            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend1.TabIndex = 3;
+            this.extend1.TabStop = false;
+            this.extend1.Click += new System.EventHandler(this.extend1_Click);
+            // 
+            // equipments
+            // 
+            this.equipments.Image = global::PBL.Properties.Resources.medical;
+            this.equipments.Location = new System.Drawing.Point(8, 320);
+            this.equipments.Name = "equipments";
+            this.equipments.Size = new System.Drawing.Size(55, 50);
+            this.equipments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.equipments.TabIndex = 3;
+            this.equipments.TabStop = false;
+            this.equipments.Click += new System.EventHandler(this.equipments_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBL.Properties.Resources.tools_and_utensils;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 243);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PBL.Properties.Resources._case;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 171);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // map
+            // 
+            this.map.Image = global::PBL.Properties.Resources.signs;
+            this.map.Location = new System.Drawing.Point(8, 95);
+            this.map.Name = "map";
+            this.map.Size = new System.Drawing.Size(55, 50);
+            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map.TabIndex = 3;
+            this.map.TabStop = false;
+            this.map.Click += new System.EventHandler(this.map_Click);
+            // 
+            // extend2
+            // 
+            this.extend2.Image = global::PBL.Properties.Resources._interface;
+            this.extend2.Location = new System.Drawing.Point(97, 7);
+            this.extend2.Name = "extend2";
+            this.extend2.Size = new System.Drawing.Size(38, 32);
+            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend2.TabIndex = 3;
+            this.extend2.TabStop = false;
+            this.extend2.Visible = false;
+            this.extend2.Click += new System.EventHandler(this.extend2_Click);
+            // 
             // Tests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -744,20 +744,20 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tests";
             this.Text = "Tests";
+            this.panel2.ResumeLayout(false);
+            this.extend.ResumeLayout(false);
+            this.extend.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.extend.ResumeLayout(false);
-            this.extend.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

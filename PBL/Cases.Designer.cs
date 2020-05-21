@@ -29,13 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.extend1 = new System.Windows.Forms.PictureBox();
-            this.equipments = new System.Windows.Forms.PictureBox();
-            this.tests = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.map = new System.Windows.Forms.PictureBox();
             this.extend = new System.Windows.Forms.Panel();
-            this.extend2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,31 +59,41 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.extend2 = new System.Windows.Forms.PictureBox();
+            this.extend1 = new System.Windows.Forms.PictureBox();
+            this.equipments = new System.Windows.Forms.PictureBox();
+            this.tests = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.map = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipments)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tests)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             this.extend.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tests)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,61 +110,6 @@
             this.panel2.Size = new System.Drawing.Size(73, 785);
             this.panel2.TabIndex = 4;
             // 
-            // extend1
-            // 
-            this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(8, 9);
-            this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(38, 32);
-            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend1.TabIndex = 3;
-            this.extend1.TabStop = false;
-            this.extend1.Click += new System.EventHandler(this.extend1_Click);
-            // 
-            // equipments
-            // 
-            this.equipments.Image = global::PBL.Properties.Resources.medical;
-            this.equipments.Location = new System.Drawing.Point(8, 320);
-            this.equipments.Name = "equipments";
-            this.equipments.Size = new System.Drawing.Size(55, 50);
-            this.equipments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.equipments.TabIndex = 3;
-            this.equipments.TabStop = false;
-            this.equipments.Click += new System.EventHandler(this.equipments_Click);
-            // 
-            // tests
-            // 
-            this.tests.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.tests.Location = new System.Drawing.Point(8, 243);
-            this.tests.Name = "tests";
-            this.tests.Size = new System.Drawing.Size(55, 50);
-            this.tests.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.tests.TabIndex = 3;
-            this.tests.TabStop = false;
-            this.tests.Click += new System.EventHandler(this.tests_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL.Properties.Resources._case;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 171);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // map
-            // 
-            this.map.Image = global::PBL.Properties.Resources.signs;
-            this.map.Location = new System.Drawing.Point(8, 95);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(55, 50);
-            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map.TabIndex = 3;
-            this.map.TabStop = false;
-            this.map.Click += new System.EventHandler(this.map_Click);
-            // 
             // extend
             // 
             this.extend.BackColor = System.Drawing.Color.IndianRed;
@@ -174,18 +123,6 @@
             this.extend.Size = new System.Drawing.Size(138, 777);
             this.extend.TabIndex = 5;
             this.extend.Visible = false;
-            // 
-            // extend2
-            // 
-            this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(97, 7);
-            this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(38, 32);
-            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend2.TabIndex = 3;
-            this.extend2.TabStop = false;
-            this.extend2.Visible = false;
-            this.extend2.Click += new System.EventHandler(this.extend2_Click);
             // 
             // label6
             // 
@@ -270,9 +207,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(54, 78);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(173, 17);
+            this.label10.Size = new System.Drawing.Size(179, 17);
             this.label10.TabIndex = 8;
-            this.label10.Text = "Total galing sa csv + input";
+            this.label10.Text = "total death per region input";
             // 
             // label7
             // 
@@ -297,12 +234,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(39, 77);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(188, 17);
+            this.label9.Size = new System.Drawing.Size(154, 13);
             this.label9.TabIndex = 8;
-            this.label9.Text = "total na galing sa csv + input";
+            this.label9.Text = "total recovered per region input";
             // 
             // label8
             // 
@@ -327,12 +264,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 17);
+            this.label2.Size = new System.Drawing.Size(233, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Total na galing don sa map + input";
+            this.label2.Text = "TOTAL CASES TO PER REGION NA ININPUT";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -493,50 +431,22 @@
             this.textBox2.Size = new System.Drawing.Size(306, 38);
             this.textBox2.TabIndex = 25;
             // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(84, 518);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(303, 239);
-            this.panel11.TabIndex = 27;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.LemonChiffon;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(508, 25);
+            this.textBox3.Location = new System.Drawing.Point(147, 520);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(404, 38);
             this.textBox3.TabIndex = 25;
             this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PBL.Properties.Resources.shapes_and_symbols;
-            this.pictureBox3.Location = new System.Drawing.Point(460, 23);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PBL.Properties.Resources.sign;
-            this.pictureBox1.Location = new System.Drawing.Point(1209, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(514, 31);
+            this.label18.Location = new System.Drawing.Point(152, 526);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(176, 25);
             this.label18.TabIndex = 30;
@@ -551,9 +461,9 @@
             this.columnHeader4});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(457, 73);
+            this.listView1.Location = new System.Drawing.Point(94, 577);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(455, 663);
+            this.listView1.Size = new System.Drawing.Size(840, 180);
             this.listView1.TabIndex = 33;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -578,15 +488,130 @@
             this.columnHeader4.Text = "Death Cases";
             this.columnHeader4.Width = 91;
             // 
-            // label17
+            // pictureBox3
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(344, 274);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(635, 13);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "KAPAG NAGSEARCH SIYA NG REGION LALABAS YUNG PROVINCES NUNG REGION NA YON WITH THO" +
-    "SE CASES AHHAHA";
+            this.pictureBox3.Image = global::PBL.Properties.Resources.shapes_and_symbols;
+            this.pictureBox3.Location = new System.Drawing.Point(102, 518);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(44, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // extend2
+            // 
+            this.extend2.Image = global::PBL.Properties.Resources._interface;
+            this.extend2.Location = new System.Drawing.Point(97, 7);
+            this.extend2.Name = "extend2";
+            this.extend2.Size = new System.Drawing.Size(38, 32);
+            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend2.TabIndex = 3;
+            this.extend2.TabStop = false;
+            this.extend2.Visible = false;
+            this.extend2.Click += new System.EventHandler(this.extend2_Click);
+            // 
+            // extend1
+            // 
+            this.extend1.Image = global::PBL.Properties.Resources._interface;
+            this.extend1.Location = new System.Drawing.Point(8, 9);
+            this.extend1.Name = "extend1";
+            this.extend1.Size = new System.Drawing.Size(38, 32);
+            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend1.TabIndex = 3;
+            this.extend1.TabStop = false;
+            this.extend1.Click += new System.EventHandler(this.extend1_Click);
+            // 
+            // equipments
+            // 
+            this.equipments.Image = global::PBL.Properties.Resources.medical;
+            this.equipments.Location = new System.Drawing.Point(8, 320);
+            this.equipments.Name = "equipments";
+            this.equipments.Size = new System.Drawing.Size(55, 50);
+            this.equipments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.equipments.TabIndex = 3;
+            this.equipments.TabStop = false;
+            this.equipments.Click += new System.EventHandler(this.equipments_Click);
+            // 
+            // tests
+            // 
+            this.tests.Image = global::PBL.Properties.Resources.tools_and_utensils;
+            this.tests.Location = new System.Drawing.Point(8, 243);
+            this.tests.Name = "tests";
+            this.tests.Size = new System.Drawing.Size(55, 50);
+            this.tests.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.tests.TabIndex = 3;
+            this.tests.TabStop = false;
+            this.tests.Click += new System.EventHandler(this.tests_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PBL.Properties.Resources._case;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 171);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // map
+            // 
+            this.map.Image = global::PBL.Properties.Resources.signs;
+            this.map.Location = new System.Drawing.Point(8, 95);
+            this.map.Name = "map";
+            this.map.Size = new System.Drawing.Size(55, 50);
+            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map.TabIndex = 3;
+            this.map.TabStop = false;
+            this.map.Click += new System.EventHandler(this.map_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBL.Properties.Resources.sign;
+            this.pictureBox1.Location = new System.Drawing.Point(1209, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(77, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(409, 18);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(548, 454);
+            this.listView2.TabIndex = 35;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Region";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Province";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Total Cases";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Recovered Cases";
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Death Cases";
             // 
             // Cases
             // 
@@ -594,22 +619,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(1290, 770);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel11);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
@@ -621,14 +645,8 @@
             this.Name = "Cases";
             this.Text = "Cases";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipments)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tests)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             this.extend.ResumeLayout(false);
             this.extend.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -639,6 +657,12 @@
             this.panel3.PerformLayout();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tests)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -685,7 +709,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label18;
@@ -694,6 +717,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
     }
 }
