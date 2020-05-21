@@ -222,21 +222,25 @@ namespace PBL
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void extend_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void luzonButton_Click(object sender, EventArgs e)
         {
             showMap();
-            
-            
+            informationInProvince.Visible = true;
+            Back.Visible = true;
+            bar1.Visible = false;
+            bar2.Visible = false;
+            bar3.Visible = false;
+            bar4.Visible = false;
+            islandComboBox.Visible = false;
+            regionComboBox.Visible = false;
+            provinceCityComboBox.Visible = false;
+            casesLabel.Visible = false;
+            islandLabel.Visible = false;
+            regionLabel.Visible = false;
+            provinceCityLabel.Visible = false;
+            casesLabel.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -265,17 +269,7 @@ namespace PBL
             hideMap();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void provinceCityLabel_Click(object sender, EventArgs e)
+        private void informationInProvince_Paint(object sender, PaintEventArgs e)
         {
 
         }
