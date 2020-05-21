@@ -43,7 +43,7 @@ namespace PBL
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
