@@ -52,7 +52,50 @@ namespace PBL
         {
             InitializeComponent();
         }
-
+        public void emptyRegionProvince()
+        {
+            provinceMapComboBox.SelectedIndex = -1;
+            regionMapComboBox.SelectedIndex = -1;
+        }
+        public void showMap()
+        {
+            // hide
+            islandLabel.Visible = false;
+            islandComboBox.Visible = false;
+            regionLabel.Visible = false;
+            regionComboBox.Visible = false;
+            provinceLabel.Visible = false;
+            provinceComboBox.Visible = false;
+            cases.Visible = false;
+            caseInputTextBox.Visible = false;
+            // clear laman
+            islandComboBox.Text = regionComboBox.Text = provinceComboBox.Text = caseInputTextBox.Text = string.Empty;
+            // visible na ngyon yung second
+            regionMap.Visible = true;
+            regionMapComboBox.Visible = true;
+            provinceMap.Visible = true;
+            provinceMapComboBox.Visible = true;
+            currentIsland.Visible = true;
+            
+        }
+        public void hideMap ()
+        {
+            regionMap.Visible = false;
+            regionMapComboBox.Visible = false;
+            provinceMapComboBox.Visible = false;
+            provinceMap.Visible = false;
+            currentIsland.Visible = false;
+            panelOfImage.Visible = false;
+            // vvisible mo ung orig
+            islandLabel.Visible = true;
+            islandComboBox.Visible = true;
+            regionLabel.Visible = true;
+            regionComboBox.Visible = true;
+            provinceLabel.Visible = true;
+            provinceComboBox.Visible = true;
+            cases.Visible = true;
+            caseInputTextBox.Visible = true;
+        }
         public void populateIsland()
         {
             for (int i = 0; i < islandList.Length;i++)
@@ -60,18 +103,21 @@ namespace PBL
                 islandComboBox.Items.Add(islandList[i]);
             }
         }
+        // lagyan mo laman regions
         public void populateRegions(string island)
         {
             int dimension = 0;
             if (island == "Luzon")
             {
                 regionComboBox.Items.Clear();
+                regionMapComboBox.Items.Clear();
                 dimension = luzonRegionOneToEight.GetLength(0);
                 for (int i = 0; i <dimension;i++)
                 {
                     if (luzonRegionOneToEight[0,i] != string.Empty)
                     {
                         regionComboBox.Items.Add(luzonRegionOneToEight[0, i]);
+                        regionMapComboBox.Items.Add(luzonRegionOneToEight[0, i]);
                     }
                 }
 
@@ -79,12 +125,14 @@ namespace PBL
             if (island == "Visayas")
             {
                 regionComboBox.Items.Clear();
+                regionMapComboBox.Items.Clear();
                 dimension = visayasRegionSixToEight.GetLength(0);
                 for (int i = 0; i < dimension; i++)
                 {
                     if (visayasRegionSixToEight[0, i] != string.Empty)
                     {
                         regionComboBox.Items.Add(visayasRegionSixToEight[0, i]);
+                        regionMapComboBox.Items.Add(visayasRegionSixToEight[0, i]);
                     }
                 }
 
@@ -92,16 +140,19 @@ namespace PBL
             if (island == "Mindanao")
             {
                 regionComboBox.Items.Clear();
+                regionMapComboBox.Items.Clear();
                 dimension = mindanaoRegions.GetLength(1);
                 for (int i = 0; i < dimension; i++)
                 {
                     if (mindanaoRegions[0, i] != string.Empty)
                     {
                         regionComboBox.Items.Add(mindanaoRegions[0, i]);
+                        regionMapComboBox.Items.Add(mindanaoRegions[0, i]);
                     }
                 }
             }
         }
+        // lagyan mo laman province
         public void populateProvince(string region)
         {
             int dimension = 0;
@@ -114,6 +165,7 @@ namespace PBL
                     if (luzonRegionOneToEight[1,i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[1, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[1, i]);
                     }
                 }
             }
@@ -125,6 +177,7 @@ namespace PBL
                     if (luzonRegionOneToEight[2, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[2, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[2, i]);
                     }
                 }
             }
@@ -136,6 +189,7 @@ namespace PBL
                     if (luzonRegionOneToEight[3, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[3, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[3, i]);
                     }
                 }
             }
@@ -148,6 +202,7 @@ namespace PBL
                     if (luzonRegionOneToEight[4, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[4, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[4, i]);
                     }
                 }
             }
@@ -159,6 +214,8 @@ namespace PBL
                     if (luzonRegionOneToEight[5, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[5, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[5, i]);
+
                     }
                 }
             }
@@ -170,6 +227,7 @@ namespace PBL
                     if (luzonRegionOneToEight[6, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[6, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[6, i]);
                     }
                 }
             }
@@ -181,6 +239,7 @@ namespace PBL
                     if (luzonRegionOneToEight[7, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[7, i]);
+                        provinceMapComboBox.Items.Add(luzonRegionOneToEight[7, i]);
                     }
                 }
             }
@@ -194,6 +253,7 @@ namespace PBL
                     if (visayasRegionSixToEight[1, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[1, i]);
+                        provinceMapComboBox.Items.Add(visayasRegionSixToEight[1, i]);
                     }
                 }
             }
@@ -205,6 +265,7 @@ namespace PBL
                     if (visayasRegionSixToEight[2, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[2, i]);
+                        provinceMapComboBox.Items.Add(visayasRegionSixToEight[2, i]);
                     }
                 }
             }
@@ -216,6 +277,7 @@ namespace PBL
                     if (visayasRegionSixToEight[3, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[3, i]);
+                        provinceMapComboBox.Items.Add(visayasRegionSixToEight[3, i]);
                     }
                 }
             }
@@ -230,6 +292,8 @@ namespace PBL
                     if (mindanaoRegions[1, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[1, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[1, i]);
+
                     }
                 }
             }
@@ -241,6 +305,7 @@ namespace PBL
                     if (mindanaoRegions[2, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[2, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[2, i]);
                     }
                 }
             }
@@ -252,6 +317,7 @@ namespace PBL
                     if (mindanaoRegions[3, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[3, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[3, i]);
                     }
                 }
             }
@@ -263,6 +329,7 @@ namespace PBL
                     if (mindanaoRegions[4, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[4, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[4, i]);
                     }
                 }
             }
@@ -274,17 +341,19 @@ namespace PBL
                     if (mindanaoRegions[5, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[5, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[5, i]);
                     }
                 }
             }
             if (region == "BARMM")
             {
-                dimension = mindanaoRegions.GetLength(1);
+                dimension = mindanaoRegions.GetLength(0);
                 for (int i = 0; i < dimension; i++)
                 {
                     if (visayasRegionSixToEight[6, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[6, i]);
+                        provinceMapComboBox.Items.Add(mindanaoRegions[6, i]);
                     }
                 }
             }
@@ -296,45 +365,51 @@ namespace PBL
         }
         private void Mapa_ni_Tiquia_Load(object sender, EventArgs e)
         {
+            hideMap();
             populateIsland();
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedIsland = islandComboBox.GetItemText(islandComboBox.SelectedItem);
-            provinceComboBox.Text = string.Empty;
+           
             populateRegions(selectedIsland);
+            provinceComboBox.Text = string.Empty;
 
         }
 
         private void provinceComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void regionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+         
             string selectedRegion = regionComboBox.GetItemText(regionComboBox.SelectedItem);
             provinceComboBox.Items.Clear();
             populateProvince(selectedRegion);
-
-            
         }
 
         private void islandComboBox_DropDown(object sender, EventArgs e)
         {
-            regionComboBox.Text = string.Empty;
-            provinceComboBox.Text = string.Empty;
+            provinceComboBox.SelectedIndex = -1;
+            regionComboBox.SelectedIndex = -1;
+            caseInputTextBox.Text = string.Empty;
+            
         }
 
         private void regionComboBox_DropDown(object sender, EventArgs e)
         {
-            provinceComboBox.Text = string.Empty;
+            
 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+         
+
+
 
         }
 
@@ -354,11 +429,74 @@ namespace PBL
                 addUser.Close();
                 islandComboBox.Text = regionComboBox.Text = provinceComboBox.Text = caseInputTextBox.Text = string.Empty;
                 islandComboBox.Focus();
-                
+                islandComboBox.SelectedIndex = -1;
+                regionComboBox.SelectedIndex = -1;
+                provinceComboBox.SelectedIndex = -1;
 
 
             }
          
+        }
+
+        private void luzonButton_Click(object sender, EventArgs e)
+        {
+            showMap();
+            string island = currentIsland.Text = "Luzon";
+            emptyRegionProvince();
+            populateRegions(island);
+
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            hideMap();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showMap();
+            string island = currentIsland.Text = "Visayas";
+            emptyRegionProvince();
+            populateRegions(island);
+        }
+
+        private void regionMapComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedRegion = regionMapComboBox.GetItemText(regionMapComboBox.SelectedItem);
+            provinceMapComboBox.Items.Clear();
+            populateProvince(selectedRegion);
+        }
+
+        private void regionMapComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void regionMapComboBox_DropDown(object sender, EventArgs e)
+        {
+            provinceMapComboBox.Text = string.Empty;
+           
+        }
+
+        private void provinceMapComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (regionMapComboBox.Text != string.Empty && provinceMapComboBox.Text != string.Empty)
+            {
+                panelOfImage.Visible = true;
+                
+
+
+            }
+        }
+
+        private void mindanao_Click(object sender, EventArgs e)
+        {
+            showMap();
+            string selectedIsland = currentIsland.Text = "Mindanao";
+            emptyRegionProvince();
+            populateRegions(selectedIsland);
+
+
         }
     }
 }
