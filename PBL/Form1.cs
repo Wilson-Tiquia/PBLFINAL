@@ -232,13 +232,17 @@ namespace PBL
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // dito ako
             string regionSelected = regionComboBox.GetItemText(regionComboBox.SelectedItem);
             populateProvince(regionSelected);
             provinceCityComboBox.Text = string.Empty;
 
 
         }
+        private void regionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
      
 
         private void luzonButton_Click(object sender, EventArgs e)
@@ -287,6 +291,11 @@ namespace PBL
         }
 
         private void informationInProvince_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void regionComboBox_QueryAccessibilityHelp(object sender, QueryAccessibilityHelpEventArgs e)
         {
 
         }
