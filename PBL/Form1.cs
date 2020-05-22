@@ -29,6 +29,23 @@ namespace PBL
             {"Albay", "Camarines Norte", "Camarines Sur", "Sorsogon","Catanduanes", "Masbate", "",""},    //region 5
             {"Abra", "Benguet", "Ifugao", "Kalinga", "Apayao", "Mountain Province", "",""},    //cordilierra administrative region
         };
+        string[,] visayasRegionSixToEight =
+        {
+            {"Aklan", "Antique", "Capiz", "Guimaras", "Iloilo", "Negros Occidental" },  // western visayas Regionn 6
+            {"Cebu", "Bohol", "Negros Oriental", "Siquijor", "", "" }, // central visayas region 7
+            {"Leyte", "Biliran", "Southern Leyte", "Samar", "Eastern Samar", "Northern Samar"  }, // eastern visayas
+        };
+
+        string[,] mindanaoRegions =
+        {
+            {"Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay", "", "" }, //Zamboanga Peninsula Region 9
+            {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", ""}, // BARMM
+            {"South Cotabato", "Cotabato", "Sultan Kudarat", "Sarangani", "" },//central mindanao sooccsargen
+            {"Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Davao Occidental"},// region 11 southern mindanao dabao region
+            {"Misamis Oriental", "Misamis Occidental", "Bukidnon", "Camiguin", "Lanao del Norte" },  // region 10 northern mindanao
+            {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands" }
+        };
+
 
         public Form1()
         {
