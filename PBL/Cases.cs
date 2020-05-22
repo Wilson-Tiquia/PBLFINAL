@@ -1,20 +1,22 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Text;
+
 
 namespace PBL
 {
     public partial class Cases : Form
     {
-    StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+        StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
 
         public Cases()
         {
             InitializeComponent();
         }
 
-        
-        
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -22,32 +24,24 @@ namespace PBL
 
         private void extend1_Click(object sender, EventArgs e)
         {
-            panel2.Visible = true;
-            map.Visible = true;
-            casess.Visible = true;
-            tests.Visible = true;
-            equipments.Visible = true;
+            extend1.Visible = false;
+            extend2.Visible = true;
+            
             label3.Visible = true;
+            label6.Visible = true;
             label4.Visible = true;
             label5.Visible = true;
-            label6.Visible = true;
-            extend2.Visible = true;
-            extend1.Visible = false;
         }
 
         private void extend2_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
-            map.Visible = false;
-            casess.Visible = false;
-            tests.Visible = false;
-            equipments.Visible = false;
+            extend1.Visible = true;
+            extend2.Visible = false;
+            
             label3.Visible = false;
+            label6.Visible = false;
             label4.Visible = false;
             label5.Visible = false;
-            label6.Visible = false;
-            extend2.Visible = false;
-            extend1.Visible = true;
         }
 
         private void map_Click(object sender, EventArgs e)
@@ -74,7 +68,7 @@ namespace PBL
             equipmentsForm.Show();
         }
 
-        
+
 
         private void textBox3_Click(object sender, EventArgs e)
         {
@@ -84,10 +78,11 @@ namespace PBL
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-
+            comboBox2.Items.Clear();
             //gives only the specific province/city per region selected
             if (comboBox1.Text == "BARMM")
             {
+
                 comboBox2.Items.Add("LANAO DEL SUR");
                 comboBox2.Items.Add("MAGUINDANAO");
                 comboBox2.Items.Add("SULU");
@@ -259,18 +254,28 @@ namespace PBL
             if (comboBox1.SelectedIndex > -1)
             {
                 listView2.Items.Clear();
+                listView1.Items.Clear();
                 string tofind = comboBox1.SelectedItem.ToString();
                 while (deathsStreamReader.Peek() != -1)
                 {
                     string x = deathsStreamReader.ReadLine();
                     string[] xe = x.Split(',');
+                    ListViewItem lvi = new ListViewItem(xe[0]);
+                    ListViewItem lvi1 = new ListViewItem(xe[0]);
+
+                    lvi.SubItems.Add(xe[1]);
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                    listView2.Items.Add(lvi);
                     if (xe[0] == tofind)
                     {
-                        ListViewItem lvi = new ListViewItem(xe[0]);
-                        lvi.SubItems.Add(xe[1]);
-                        lvi.SubItems.Add(xe[2]);
-                        lvi.SubItems.Add(xe[3]);
-                        listView2.Items.Add(lvi);
+                        lvi1.SubItems.Add(xe[1]);
+                        lvi1.SubItems.Add(xe[2]);
+                        lvi1.SubItems.Add(xe[3]);
+                        listView1.Items.Add(lvi1);
+                        listView2.Items[0].Focused = true;
+                        listView2.Items[0].Selected = true;
+
                     }
 
                 }
@@ -286,7 +291,7 @@ namespace PBL
         private void Cases_Load(object sender, EventArgs e)
         {
 
-  
+
 
             if (comboBox1.SelectedIndex > 1)
             {
@@ -303,6 +308,7 @@ namespace PBL
                         lvi.SubItems.Add(xe[2]);
                         lvi.SubItems.Add(xe[3]);
                         listView2.Items.Add(lvi);
+
                     }
 
                 }
@@ -320,6 +326,7 @@ namespace PBL
                     lvi.SubItems.Add(xe[2]);
                     lvi.SubItems.Add(xe[3]);
                     listView2.Items.Add(lvi);
+
                 }
                 deathsStreamReader.Close();
             }
@@ -332,18 +339,38 @@ namespace PBL
             if (comboBox2.SelectedIndex > -1)
             {
                 listView2.Items.Clear();
+                listView1.Items.Clear();
+
                 string tofind = comboBox2.SelectedItem.ToString();
+
                 while (deathsStreamReader.Peek() != -1)
                 {
+
                     string x = deathsStreamReader.ReadLine();
                     string[] xe = x.Split(',');
+                    ListViewItem lvi = new ListViewItem(xe[0]);
+                    ListViewItem lvi1 = new ListViewItem(xe[0]);
+                    lvi.SubItems.Add(xe[1]);
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                    listView2.Items.Add(lvi);
                     if (xe[1] == tofind)
                     {
-                        ListViewItem lvi = new ListViewItem(xe[0]);
-                        lvi.SubItems.Add(xe[1]);
-                        lvi.SubItems.Add(xe[2]);
-                        lvi.SubItems.Add(xe[3]);
-                        listView2.Items.Add(lvi);
+
+                        //ListViewItem lvi = new ListViewItem(xe[0]);
+                        //lvi.SubItems.Add(xe[1]);
+                        //lvi.SubItems.Add(xe[2]);
+                        //lvi.SubItems.Add(xe[3]);
+                        //listView2.Items.Add(lvi);
+                        lvi1.SubItems.Add(xe[1]);
+                        lvi1.SubItems.Add(xe[2]);
+                        lvi1.SubItems.Add(xe[3]);
+                        listView1.Items.Add(lvi1);
+
+                        listView2.Items[0].Focused = true;
+                        listView2.Items[0].Selected = true;
+
+
                     }
 
                 }
@@ -352,47 +379,168 @@ namespace PBL
             }
         }
 
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            string cmb1 = comboBox1.Text.ToString();
+            string cmb2 = comboBox2.Text.ToString();
+            int val1;
+            int val2;
+
+            if (textBox1.Text == "")
+            {
+                val1 = 0;
+            }
+            else
+            {
+                val1 = Convert.ToInt32(textBox1.Text);
+            }
+            if (textBox2.Text == "")
+            {
+                val2 = 0;
+            }
+            else
+            {
+                val2 = Convert.ToInt32(textBox2.Text);
+            }
+
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+            listView2.Items.Clear();
+            listView1.Items.Clear();
+
+            string tofind = comboBox2.SelectedItem.ToString();
+            while (deathsStreamReader.Peek() != -1)
+            {
+                string x = deathsStreamReader.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                lvi.SubItems.Add(xe[1]);
+                if (xe[1] == tofind)
+                {
+                    ListViewItem lvi1 = new ListViewItem(xe[0]);
+                    lvi1.SubItems.Add(xe[1]);
+
+                    if (xe[1] == cmb2 && xe[0] == cmb1)
+                    {
+                        val2 = Convert.ToInt32(xe[3]) + val2;
+                        val1 = Convert.ToInt32(xe[2]) + val1;
+                        lvi.SubItems.Add(val1.ToString());
+                        lvi.SubItems.Add(val2.ToString());
+                        lvi1.SubItems.Add(val1.ToString());
+                        lvi1.SubItems.Add(val2.ToString());
+                        listView1.Items.Add(lvi1);
+
+                    }
+                }
+                else
+                {
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                }
+                //listView2.Items.Add(lvi);
+
+
+                //lvi.SubItems.Add(xe[2]);
+                //lvi.SubItems.Add(xe[3]);
+                listView2.Items.Add(lvi);
+            }
+            deathsStreamReader.Close();
+
 
         }
 
-        private void label15_Click(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            string cmb1 = comboBox1.Text.ToString();
+            string cmb2 = comboBox2.Text.ToString();
+            int val1;
+            int val2;
+
+            if (textBox1.Text == "")
+            {
+                val1 = 0;
+            }
+            else
+            {
+                val1 = Convert.ToInt32(textBox1.Text);
+            }
+            if (textBox2.Text == "")
+            {
+                val2 = 0;
+            }
+            else
+            {
+                val2 = Convert.ToInt32(textBox2.Text);
+            }
+
+
+
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
+            listView2.Items.Clear();
+            listView1.Items.Clear();
+
+            string tofind = comboBox2.SelectedItem.ToString();
+            while (deathsStreamReader.Peek() != -1)
+            {
+                string x = deathsStreamReader.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                lvi.SubItems.Add(xe[1]);
+                if (xe[1] == tofind)
+                {
+                    ListViewItem lvi1 = new ListViewItem(xe[0]);
+                    lvi1.SubItems.Add(xe[1]);
+
+                    if (xe[1] == cmb2 && xe[0] == cmb1)
+                    {
+                        val2 = Convert.ToInt32(xe[3]) + val2;
+                        val1 = Convert.ToInt32(xe[2]) + val1;
+                        lvi.SubItems.Add(val1.ToString());
+                        lvi.SubItems.Add(val2.ToString());
+                        lvi1.SubItems.Add(val1.ToString());
+                        lvi1.SubItems.Add(val2.ToString());
+                        listView1.Items.Add(lvi1);
+
+                    }
+                }
+                else
+                {
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                }
+                //listView2.Items.Add(lvi);
+
+
+                //lvi.SubItems.Add(xe[2]);
+                //lvi.SubItems.Add(xe[3]);
+                listView2.Items.Add(lvi);
+            }
+            deathsStreamReader.Close();
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            //Stream Writer
+            listView2.SelectedItems.Clear();
+            StreamWriter sw = new StreamWriter("D://Death-Cases.txt", false);
 
-        }
+            foreach (ListViewItem itemRow in listView2.Items)
+            {
+                for (int i = 0; i < itemRow.SubItems.Count; i++)
+                {
+                    sw.Write(itemRow.SubItems[i].Text);
+                    if (i < listView2.Columns.Count - 1)
+                    {
+                        sw.Write(",");
+                    }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            this.Width = 550;
-            this.Height = 370;
-            pictureBox6.Visible = false;
-            pictureBox4.Visible = true;
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Minimized;
-            TopMost = false;
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            this.Width = 1290;
-            this.Height = 770;
-            pictureBox6.Visible = true;
-            pictureBox4.Visible = false;
+                }
+                sw.Write(sw.NewLine);
+            }
+            sw.Close();
+            MessageBox.Show("Saved!!!");
         }
     }
 }
