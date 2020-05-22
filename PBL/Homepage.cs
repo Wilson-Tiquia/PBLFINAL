@@ -74,24 +74,14 @@ namespace PBL
             aForm.Show();
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            Equipments equipmentsForm = new Equipments();
-            equipmentsForm.Show();
-
-        }
+       
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

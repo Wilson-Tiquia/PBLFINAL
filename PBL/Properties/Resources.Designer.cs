@@ -113,6 +113,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap first_aid_kit {
+            get {
+                object obj = ResourceManager.GetObject("first-aid-kit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("green-circle-button-blank-web-internet-icon-vector-13228683-removebg-preview", resourceCulture);

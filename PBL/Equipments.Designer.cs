@@ -173,7 +173,7 @@
             // 
             // pictureBox4
             // 
-            
+            this.pictureBox4.Image = global::PBL.Properties.Resources.first_aid_kit;
             this.pictureBox4.Location = new System.Drawing.Point(8, 171);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(55, 50);

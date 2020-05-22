@@ -144,7 +144,7 @@
             // 
             // pictureBox2
             // 
-
+            this.pictureBox2.Image = global::PBL.Properties.Resources.first_aid_kit;
             this.pictureBox2.Location = new System.Drawing.Point(8, 171);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(55, 50);
