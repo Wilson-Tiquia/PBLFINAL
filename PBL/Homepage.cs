@@ -68,7 +68,10 @@ namespace PBL
             TopMost = false;
         }
 
-       
-
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Mapa aForm = new Mapa();
+            aForm.Show();
+        }
     }
 }
