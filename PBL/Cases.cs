@@ -568,5 +568,33 @@ namespace PBL
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Minimized;
+            TopMost = false;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Width = 550;
+            this.Height = 370;
+            pictureBox6.Visible = false;
+            pictureBox4.Visible = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Width = 1290;
+            this.Height = 770;
+            pictureBox4.Visible = false;
+            pictureBox6.Visible = true;
+        }
     }
 }

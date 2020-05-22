@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -130,7 +130,6 @@
             this.label8.Size = new System.Drawing.Size(216, 18);
             this.label8.TabIndex = 34;
             this.label8.Text = "occupied mechanical ventilators";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -142,7 +141,6 @@
             this.label7.Size = new System.Drawing.Size(136, 18);
             this.label7.TabIndex = 35;
             this.label7.Text = "occupied ward beds";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox3
             // 
@@ -152,7 +150,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(133, 38);
             this.textBox3.TabIndex = 42;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label2
             // 
@@ -164,7 +161,6 @@
             this.label2.Size = new System.Drawing.Size(159, 18);
             this.label2.TabIndex = 36;
             this.label2.Text = "occupied isolation beds";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboBox1
             // 
@@ -262,7 +258,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 39);
             this.comboBox1.TabIndex = 33;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -274,7 +269,6 @@
             this.label16.Size = new System.Drawing.Size(126, 18);
             this.label16.TabIndex = 37;
             this.label16.Text = "occupied ICU beds";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel6
             // 
@@ -283,7 +277,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(122, 10);
             this.panel6.TabIndex = 38;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // textBox4
             // 
@@ -293,7 +286,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(214, 38);
             this.textBox4.TabIndex = 43;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // panel7
             // 
@@ -303,7 +295,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(167, 10);
             this.panel7.TabIndex = 32;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // panel8
             // 
@@ -320,7 +311,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(157, 10);
             this.panel1.TabIndex = 39;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel3
             // 
@@ -329,7 +319,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(133, 10);
             this.panel3.TabIndex = 40;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label15
             // 
@@ -341,7 +330,6 @@
             this.label15.Size = new System.Drawing.Size(64, 18);
             this.label15.TabIndex = 31;
             this.label15.Text = "Province";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // textBox1
             // 
@@ -351,7 +339,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 38);
             this.textBox1.TabIndex = 44;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel4
             // 
@@ -360,7 +347,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 10);
             this.panel4.TabIndex = 41;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // textBox2
             // 
@@ -370,7 +356,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(122, 38);
             this.textBox2.TabIndex = 45;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // listView1
             // 
@@ -393,7 +378,6 @@
             this.listView1.TabIndex = 46;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -442,17 +426,17 @@
             // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(1053, 176);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(225, 250);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
@@ -676,7 +660,6 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(131, 38);
             this.textBox12.TabIndex = 43;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // label18
             // 
@@ -693,16 +676,16 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea6.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart2.Legends.Add(legend6);
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
             this.chart2.Location = new System.Drawing.Point(109, 535);
             this.chart2.Name = "chart2";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart2.Series.Add(series6);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(1084, 223);
             this.chart2.TabIndex = 49;
             this.chart2.Text = "chart2";
@@ -717,7 +700,6 @@
             this.label19.Size = new System.Drawing.Size(347, 35);
             this.label19.TabIndex = 37;
             this.label19.Text = "Availability of equipments";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // topPanel
             // 
@@ -765,6 +747,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
             // 
@@ -842,7 +825,6 @@
             this.panel16.Size = new System.Drawing.Size(372, 164);
             this.panel16.TabIndex = 52;
             this.panel16.Visible = false;
-            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
             // 
             // label6
             // 
@@ -968,7 +950,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Equipments";
             this.Text = "Equipments";
-            this.Load += new System.EventHandler(this.Equipments_Load);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();

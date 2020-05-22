@@ -124,6 +124,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
             this.pictureBox4.Location = new System.Drawing.Point(44, 3);
             this.pictureBox4.Name = "pictureBox4";
