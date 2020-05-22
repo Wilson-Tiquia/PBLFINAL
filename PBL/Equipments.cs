@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PBL
 {
     public partial class Equipments : Form
     {
+        StreamReader equipments = new StreamReader("D://Equipments.txt");
         public Equipments()
         {
             InitializeComponent();
@@ -100,7 +102,97 @@ namespace PBL
             extend1.Visible = false;
         }
 
-        
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Equipments_Load(object sender, EventArgs e)
+        {
+
+
+            while (equipments.Peek() != -1)
+            {
+                string x = equipments.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                ListViewItem lvi1 = new ListViewItem(xe[0]);
+
+                lvi.SubItems.Add(xe[1]);
+                lvi.SubItems.Add(xe[2]);
+                lvi.SubItems.Add(xe[3]);
+                lvi.SubItems.Add(xe[4]);
+                lvi.SubItems.Add(xe[5]);
+                lvi.SubItems.Add(xe[6]);
+                lvi.SubItems.Add(xe[7]);
+                lvi.SubItems.Add(xe[8]);
+                listView1.Items.Add(lvi);
+
+                //if (xe[0] == tofind)
+                //{
+                //    lvi1.SubItems.Add(xe[1]);
+                //    lvi1.SubItems.Add(xe[2]);
+                //    lvi1.SubItems.Add(xe[3]);
+                //listView1.Items.Add(lvi1);
+
+
+                //}
+
+            }
+            equipments.Close();
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            while (equipments.Peek() != -1)
+            {
+                string x = equipments.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                ListViewItem lvi1 = new ListViewItem(xe[0]);
+
+                lvi.SubItems.Add(xe[1]);
+                lvi.SubItems.Add(xe[2]);
+                lvi.SubItems.Add(xe[3]);
+                lvi.SubItems.Add(xe[4]);
+                lvi.SubItems.Add(xe[5]);
+                lvi.SubItems.Add(xe[6]);
+                lvi.SubItems.Add(xe[7]);
+                lvi.SubItems.Add(xe[8]);
+                listView1.Items.Add(lvi);
+
+                //if (xe[0] == tofind)
+                //{
+                //    lvi1.SubItems.Add(xe[1]);
+                //    lvi1.SubItems.Add(xe[2]);
+                //    lvi1.SubItems.Add(xe[3]);
+                //    listView1.Items.Add(lvi1);
+
+
+                //}
+
+            }
+            equipments.Close();
+
+        }
+
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -122,7 +214,10 @@ namespace PBL
             pictureBox4.Visible = false;
         }
 
+        private void panel16_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
         private void map_Click_1(object sender, EventArgs e)
         {
@@ -146,13 +241,6 @@ namespace PBL
         {
             Equipments equipmentsForm = new Equipments();
             equipmentsForm.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Minimized;
-            TopMost = false;
         }
     }
 }
