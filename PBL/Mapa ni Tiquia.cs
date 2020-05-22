@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PBL
 {
-    public partial class Mapa : Form
+    public partial class Mapa_ni_Tiquia : Form
     {
-        public Mapa()
+        public Mapa_ni_Tiquia()
         {
             InitializeComponent();
         }

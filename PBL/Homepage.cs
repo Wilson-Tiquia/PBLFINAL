@@ -70,7 +70,7 @@ namespace PBL
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Mapa aForm = new Mapa();
+            Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
             aForm.Show();
         }
     }
