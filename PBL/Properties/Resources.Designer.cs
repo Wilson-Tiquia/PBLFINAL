@@ -93,6 +93,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap final_option {
+            get {
+                object obj = ResourceManager.GetObject("final option", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("green-circle-button-blank-web-internet-icon-vector-13228683-removebg-preview", resourceCulture);
@@ -136,6 +146,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap option_3 {
             get {
                 object obj = ResourceManager.GetObject("option_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap option_4 {
+            get {
+                object obj = ResourceManager.GetObject("option_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
