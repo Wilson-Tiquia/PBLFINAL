@@ -148,7 +148,6 @@
             // 
             // cases
             // 
-            this.cases.Image = global::PBL.Properties.Resources._case;
             this.cases.Location = new System.Drawing.Point(8, 171);
             this.cases.Name = "cases";
             this.cases.Size = new System.Drawing.Size(55, 50);
@@ -186,7 +185,7 @@
             this.luzonButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.luzonButton.FlatAppearance.BorderSize = 0;
             this.luzonButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.luzonButton.Location = new System.Drawing.Point(163, -30);
+            this.luzonButton.Location = new System.Drawing.Point(140, 0);
             this.luzonButton.Margin = new System.Windows.Forms.Padding(0);
             this.luzonButton.Name = "luzonButton";
             this.luzonButton.Size = new System.Drawing.Size(268, 265);

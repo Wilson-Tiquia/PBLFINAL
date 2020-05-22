@@ -73,16 +73,6 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _case {
-            get {
-                object obj = ResourceManager.GetObject("case", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _interface {
             get {
                 object obj = ResourceManager.GetObject("interface", resourceCulture);
@@ -93,9 +83,39 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cases {
+            get {
+                object obj = ResourceManager.GetObject("cases", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap equipments {
+            get {
+                object obj = ResourceManager.GetObject("equipments", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap final_option {
             get {
                 object obj = ResourceManager.GetObject("final option", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap first_aid_kit {
+            get {
+                object obj = ResourceManager.GetObject("first-aid-kit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +193,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap philippine_flag {
+            get {
+                object obj = ResourceManager.GetObject("philippine flag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview", resourceCulture);
@@ -206,6 +236,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap signs {
             get {
                 object obj = ResourceManager.GetObject("signs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tests {
+            get {
+                object obj = ResourceManager.GetObject("tests", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
