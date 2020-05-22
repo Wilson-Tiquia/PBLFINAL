@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label11 = new System.Windows.Forms.Label();
@@ -72,11 +72,11 @@
             this.map = new System.Windows.Forms.PictureBox();
             this.extend1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.extend2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.extend2 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -120,16 +120,16 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.DimGray;
             this.chart1.BorderlineColor = System.Drawing.Color.DimGray;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea7.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart1.Legends.Add(legend7);
             this.chart1.Location = new System.Drawing.Point(963, 8);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chart1.Series.Add(series7);
             this.chart1.Size = new System.Drawing.Size(321, 147);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
@@ -539,7 +539,7 @@
             // 
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(-11, -5);
+            this.extend1.Location = new System.Drawing.Point(6, 39);
             this.extend1.Name = "extend1";
             this.extend1.Size = new System.Drawing.Size(38, 32);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -553,29 +553,16 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.extend1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.map);
             this.panel2.Controls.Add(this.casess);
             this.panel2.Controls.Add(this.equipments);
             this.panel2.Controls.Add(this.tests);
-            this.panel2.Location = new System.Drawing.Point(15, 50);
+            this.panel2.Location = new System.Drawing.Point(16, 56);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(372, 164);
             this.panel2.TabIndex = 37;
             this.panel2.Visible = false;
-            // 
-            // extend2
-            // 
-            this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(4, 45);
-            this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(38, 32);
-            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend2.TabIndex = 3;
-            this.extend2.TabStop = false;
-            this.extend2.Click += new System.EventHandler(this.extend2_Click);
             // 
             // label6
             // 
@@ -621,6 +608,18 @@
             this.label3.TabIndex = 38;
             this.label3.Text = "equipments";
             // 
+            // extend2
+            // 
+            this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.extend2.Image = global::PBL.Properties.Resources._interface;
+            this.extend2.Location = new System.Drawing.Point(6, 39);
+            this.extend2.Name = "extend2";
+            this.extend2.Size = new System.Drawing.Size(38, 32);
+            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend2.TabIndex = 3;
+            this.extend2.TabStop = false;
+            this.extend2.Click += new System.EventHandler(this.extend2_Click);
+            // 
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.Color.SlateGray;
@@ -664,7 +663,7 @@
             this.btnSave.BackColor = System.Drawing.Color.DimGray;
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(249, 562);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 38);
             this.btnSave.TabIndex = 39;
@@ -698,10 +697,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.extend1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cases";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cases";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cases_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
