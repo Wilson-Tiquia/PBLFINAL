@@ -427,7 +427,7 @@ namespace PBL
             MessageBox.Show("Saved!!!");
             WebClient client = new WebClient();
             client.Credentials = new NetworkCredential("JeonLana", "lana0316");
-            client.UploadFile("ftp://66.220.9.50 MyDocuments/Death-Cases.txt", "D://Death-Cases.txt");
+            client.UploadFile("ftp://66.220.9.50/My Documents/Sample.txt", "D://Death-Cases.txt");
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
