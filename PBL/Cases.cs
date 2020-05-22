@@ -22,24 +22,32 @@ namespace PBL
 
         private void extend1_Click(object sender, EventArgs e)
         {
-            extend1.Visible = false;
-            extend2.Visible = true;
-            extend.Visible = true;
+            panel2.Visible = true;
+            map.Visible = true;
+            casess.Visible = true;
+            tests.Visible = true;
+            equipments.Visible = true;
             label3.Visible = true;
-            label6.Visible = true;
             label4.Visible = true;
             label5.Visible = true;
+            label6.Visible = true;
+            extend2.Visible = true;
+            extend1.Visible = false;
         }
 
         private void extend2_Click(object sender, EventArgs e)
         {
-            extend1.Visible = true;
-            extend2.Visible = false;
-            extend.Visible = false;
+            panel2.Visible = false;
+            map.Visible = false;
+            casess.Visible = false;
+            tests.Visible = false;
+            equipments.Visible = false;
             label3.Visible = false;
-            label6.Visible = false;
             label4.Visible = false;
             label5.Visible = false;
+            label6.Visible = false;
+            extend2.Visible = false;
+            extend1.Visible = true;
         }
 
         private void map_Click(object sender, EventArgs e)
@@ -342,6 +350,49 @@ namespace PBL
                 deathsStreamReader.Close();
 
             }
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Width = 550;
+            this.Height = 370;
+            pictureBox6.Visible = false;
+            pictureBox4.Visible = true;
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Minimized;
+            TopMost = false;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Width = 1290;
+            this.Height = 770;
+            pictureBox6.Visible = true;
+            pictureBox4.Visible = false;
         }
     }
 }
