@@ -72,7 +72,7 @@ namespace PBL
 
         private void textBox3_Click(object sender, EventArgs e)
         {
-            label18.Visible = false;
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -290,9 +290,8 @@ namespace PBL
 
         private void Cases_Load(object sender, EventArgs e)
         {
-
-
-
+            int totalRC = 0;
+            int totalDC = 0;
             if (comboBox1.SelectedIndex > 1)
             {
                 listView2.Items.Clear();
@@ -303,6 +302,8 @@ namespace PBL
                 {
                     string x = deathsStreamReader.ReadLine();
                     string[] xe = x.Split(',');
+                    totalRC = totalRC + Convert.ToInt32(xe[2]);
+                    totalDC = totalDC + Convert.ToInt32(xe[3]);
                     if (xe[0] == tofind)
                     {
                         ListViewItem lvi = new ListViewItem(xe[0]);
@@ -330,6 +331,9 @@ namespace PBL
                 {
                     string x = deathsStreamReader.ReadLine();
                     string[] xe = x.Split(',');
+                    totalRC = totalRC + Convert.ToInt32(xe[2]);
+                    totalDC = totalDC + Convert.ToInt32(xe[3]);
+
                     ListViewItem lvi = new ListViewItem(xe[0]);
                     ListViewItem lvi1 = new ListViewItem(xe[0]);
 
@@ -345,7 +349,8 @@ namespace PBL
                 }
                 deathsStreamReader.Close();
             }
-
+            label18.Text = totalRC.ToString();
+            label17.Text = totalDC.ToString();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -396,146 +401,7 @@ namespace PBL
 
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string cmb1 = comboBox1.Text.ToString();
-            string cmb2 = comboBox2.Text.ToString();
-            int val1;
-            int val2;
-
-            if (textBox1.Text == "")
-            {
-                val1 = 0;
-            }
-            else
-            {
-                val1 = Convert.ToInt32(textBox1.Text);
-            }
-            if (textBox2.Text == "")
-            {
-                val2 = 0;
-            }
-            else
-            {
-                val2 = Convert.ToInt32(textBox2.Text);
-            }
-
-            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-            listView2.Items.Clear();
-            listView1.Items.Clear();
-
-            string tofind = comboBox2.SelectedItem.ToString();
-            while (deathsStreamReader.Peek() != -1)
-            {
-                string x = deathsStreamReader.ReadLine();
-                string[] xe = x.Split(',');
-                ListViewItem lvi = new ListViewItem(xe[0]);
-                lvi.SubItems.Add(xe[1]);
-                if (xe[1] == tofind)
-                {
-                    ListViewItem lvi1 = new ListViewItem(xe[0]);
-                    lvi1.SubItems.Add(xe[1]);
-
-                    if (xe[1] == cmb2 && xe[0] == cmb1)
-                    {
-                        val2 = Convert.ToInt32(xe[3]) + val2;
-                        val1 = Convert.ToInt32(xe[2]) + val1;
-                        lvi.SubItems.Add(val1.ToString());
-                        lvi.SubItems.Add(val2.ToString());
-                        lvi1.SubItems.Add(val1.ToString());
-                        lvi1.SubItems.Add(val2.ToString());
-                        listView1.Items.Add(lvi1);
-
-                    }
-                }
-                else
-                {
-                    lvi.SubItems.Add(xe[2]);
-                    lvi.SubItems.Add(xe[3]);
-                }
-                //listView2.Items.Add(lvi);
-
-
-                //lvi.SubItems.Add(xe[2]);
-                //lvi.SubItems.Add(xe[3]);
-                listView2.Items.Add(lvi);
-            }
-            deathsStreamReader.Close();
-
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            string cmb1 = comboBox1.Text.ToString();
-            string cmb2 = comboBox2.Text.ToString();
-            int val1;
-            int val2;
-
-            if (textBox1.Text == "")
-            {
-                val1 = 0;
-            }
-            else
-            {
-                val1 = Convert.ToInt32(textBox1.Text);
-            }
-            if (textBox2.Text == "")
-            {
-                val2 = 0;
-            }
-            else
-            {
-                val2 = Convert.ToInt32(textBox2.Text);
-            }
-
-
-
-            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-            listView2.Items.Clear();
-            listView1.Items.Clear();
-
-            string tofind = comboBox2.SelectedItem.ToString();
-            while (deathsStreamReader.Peek() != -1)
-            {
-                string x = deathsStreamReader.ReadLine();
-                string[] xe = x.Split(',');
-                ListViewItem lvi = new ListViewItem(xe[0]);
-                lvi.SubItems.Add(xe[1]);
-                if (xe[1] == tofind)
-                {
-                    ListViewItem lvi1 = new ListViewItem(xe[0]);
-                    lvi1.SubItems.Add(xe[1]);
-
-                    if (xe[1] == cmb2 && xe[0] == cmb1)
-                    {
-                        val2 = Convert.ToInt32(xe[3]) + val2;
-                        val1 = Convert.ToInt32(xe[2]) + val1;
-                        lvi.SubItems.Add(val1.ToString());
-                        lvi.SubItems.Add(val2.ToString());
-                        lvi1.SubItems.Add(val1.ToString());
-                        lvi1.SubItems.Add(val2.ToString());
-                        listView1.Items.Add(lvi1);
-
-                    }
-                }
-                else
-                {
-                    lvi.SubItems.Add(xe[2]);
-                    lvi.SubItems.Add(xe[3]);
-                }
-                //listView2.Items.Add(lvi);
-
-
-                //lvi.SubItems.Add(xe[2]);
-                //lvi.SubItems.Add(xe[3]);
-                listView2.Items.Add(lvi);
-            }
-            deathsStreamReader.Close();
-
-        }
-
-       
+ 
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
@@ -696,6 +562,11 @@ namespace PBL
                 listView2.Items.Add(lvi);
             }
             deathsStreamReader.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
