@@ -179,5 +179,20 @@
   <ItemGroup>
     <None Include="Resources\option 4.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\philippine flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipments.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tests.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cases.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -148,7 +148,7 @@
             // 
             // cases
             // 
-            this.cases.Image = global::PBL.Properties.Resources._case;
+            
             this.cases.Location = new System.Drawing.Point(8, 171);
             this.cases.Name = "cases";
             this.cases.Size = new System.Drawing.Size(55, 50);
