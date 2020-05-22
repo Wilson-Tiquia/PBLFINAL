@@ -2,6 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 using System.Text;
+using System.Net;
 
 
 namespace PBL
@@ -424,6 +425,9 @@ namespace PBL
             }
             sw.Close();
             MessageBox.Show("Saved!!!");
+            WebClient client = new WebClient();
+            client.Credentials = new NetworkCredential("JeonLana", "lana0316");
+            client.UploadFile("ftp://66.220.9.50 MyDocuments/Death-Cases.txt", "D://Death-Cases.txt");
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
