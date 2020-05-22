@@ -261,6 +261,7 @@ namespace PBL
                         ListViewItem lvi = new ListViewItem(xe[0]);
                         lvi.SubItems.Add(xe[1]);
                         lvi.SubItems.Add(xe[2]);
+                        lvi.SubItems.Add(xe[3]);
                         listView2.Items.Add(lvi);
                     }
 
@@ -292,6 +293,7 @@ namespace PBL
                         ListViewItem lvi = new ListViewItem(xe[0]);
                         lvi.SubItems.Add(xe[1]);
                         lvi.SubItems.Add(xe[2]);
+                        lvi.SubItems.Add(xe[3]);
                         listView2.Items.Add(lvi);
                     }
 
@@ -308,6 +310,7 @@ namespace PBL
                     ListViewItem lvi = new ListViewItem(xe[0]);
                     lvi.SubItems.Add(xe[1]);
                     lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
                     listView2.Items.Add(lvi);
                 }
                 deathsStreamReader.Close();
@@ -331,6 +334,7 @@ namespace PBL
                         ListViewItem lvi = new ListViewItem(xe[0]);
                         lvi.SubItems.Add(xe[1]);
                         lvi.SubItems.Add(xe[2]);
+                        lvi.SubItems.Add(xe[3]);
                         listView2.Items.Add(lvi);
                     }
 

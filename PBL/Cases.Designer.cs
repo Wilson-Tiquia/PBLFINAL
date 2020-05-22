@@ -78,6 +78,7 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipments)).BeginInit();
@@ -104,7 +105,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.map);
             this.panel2.Location = new System.Drawing.Point(-4, -7);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(97, 966);
             this.panel2.TabIndex = 4;
@@ -113,7 +114,7 @@
             // 
             this.extend1.Image = global::PBL.Properties.Resources._interface;
             this.extend1.Location = new System.Drawing.Point(11, 11);
-            this.extend1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend1.Margin = new System.Windows.Forms.Padding(4);
             this.extend1.Name = "extend1";
             this.extend1.Size = new System.Drawing.Size(51, 39);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +126,7 @@
             // 
             this.equipments.Image = global::PBL.Properties.Resources.medical;
             this.equipments.Location = new System.Drawing.Point(11, 394);
-            this.equipments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipments.Margin = new System.Windows.Forms.Padding(4);
             this.equipments.Name = "equipments";
             this.equipments.Size = new System.Drawing.Size(73, 62);
             this.equipments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +138,7 @@
             // 
             this.tests.Image = global::PBL.Properties.Resources.tools_and_utensils;
             this.tests.Location = new System.Drawing.Point(11, 299);
-            this.tests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tests.Margin = new System.Windows.Forms.Padding(4);
             this.tests.Name = "tests";
             this.tests.Size = new System.Drawing.Size(73, 62);
             this.tests.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -149,7 +150,7 @@
             // 
             this.pictureBox2.Image = global::PBL.Properties.Resources._case;
             this.pictureBox2.Location = new System.Drawing.Point(11, 210);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,7 +162,7 @@
             // 
             this.map.Image = global::PBL.Properties.Resources.signs;
             this.map.Location = new System.Drawing.Point(11, 117);
-            this.map.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.map.Margin = new System.Windows.Forms.Padding(4);
             this.map.Name = "map";
             this.map.Size = new System.Drawing.Size(73, 62);
             this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +179,7 @@
             this.extend.Controls.Add(this.label3);
             this.extend.Controls.Add(this.label4);
             this.extend.Location = new System.Drawing.Point(93, -4);
-            this.extend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend.Margin = new System.Windows.Forms.Padding(4);
             this.extend.Name = "extend";
             this.extend.Size = new System.Drawing.Size(184, 956);
             this.extend.TabIndex = 5;
@@ -188,7 +189,7 @@
             // 
             this.extend2.Image = global::PBL.Properties.Resources._interface;
             this.extend2.Location = new System.Drawing.Point(129, 9);
-            this.extend2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend2.Margin = new System.Windows.Forms.Padding(4);
             this.extend2.Name = "extend2";
             this.extend2.Size = new System.Drawing.Size(51, 39);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +255,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(1313, 73);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 879);
             this.panel1.TabIndex = 6;
@@ -276,7 +277,7 @@
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(17, 389);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(368, 180);
             this.panel5.TabIndex = 2;
@@ -309,7 +310,7 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Location = new System.Drawing.Point(16, 196);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(368, 180);
             this.panel4.TabIndex = 1;
@@ -342,7 +343,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(15, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(365, 180);
             this.panel3.TabIndex = 0;
@@ -385,7 +386,7 @@
             this.textBox1.BackColor = System.Drawing.Color.LemonChiffon;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(108, 375);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(407, 45);
             this.textBox1.TabIndex = 25;
@@ -436,7 +437,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.DimGray;
             this.panel10.Location = new System.Drawing.Point(108, 446);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(409, 12);
             this.panel10.TabIndex = 22;
@@ -445,7 +446,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.DimGray;
             this.panel9.Location = new System.Drawing.Point(108, 289);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(409, 12);
             this.panel9.TabIndex = 21;
@@ -455,7 +456,7 @@
             this.panel7.BackColor = System.Drawing.Color.DimGray;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Location = new System.Drawing.Point(108, 146);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(409, 12);
             this.panel7.TabIndex = 20;
@@ -464,7 +465,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
             this.panel8.Location = new System.Drawing.Point(0, -21);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(631, 12);
             this.panel8.TabIndex = 11;
@@ -517,7 +518,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DimGray;
             this.panel6.Location = new System.Drawing.Point(111, 598);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(409, 12);
             this.panel6.TabIndex = 22;
@@ -527,7 +528,7 @@
             this.textBox2.BackColor = System.Drawing.Color.LemonChiffon;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(111, 528);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(407, 45);
             this.textBox2.TabIndex = 25;
@@ -538,7 +539,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(196, 640);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(538, 45);
             this.textBox3.TabIndex = 25;
@@ -565,7 +566,7 @@
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(125, 710);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1119, 221);
             this.listView1.TabIndex = 33;
@@ -596,7 +597,7 @@
             // 
             this.pictureBox3.Image = global::PBL.Properties.Resources.shapes_and_symbols;
             this.pictureBox3.Location = new System.Drawing.Point(136, 638);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(59, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -607,7 +608,7 @@
             // 
             this.pictureBox1.Image = global::PBL.Properties.Resources.sign;
             this.pictureBox1.Location = new System.Drawing.Point(1612, -7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -620,11 +621,12 @@
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
-            this.columnHeader7});
+            this.columnHeader7,
+            this.columnHeader8});
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(545, 22);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView2.Location = new System.Drawing.Point(503, 22);
+            this.listView2.Margin = new System.Windows.Forms.Padding(4);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(729, 558);
             this.listView2.TabIndex = 35;
@@ -634,15 +636,22 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Region";
+            this.columnHeader5.Width = 211;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Province";
+            this.columnHeader6.Width = 221;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "Death Cases";
-            this.columnHeader7.Width = 109;
+            this.columnHeader7.Width = 146;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Recovered Cases";
+            this.columnHeader8.Width = 342;
             // 
             // Cases
             // 
@@ -673,7 +682,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cases";
             this.Text = "Cases";
             this.Load += new System.EventHandler(this.Cases_Load);
@@ -754,5 +763,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
     }
 }
