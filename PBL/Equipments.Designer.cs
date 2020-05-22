@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -88,10 +88,10 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label19 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.extend2 = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.PictureBox();
             this.casess = new System.Windows.Forms.PictureBox();
@@ -107,10 +107,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.casess)).BeginInit();
@@ -374,6 +374,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -441,17 +442,17 @@
             // 
             // chart1
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart1.Legends.Add(legend11);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(1053, 176);
             this.chart1.Name = "chart1";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chart1.Series.Add(series11);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(225, 250);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
@@ -691,16 +692,17 @@
             // 
             // chart2
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart2.Legends.Add(legend12);
+            this.chart2.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(109, 535);
             this.chart2.Name = "chart2";
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chart2.Series.Add(series12);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(1084, 223);
             this.chart2.TabIndex = 49;
             this.chart2.Text = "chart2";
@@ -730,15 +732,17 @@
             this.topPanel.Size = new System.Drawing.Size(1317, 33);
             this.topPanel.TabIndex = 51;
             // 
-            // pictureBox1
+            // pictureBox6
             // 
-            this.pictureBox1.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(73, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(43, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox4
             // 
@@ -751,8 +755,20 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(73, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
             this.pictureBox5.Location = new System.Drawing.Point(15, 3);
             this.pictureBox5.Name = "pictureBox5";
@@ -762,21 +778,11 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(43, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // extend2
             // 
+            this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(5, 38);
+            this.extend2.Location = new System.Drawing.Point(-14, -10);
             this.extend2.Name = "extend2";
             this.extend2.Size = new System.Drawing.Size(38, 32);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -786,6 +792,7 @@
             // 
             // map
             // 
+            this.map.Cursor = System.Windows.Forms.Cursors.Hand;
             this.map.Image = global::PBL.Properties.Resources.signs;
             this.map.Location = new System.Drawing.Point(8, 49);
             this.map.Name = "map";
@@ -793,9 +800,11 @@
             this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.map.TabIndex = 3;
             this.map.TabStop = false;
+            this.map.Click += new System.EventHandler(this.map_Click_1);
             // 
             // casess
             // 
+            this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
             this.casess.Location = new System.Drawing.Point(93, 49);
             this.casess.Name = "casess";
@@ -803,9 +812,11 @@
             this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.casess.TabIndex = 3;
             this.casess.TabStop = false;
+            this.casess.Click += new System.EventHandler(this.casess_Click);
             // 
             // tests
             // 
+            this.tests.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tests.Image = global::PBL.Properties.Resources.tools_and_utensils;
             this.tests.Location = new System.Drawing.Point(182, 49);
             this.tests.Name = "tests";
@@ -813,10 +824,12 @@
             this.tests.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tests.TabIndex = 3;
             this.tests.TabStop = false;
+            this.tests.Click += new System.EventHandler(this.tests_Click);
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.DimGray;
+            this.panel16.Controls.Add(this.extend2);
             this.panel16.Controls.Add(this.label6);
             this.panel16.Controls.Add(this.label5);
             this.panel16.Controls.Add(this.label4);
@@ -825,11 +838,12 @@
             this.panel16.Controls.Add(this.casess);
             this.panel16.Controls.Add(this.pictureBox2);
             this.panel16.Controls.Add(this.tests);
-            this.panel16.Location = new System.Drawing.Point(23, 46);
+            this.panel16.Location = new System.Drawing.Point(24, 52);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(372, 164);
             this.panel16.TabIndex = 52;
             this.panel16.Visible = false;
+            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
             // 
             // label6
             // 
@@ -877,6 +891,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
             this.pictureBox2.Location = new System.Drawing.Point(275, 49);
             this.pictureBox2.Name = "pictureBox2";
@@ -884,11 +899,13 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // extend1
             // 
+            this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(5, 38);
+            this.extend1.Location = new System.Drawing.Point(10, 42);
             this.extend1.Name = "extend1";
             this.extend1.Size = new System.Drawing.Size(38, 32);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -902,7 +919,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1290, 770);
-            this.Controls.Add(this.extend2);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.chart2);
@@ -957,10 +973,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.topPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.casess)).EndInit();

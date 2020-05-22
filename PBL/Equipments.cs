@@ -215,5 +215,34 @@ namespace PBL
             pictureBox6.Visible = true;
             pictureBox4.Visible = false;
         }
+
+        private void panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void map_Click_1(object sender, EventArgs e)
+        {
+            Form1 mapForm = new Form1();
+            mapForm.Show();
+        }
+
+        private void casess_Click(object sender, EventArgs e)
+        {
+            Cases casesForm = new Cases();
+            casesForm.Show();
+        }
+
+        private void tests_Click(object sender, EventArgs e)
+        {
+            Tests testsForm = new Tests();
+            testsForm.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            Equipments equipmentsForm = new Equipments();
+            equipmentsForm.Show();
+        }
     }
 }
