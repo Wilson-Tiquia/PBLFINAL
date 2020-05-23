@@ -218,5 +218,17 @@
   <ItemGroup>
     <None Include="Resources\shadow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tests in hospitals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523022153.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523022219.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523022202.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -72,7 +72,7 @@ namespace PBL
             foreach(string provCase in provinceAndCase)
             {
                 string[] provCaseSplit = provCase.Split('*');
-                Console.Write(appended);
+                //Console.Write(appended);
                 if (provinceMapComboBox.Text.ToLower() ==provCaseSplit[0])
                 {
                     MessageBox.Show("SAME KAMI " + provCaseSplit[0] +"total case is " + provCaseSplit[1]);

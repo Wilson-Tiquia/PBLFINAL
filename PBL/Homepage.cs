@@ -19,8 +19,8 @@ namespace PBL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 mapsForm = new Form1();
-            mapsForm.Show();
+            Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
+            aForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,42 +41,31 @@ namespace PBL
             testsForm.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void exit(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void minimize(object sender, EventArgs e)
         {
             this.Width = 550;
             this.Height = 370;
-            pictureBox2.Visible = false;
-            pictureBox4.Visible = true;
+            minimizeButton.Visible = false;
+            maximizeButton.Visible = true;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void maximize(object sender, EventArgs e)
         {
             this.Width = 1290;
             this.Height = 770;
-            pictureBox4.Visible = false;
-            pictureBox2.Visible = true;
+            maximizeButton.Visible = false;
+            minimizeButton.Visible = true;
         }
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void hide(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Minimized;
             TopMost = false;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
-            aForm.Show();
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
