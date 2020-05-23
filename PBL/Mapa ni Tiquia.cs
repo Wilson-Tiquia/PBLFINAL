@@ -45,13 +45,13 @@ namespace PBL
         // 80
         string[,] mindanaoRegions =
         {
-            {"Region IX", "Region X", "Region XI", "Region XII","Region XIII", "BARMM" },
-            {"Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay", "", "", "" }, //Zamboanga Peninsula Region 9
-            {"Misamis Oriental", "Misamis Occidental", "Bukidnon", "Camiguin", "Lanao del Norte", "" },         // region 10 northern mindanao
-            {"Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Davao Occidental",""},      // region 11 southern mindanao dabao region
-            {"South Cotabato", "Cotabato", "Sultan Kudarat", "Sarangani", "", "" },         //central mindanao sooccsargen 12
-            {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands", "" }, // region 13 caraga
-            {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", "", ""},                  // BARMM
+            {"Region IX", "Region X", "Region XI", "Region XII","Region XIII", "BARMM","" },
+            {"Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay", "", "", "" ,""}, //Zamboanga Peninsula Region 9
+            {"Misamis Oriental", "Misamis Occidental", "Bukidnon", "Camiguin", "Lanao del Norte", "","" },         // region 10 northern mindanao
+            {"Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Davao Occidental","",""},      // region 11 southern mindanao dabao region
+            {"South Cotabato", "Cotabato", "Sultan Kudarat", "Sarangani", "", "","" },         //central mindanao sooccsargen 12
+            {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands", "","" }, // region 13 caraga
+            {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", "", "",""},                  // BARMM
         };
 
         List<string> provinceAndCase = new List<string>();
@@ -438,7 +438,7 @@ namespace PBL
                 dimension = mindanaoRegions.GetLength(0);
                 for (int i = 0; i < dimension; i++)
                 {
-                    if (visayasRegionSixToEight[6, i] != string.Empty)
+                    if (mindanaoRegions[6, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[6, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[6, i]);

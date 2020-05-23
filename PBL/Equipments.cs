@@ -13,8 +13,28 @@ namespace PBL
 {
     public partial class Equipments : Form
     {
+
         StreamReader equipments = new StreamReader("D://Equipments.txt");
         StreamReader ppe = new StreamReader("D://PPE.txt");
+
+        int coverall = 0;
+        int faceshield = 0;
+        int goggles = 0;
+        int gown = 0;
+        int N95 = 0;
+        int shoecover = 0;
+        int headcover = 0;
+        int surgicalmask = 0;
+
+        int val1 = 0;
+        int val2 = 0;
+        int val3 = 0;
+        int val4 = 0;
+        int val5 = 0;
+        int val6 = 0;
+        int val7 = 0;
+        int val8 = 0;
+
         public Equipments()
         {
             InitializeComponent();
@@ -103,104 +123,104 @@ namespace PBL
             extend1.Visible = false;
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        //private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void Equipments_Load(object sender, EventArgs e)
-        {
+        //private void Equipments_Load(object sender, EventArgs e)
+        //{
 
 
             
-        }
+        //}
 
-        private void label15_Click(object sender, EventArgs e)
-        {
+        //private void label15_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void label19_Click(object sender, EventArgs e)
-        {
+        //private void label19_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void label16_Click(object sender, EventArgs e)
-        {
+        //private void label16_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
 
            
 
-        }
+        //}
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel7_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel6_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
+        //private void textBox2_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        //private void label2_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel1_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
+        //private void textBox3_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel3_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void label7_Click(object sender, EventArgs e)
-        {
+        //private void label7_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void label8_Click(object sender, EventArgs e)
-        {
+        //private void label8_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
+        //private void textBox4_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel4_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
+        //private void textBox12_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -274,9 +294,147 @@ namespace PBL
 
             }
             equipments.Close();
+            //while (ppe.Peek() != -1)
+            //{
+                string x1 = ppe.ReadLine();
+                string[] xe1 = x1.Split(',');
 
+                coverall = Convert.ToInt32(xe1[0]);
+                faceshield = Convert.ToInt32(xe1[1]);
+                goggles = Convert.ToInt32(xe1[2]);
+                gown = Convert.ToInt32(xe1[3]);
+                N95 = Convert.ToInt32(xe1[4]);
+                shoecover = Convert.ToInt32(xe1[5]);
+                headcover = Convert.ToInt32(xe1[6]);
+                surgicalmask = Convert.ToInt32(xe1[7]);
+ 
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Coverall", coverall);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Face Shield", faceshield);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Goggles", goggles);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Gown", gown);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("N95", N95);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Shoe Cover", shoecover);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Head Cover", headcover);
+                chart2.Series["Personal Protective Equipment"].Points.AddXY("Surgical Mask", surgicalmask);
+
+            //}
+            ppe.Close();
+
+
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+            if (txtcoverall.Text == "")
+            {
+                val1 = coverall;
+            }
+            else 
+            { 
+                val1 = Convert.ToInt32(txtcoverall.Text);
+            }
+
+            if(txtfaceshield.Text == "")
+            {
+                val2 = faceshield;
+            }
+            else
+            {
+                val2 = Convert.ToInt32(txtfaceshield.Text);
+            }
+ 
+            if(txtgoggles.Text == "")
+            {
+                val3 = goggles;
+            }
+            else
+            {
+                val3 = Convert.ToInt32(txtgoggles.Text);
+            }
+
+            if(txtgown.Text == "")
+            {
+                val4 = gown;
+            }
+            else
+            {
+                val4 = Convert.ToInt32(txtgown.Text);
+            }
+            if (txtN95.Text == "")
+            {
+                val5 = N95;
+            }
+            else
+            {
+                val5 = Convert.ToInt32(txtN95.Text);
+            }
+            if (txtShoeCover.Text == "")
+            {
+                val6 = shoecover;
+            }
+            else
+            {
+                val6 = Convert.ToInt32(txtShoeCover.Text);
+            }
+            if (txtHeadCover.Text == "")
+            {
+                val7 = headcover;
+            }
+            else
+            {
+                val7 = Convert.ToInt32(txtHeadCover.Text);
+            }
+            if (txtSurgicalMask.Text == "")
+            {
+               val8 = surgicalmask;
+            }
+            else
+            {
+                val8 = Convert.ToInt32(txtSurgicalMask.Text);
+            }
+
+            //Write to csv text file
+            StreamWriter sw = new StreamWriter("D://PPE.txt", false);
+            string strtowrite = "";
+            strtowrite = val1 + "," + val2 + "," + val3 + "," + val4 + "," + val5 + "," + val6 + "," + val7 + "," + val8;
+            sw.Write(strtowrite.ToString());
+            sw.Write(sw.NewLine);
+            sw.Close();
+
+            //Clear text boxes
+            txtcoverall.Text = "";
+            txtfaceshield.Text = "";
+            txtgown.Text = "";
+            txtgoggles.Text = "";
+            txtN95.Text = "";
+            txtHeadCover.Text = "";
+            txtShoeCover.Text = "";
+            txtSurgicalMask.Text = "";
+            //Initialize current value
+            coverall = val1;
+            faceshield = val2;
+            goggles = val3;
+            gown = val4;
+            N95 = val5;
+            shoecover = val6;
+            headcover = val7;
+            surgicalmask = val8;
+
+            //Display value to chart
+            chart2.Series["Personal Protective Equipment"].Points.Clear();
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Coverall", val1);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Face Shield", val2);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Goggles", val3);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Gown", val4);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("N95", val5);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Shoe Cover", val6);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Head Cover", val7);
+            chart2.Series["Personal Protective Equipment"].Points.AddXY("Surgical Mask", val8);
             
-            
+            MessageBox.Show("Saved!!!");
+
         }
     }
 }
