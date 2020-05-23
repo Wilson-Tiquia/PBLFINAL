@@ -10,7 +10,6 @@ namespace PBL
     public partial class Cases : Form
     {
         StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-        //StreamReader ashleyDeathStreamReader = new StreamReader("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt");
         
         public Cases()
         {
@@ -88,7 +87,7 @@ namespace PBL
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-            //StreamReader ashleyDeathStreamReader = new StreamReader("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt");
+
             provinceCityComboBox.Items.Clear();
             //gives only the specific province/city per region selected
             if (regionComboBox.Text == "BARMM")
@@ -268,12 +267,12 @@ namespace PBL
                 listView1.Items.Clear();
                 string tofind = regionComboBox.SelectedItem.ToString();
                 
-                //while (ashleyDeathStreamReader.Peek() != 1)
+               
 
                 while (deathsStreamReader.Peek() != -1)
                 {
                     string x = deathsStreamReader.ReadLine();
-                    //string x = ashleyDeathStreamReader.ReadLine();
+                    
                     string[] xe = x.Split(',');
                     ListViewItem lvi = new ListViewItem(xe[0]);
                     ListViewItem lvi1 = new ListViewItem(xe[0]);
@@ -295,7 +294,7 @@ namespace PBL
 
                }
                 deathsStreamReader.Close();
-                //ashleyDeathStreamReader.Close();
+                
             }
         }
 
@@ -316,12 +315,12 @@ namespace PBL
 
                 string tofind = regionComboBox.SelectedItem.ToString();
                 
-                //while (ashleyDeathStreamReader.Peek() != -1)
+                
 
                 while (deathsStreamReader.Peek() != -1)
                 {
                     string x = deathsStreamReader.ReadLine();
-                    //string x = ashleyDeathStreamReader.ReadLine();
+                    
                     string[] xe = x.Split(',');
                     totalRC = totalRC + Convert.ToInt32(xe[2]);
                     totalDC = totalDC + Convert.ToInt32(xe[3]);
@@ -344,8 +343,8 @@ namespace PBL
 
                 }
                 deathsStreamReader.Close();
-                recoveredDeathChart.Series["Death"].Points.AddXY("Deaths", deathNumber);
-                recoveredDeathChart.Series["Recovered"].Points.AddXY("Recovered", recoveredNumber);
+                recoveredDeathChart.Series["Death"].Points.AddXY("Total", deathNumber);
+                recoveredDeathChart.Series["Recovered"].Points.AddXY("Total", recoveredNumber);
                 
             }
             else
@@ -379,14 +378,14 @@ namespace PBL
             }
             deathNumber.Text = totalRC.ToString();
             recoveredNumber.Text = totalDC.ToString();
-            recoveredDeathChart.Series["Deaths"].Points.AddXY("Deaths", deathNumber.Text);
-            recoveredDeathChart.Series["Recovered"].Points.AddXY("Recovered", recoveredNumber.Text);
+            recoveredDeathChart.Series["Deaths"].Points.AddXY("Total", deathNumber.Text);
+            recoveredDeathChart.Series["Recovered"].Points.AddXY("Total", recoveredNumber.Text);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-            //StreamReader ashleyDeathStreamReader = new StreamReader("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt");
+            
             if (provinceCityComboBox.SelectedIndex > -1)
             {
                 listView2.Items.Clear();
@@ -394,13 +393,12 @@ namespace PBL
 
                 string tofind = provinceCityComboBox.SelectedItem.ToString();
 
-                //while (ashleyDeathStreamReader.Peek() != -1)
 
                 while (deathsStreamReader.Peek() != -1)
                 {
 
                      string x = deathsStreamReader.ReadLine();
-                    //string x = ashleyDeathStreamReader.ReadLine();
+                   
                     string[] xe = x.Split(',');
                     ListViewItem lvi = new ListViewItem(xe[0]);
                     ListViewItem lvi1 = new ListViewItem(xe[0]);
@@ -410,12 +408,6 @@ namespace PBL
                     listView2.Items.Add(lvi);
                     if (xe[1] == tofind)
                     {
-
-                        //ListViewItem lvi = new ListViewItem(xe[0]);
-                        //lvi.SubItems.Add(xe[1]);
-                        //lvi.SubItems.Add(xe[2]);
-                        //lvi.SubItems.Add(xe[3]);
-                        //listView2.Items.Add(lvi);
                         lvi1.SubItems.Add(xe[1]);
                         lvi1.SubItems.Add(xe[2]);
                         lvi1.SubItems.Add(xe[3]);
@@ -429,7 +421,8 @@ namespace PBL
 
                 }
                deathsStreamReader.Close();
-               // ashleyDeathStreamReader.Close();
+                listView2.Visible = false;
+                listView1.Visible = true;
 
             }
         }
@@ -443,7 +436,7 @@ namespace PBL
             //Stream Writer
             listView2.SelectedItems.Clear();
            StreamWriter sw = new StreamWriter("D://Death-Cases.txt", false);
-            //StreamWriter asw = new StreamWriter("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt",false);
+            
 
 
             foreach (ListViewItem itemRow in listView2.Items)
@@ -451,19 +444,24 @@ namespace PBL
                 for (int i = 0; i < itemRow.SubItems.Count; i++)
                 {
                     sw.Write(itemRow.SubItems[i].Text);
-                    //asw.Write(itemRow.SubItems[i].Text);
+                    
                     if (i < listView2.Columns.Count - 1)
                     {
                          sw.Write(",");
-                        //asw.Write(",");
+                       
                     }
 
                 }
                 sw.Write(sw.NewLine);
-                //asw.Write(asw.NewLine);
+                
             }
             sw.Close();
-            //asw.Close();
+
+            listView2.Visible = true;
+            listView1.Visible = false;
+            recoveredTextBox.Clear();
+            deathTextBix.Clear();
+
             MessageBox.Show("Saved!!!");
             WebClient client = new WebClient();
             client.Credentials = new NetworkCredential("JeonLana", "lana0316");
@@ -495,17 +493,17 @@ namespace PBL
             }
 
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-            //StreamReader ashleyDeathsStreamReader = new StreamReader("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt");
+            
             listView2.Items.Clear();
             listView1.Items.Clear();
 
             string tofind = provinceCityComboBox.SelectedItem.ToString();
 
-            // while(ashleyDeathsStreamReader.Peek() != -1)
+            
             while (deathsStreamReader.Peek() != -1)
             {
                 string x = deathsStreamReader.ReadLine();
-                //string x = ashleyDeathsStreamReader.ReadLine();
+               
                 string[] xe = x.Split(',');
                 ListViewItem lvi = new ListViewItem(xe[0]);
                 lvi.SubItems.Add(xe[1]);
@@ -531,15 +529,11 @@ namespace PBL
                     lvi.SubItems.Add(xe[2]);
                     lvi.SubItems.Add(xe[3]);
                 }
-                //listView2.Items.Add(lvi);
-
-
-                //lvi.SubItems.Add(xe[2]);
-                //lvi.SubItems.Add(xe[3]);
+                
                 listView2.Items.Add(lvi);
             }
              deathsStreamReader.Close();
-            //ashleyDeathsStreamReader.Close();
+            
 
 
         }
@@ -571,17 +565,17 @@ namespace PBL
 
 
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
-           // StreamReader ashleyDeathsStreamReader = new StreamReader("C://Users//ashle//OneDrive//Desktop//School//Death Cases.txt");
+
             listView2.Items.Clear();
             listView1.Items.Clear();
 
             string tofind = provinceCityComboBox.SelectedItem.ToString();
 
-            //while(ashleyDeathsStreamReader.Peek() != -1)
+            
             while (deathsStreamReader.Peek() != -1)
             {
                 string x = deathsStreamReader.ReadLine();
-                //string x = ashleyDeathsStreamReader.ReadLine();
+                
                 string[] xe = x.Split(',');
                 ListViewItem lvi = new ListViewItem(xe[0]);
                 lvi.SubItems.Add(xe[1]);
@@ -607,15 +601,11 @@ namespace PBL
                     lvi.SubItems.Add(xe[2]);
                     lvi.SubItems.Add(xe[3]);
                 }
-                //listView2.Items.Add(lvi);
-
-
-                //lvi.SubItems.Add(xe[2]);
-                //lvi.SubItems.Add(xe[3]);
+                
                 listView2.Items.Add(lvi);
             }
             deathsStreamReader.Close();
-            //ashleyDeathsStreamReader.Close();
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

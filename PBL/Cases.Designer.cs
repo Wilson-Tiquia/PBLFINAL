@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cases));
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -128,22 +128,22 @@
             // 
             this.recoveredDeathChart.BackColor = System.Drawing.Color.Transparent;
             this.recoveredDeathChart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.recoveredDeathChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.recoveredDeathChart.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.recoveredDeathChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.recoveredDeathChart.Legends.Add(legend3);
             this.recoveredDeathChart.Location = new System.Drawing.Point(1269, 10);
             this.recoveredDeathChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
             this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Deaths";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Recovered";
-            this.recoveredDeathChart.Series.Add(series1);
-            this.recoveredDeathChart.Series.Add(series2);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Deaths";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Recovered";
+            this.recoveredDeathChart.Series.Add(series5);
+            this.recoveredDeathChart.Series.Add(series6);
             this.recoveredDeathChart.Size = new System.Drawing.Size(428, 181);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
@@ -761,7 +761,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1720, 948);
             this.Controls.Add(this.extend2);
-            this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.border);
@@ -781,12 +780,14 @@
             this.Controls.Add(this.recoveredDeathPanel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.extend1);
+            this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cases";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cases";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cases_Load);
             this.recoveredDeathPanel.ResumeLayout(false);
             this.recoveredDeathPanel.PerformLayout();
