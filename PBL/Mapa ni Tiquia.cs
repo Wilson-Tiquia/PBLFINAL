@@ -53,36 +53,41 @@ namespace PBL
         };
 
         List<string> provinceAndCase = new List<string>();
-        List<string> allProvinces = new List<string>();
-       
-
-         public void getTotalCase(string province)
+        
+        string temporary = "";
+     
+      
+        public void getTotalCase(string province, int sum)
          {
             StreamReader read = new StreamReader(@"C:\Users\Denise\Downloads\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
+               
                 string input = read.ReadLine();
                 string[] splitInput = input.Split(',');
                 string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
+                temporary = provinceMapComboBox.Text.ToLower();
                 string caseSplitNew = splitInput[2].Replace(",", "");
+                if (temporary != newSplit)
+                {
+                    
+                    tCase.Text = "Total Case: " + sum.ToString();
+                }
+                if (temporary == newSplit)
+                {
+                    sum += int.Parse(caseSplitNew);
+                    tCase.Text = "Total Case: " + sum.ToString();
+                    
+                }
+            
+               
+
+
                 provinceAndCase.Add(newSplit + "*"+caseSplitNew);
             }
             read.Close();
            
-            foreach(string provCase in provinceAndCase)
-            {
-                string[] provCaseSplit = provCase.Split('*');
-                //Console.Write(appended);
-                if (provinceMapComboBox.Text.ToLower() ==provCaseSplit[0])
-                {
-                    MessageBox.Show("SAME KAMI " + provCaseSplit[0] +"total case is " + provCaseSplit[1]);
-                   
-
-
-                    tCase.Text = "Total Case: " + provCaseSplit[1];
-                }
-            }
-
+        
 
 
 
@@ -205,7 +210,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[1, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[1, i]);
-                        allProvinces.Add(luzonRegionOneToEight[1, i].ToLower());
+                        
                     }
                 }
             }
@@ -218,7 +223,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[2, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[2, i]);
-                        allProvinces.Add(luzonRegionOneToEight[2, i].ToLower());
+                        
                     }
                 }
             }
@@ -231,7 +236,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[3, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[3, i]);
-                        allProvinces.Add(luzonRegionOneToEight[3, i].ToLower());
+                        
                     }
                 }
             }
@@ -245,7 +250,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[4, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[4, i]);
-                        allProvinces.Add(luzonRegionOneToEight[4, i].ToLower());
+                       
                     }
                 }
             }
@@ -258,7 +263,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[5, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[5, i]);
-                        allProvinces.Add(luzonRegionOneToEight[5, i].ToLower());
+                        
 
                     }
                 }
@@ -272,7 +277,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[6, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[6, i]);
-                        allProvinces.Add(luzonRegionOneToEight[6, i].ToLower());
+                        
                     }
                 }
             }
@@ -285,7 +290,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[7, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[7, i]);
-                        allProvinces.Add(luzonRegionOneToEight[7, i].ToLower());
+                        
 
                     }
                 }
@@ -301,7 +306,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[1, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[1, i]);
-                        allProvinces.Add(visayasRegionSixToEight[1, i].ToLower());
+                        
                     }
                 }
             }
@@ -314,7 +319,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[2, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[2, i]);
-                        allProvinces.Add(visayasRegionSixToEight[2, i].ToLower());
+                        
                     }
                 }
             }
@@ -327,7 +332,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[3, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[3, i]);
-                        allProvinces.Add(visayasRegionSixToEight[3, i].ToLower());
+                        
                     }
                 }
             }
@@ -343,7 +348,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[1, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[1, i]);
-                        allProvinces.Add(mindanaoRegions[1, i].ToLower());
+                        
 
                     }
                 }
@@ -357,7 +362,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[2, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[2, i]);
-                        allProvinces.Add(mindanaoRegions[2, i].ToLower());
+                        
                     }
                 }
             }
@@ -370,7 +375,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[3, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[3, i]);
-                        allProvinces.Add(mindanaoRegions[3, i].ToLower());
+                        
 
                     }
                 }
@@ -384,7 +389,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[4, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[4, i]);
-                        allProvinces.Add(mindanaoRegions[4, i].ToLower());
+                       
 
                     }
                 }
@@ -398,7 +403,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[5, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[5, i]);
-                        allProvinces.Add(mindanaoRegions[5, i].ToLower());
+                       
 
                     }
                 }
@@ -412,13 +417,10 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[6, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[6, i]);
-                        allProvinces.Add(mindanaoRegions[6, i].ToLower());
+                      
                     }
                 }
             }
-
-
-
 
 
         }
@@ -426,12 +428,6 @@ namespace PBL
         {
             hideMap();
             populateIsland();
-            
-           
-           
-            
-
-
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -443,10 +439,7 @@ namespace PBL
 
         }
 
-        private void provinceComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
+     
 
         private void regionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -470,13 +463,7 @@ namespace PBL
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-         
-
-
-
-        }
+     
 
         private void caseInputTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -524,6 +511,7 @@ namespace PBL
             string island = currentIsland.Text = "Visayas";
             emptyRegionProvince();
             populateRegions(island);
+            panelOfImage.Visible = false;
         }
 
         private void regionMapComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -533,13 +521,12 @@ namespace PBL
             populateProvince(selectedRegion);
         }
 
-        private void regionMapComboBox_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
+     
 
         private void regionMapComboBox_DropDown(object sender, EventArgs e)
         {
+            panelOfImage.Visible = false;
+            provinceMapComboBox.SelectedIndex = -1;
             
            
         }
@@ -551,11 +538,9 @@ namespace PBL
                 panelOfImage.Visible = true;
                 string province= provinceMapComboBox.GetItemText(provinceMapComboBox.SelectedItem);
                 provinceName.Text = province;
-                getTotalCase(province);
-                foreach (var a in allProvinces)
-                {
-                    Console.WriteLine(a);
-                }
+                int sum = 0;
+                getTotalCase(province, sum);
+                
 
 
             }
@@ -567,11 +552,21 @@ namespace PBL
             string selectedIsland = currentIsland.Text = "Mindanao";
             emptyRegionProvince();
             populateRegions(selectedIsland);
+            panelOfImage.Visible = false;
         }
 
-        private void tCase_Click(object sender, EventArgs e)
-        {
+       
 
+        private void provinceMapComboBox_DropDown(object sender, EventArgs e)
+        {
+            provinceMapComboBox.Text = string.Empty;
+            provinceMapComboBox.SelectedIndex = -1;
+            panelOfImage.Visible = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

@@ -59,8 +59,6 @@
             this.mindanao = new System.Windows.Forms.Button();
             this.visayas = new System.Windows.Forms.Button();
             this.luzonButton = new System.Windows.Forms.Button();
-            this.provinceslistbox = new System.Windows.Forms.ListBox();
-            this.caseListBox = new System.Windows.Forms.ListBox();
             this.panelOfImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.case1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.case2)).BeginInit();
@@ -140,7 +138,6 @@
             this.provinceComboBox.Name = "provinceComboBox";
             this.provinceComboBox.Size = new System.Drawing.Size(445, 28);
             this.provinceComboBox.TabIndex = 5;
-            this.provinceComboBox.SelectedIndexChanged += new System.EventHandler(this.provinceComboBox_SelectedIndexChanged);
             // 
             // caseInputTextBox
             // 
@@ -148,7 +145,6 @@
             this.caseInputTextBox.Name = "caseInputTextBox";
             this.caseInputTextBox.Size = new System.Drawing.Size(100, 26);
             this.caseInputTextBox.TabIndex = 6;
-            this.caseInputTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.caseInputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.caseInputTextBox_KeyDown);
             // 
             // regionMap
@@ -181,7 +177,6 @@
             this.regionMapComboBox.TabIndex = 10;
             this.regionMapComboBox.DropDown += new System.EventHandler(this.regionMapComboBox_DropDown);
             this.regionMapComboBox.SelectedIndexChanged += new System.EventHandler(this.regionMapComboBox_SelectedIndexChanged);
-            this.regionMapComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.regionMapComboBox_KeyDown);
             // 
             // provinceMapComboBox
             // 
@@ -191,6 +186,7 @@
             this.provinceMapComboBox.Name = "provinceMapComboBox";
             this.provinceMapComboBox.Size = new System.Drawing.Size(445, 28);
             this.provinceMapComboBox.TabIndex = 11;
+            this.provinceMapComboBox.DropDown += new System.EventHandler(this.provinceMapComboBox_DropDown);
             this.provinceMapComboBox.SelectedIndexChanged += new System.EventHandler(this.provinceMapComboBox_SelectedIndexChanged);
             // 
             // panelOfImage
@@ -222,7 +218,6 @@
             this.tCase.Size = new System.Drawing.Size(93, 20);
             this.tCase.TabIndex = 5;
             this.tCase.Text = "Total Case: ";
-            this.tCase.Click += new System.EventHandler(this.tCase_Click);
             // 
             // provinceName
             // 
@@ -356,6 +351,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(430, 564);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // mindanao
             // 
@@ -395,31 +391,11 @@
             this.luzonButton.UseVisualStyleBackColor = false;
             this.luzonButton.Click += new System.EventHandler(this.luzonButton_Click);
             // 
-            // provinceslistbox
-            // 
-            this.provinceslistbox.FormattingEnabled = true;
-            this.provinceslistbox.ItemHeight = 20;
-            this.provinceslistbox.Location = new System.Drawing.Point(668, 108);
-            this.provinceslistbox.Name = "provinceslistbox";
-            this.provinceslistbox.Size = new System.Drawing.Size(286, 324);
-            this.provinceslistbox.TabIndex = 12;
-            // 
-            // caseListBox
-            // 
-            this.caseListBox.FormattingEnabled = true;
-            this.caseListBox.ItemHeight = 20;
-            this.caseListBox.Location = new System.Drawing.Point(978, 108);
-            this.caseListBox.Name = "caseListBox";
-            this.caseListBox.Size = new System.Drawing.Size(286, 324);
-            this.caseListBox.TabIndex = 13;
-            // 
             // Mapa_ni_Tiquia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Controls.Add(this.caseListBox);
-            this.Controls.Add(this.provinceslistbox);
             this.Controls.Add(this.currentIsland);
             this.Controls.Add(this.panelOfImage);
             this.Controls.Add(this.provinceMapComboBox);
@@ -482,7 +458,5 @@
         private System.Windows.Forms.Label range501To1k;
         private System.Windows.Forms.Label range0To500;
         private System.Windows.Forms.Label tCase;
-        private System.Windows.Forms.ListBox provinceslistbox;
-        private System.Windows.Forms.ListBox caseListBox;
     }
 }
