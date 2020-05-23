@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -607,17 +607,17 @@
             // dailyTestChart
             // 
             this.dailyTestChart.BackColor = System.Drawing.Color.SlateGray;
-            chartArea2.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend1);
             this.dailyTestChart.Location = new System.Drawing.Point(126, 598);
             this.dailyTestChart.Name = "dailyTestChart";
-            this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.dailyTestChart.Series.Add(series2);
+            this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.dailyTestChart.Series.Add(series1);
             this.dailyTestChart.Size = new System.Drawing.Size(876, 160);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
@@ -833,6 +833,7 @@
             // 
             // cumulativePanel
             // 
+            this.cumulativePanel.BackColor = System.Drawing.Color.SlateGray;
             this.cumulativePanel.Controls.Add(this.hospitalLabel);
             this.cumulativePanel.Controls.Add(this.uniqueTextBox);
             this.cumulativePanel.Controls.Add(this.equivocalPanel);
@@ -934,6 +935,7 @@
             // 
             // testPanel
             // 
+            this.testPanel.BackColor = System.Drawing.Color.SlateGray;
             this.testPanel.Controls.Add(this.label12);
             this.testPanel.Controls.Add(this.conductedLabel);
             this.testPanel.Controls.Add(this.conductedPanel);
@@ -979,8 +981,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateGray;
-            this.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022150;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.closeTest);

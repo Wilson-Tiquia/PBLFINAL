@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cases));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label11 = new System.Windows.Forms.Label();
@@ -108,8 +107,7 @@
             // 
             // recoveredDeathPanel
             // 
-            this.recoveredDeathPanel.BackColor = System.Drawing.Color.DimGray;
-            this.recoveredDeathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022219;
+            this.recoveredDeathPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
             this.recoveredDeathPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recoveredDeathPanel.Controls.Add(this.recoveredDeathChart);
             this.recoveredDeathPanel.Controls.Add(this.label11);
@@ -127,21 +125,21 @@
             // 
             this.recoveredDeathChart.BackColor = System.Drawing.Color.Transparent;
             this.recoveredDeathChart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.recoveredDeathChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.recoveredDeathChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.recoveredDeathChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.recoveredDeathChart.Legends.Add(legend1);
             this.recoveredDeathChart.Location = new System.Drawing.Point(952, 8);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
-            this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Deaths";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Recovered";
-            this.recoveredDeathChart.Series.Add(series3);
-            this.recoveredDeathChart.Series.Add(series4);
+            this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Deaths";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Recovered";
+            this.recoveredDeathChart.Series.Add(series1);
+            this.recoveredDeathChart.Series.Add(series2);
             this.recoveredDeathChart.Size = new System.Drawing.Size(321, 147);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
@@ -159,7 +157,7 @@
             // 
             // deathCasesPanel
             // 
-            this.deathCasesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deathCasesPanel.BackgroundImage")));
+            this.deathCasesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(56)))), ((int)(((byte)(93)))));
             this.deathCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.deathCasesPanel.Controls.Add(this.deathNumber);
             this.deathCasesPanel.Controls.Add(this.deathCasesLabel);
@@ -197,7 +195,7 @@
             // 
             // recoveredCasesPanel
             // 
-            this.recoveredCasesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("recoveredCasesPanel.BackgroundImage")));
+            this.recoveredCasesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(56)))), ((int)(((byte)(93)))));
             this.recoveredCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recoveredCasesPanel.Controls.Add(this.recoveredNumber);
             this.recoveredCasesPanel.Controls.Add(this.recoveredCasesLabel);
@@ -323,7 +321,7 @@
             // 
             // deathPanel
             // 
-            this.deathPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.deathPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.deathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.deathPanel.Location = new System.Drawing.Point(16, 423);
             this.deathPanel.Name = "deathPanel";
@@ -332,7 +330,7 @@
             // 
             // provinceCityPanel
             // 
-            this.provinceCityPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.provinceCityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.provinceCityPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.provinceCityPanel.Location = new System.Drawing.Point(16, 296);
             this.provinceCityPanel.Name = "provinceCityPanel";
@@ -341,8 +339,7 @@
             // 
             // regionPanel
             // 
-            this.regionPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.regionPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
+            this.regionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.regionPanel.Controls.Add(this.panel8);
             this.regionPanel.Location = new System.Drawing.Point(16, 180);
             this.regionPanel.Name = "regionPanel";
@@ -407,7 +404,7 @@
             // 
             // recoveredPanel
             // 
-            this.recoveredPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.recoveredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.recoveredPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.recoveredPanel.Location = new System.Drawing.Point(18, 547);
             this.recoveredPanel.Name = "recoveredPanel";
@@ -681,7 +678,7 @@
             this.btnSave.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(249, 562);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 38);
             this.btnSave.TabIndex = 39;
