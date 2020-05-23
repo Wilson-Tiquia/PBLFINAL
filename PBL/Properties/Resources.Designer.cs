@@ -83,6 +83,26 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background1 {
+            get {
+                object obj = ResourceManager.GetObject("background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cases {
             get {
                 object obj = ResourceManager.GetObject("cases", resourceCulture);
@@ -356,6 +376,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap Untitled2_20200523023132 {
             get {
                 object obj = ResourceManager.GetObject("Untitled2_20200523023132", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled2_20200523023156 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled2_20200523023156", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

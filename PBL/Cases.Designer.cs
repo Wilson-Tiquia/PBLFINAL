@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cases));
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -41,6 +41,8 @@
             this.recoveredCasesPanel = new System.Windows.Forms.Panel();
             this.recoveredNumber = new System.Windows.Forms.Label();
             this.recoveredCasesLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.deathTextBix = new System.Windows.Forms.TextBox();
             this.provinceCityComboBox = new System.Windows.Forms.ComboBox();
@@ -86,6 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.recoveredDeathChart)).BeginInit();
             this.deathCasesPanel.SuspendLayout();
             this.recoveredCasesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.regionPanel.SuspendLayout();
             this.border.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
@@ -110,7 +114,9 @@
             this.recoveredDeathPanel.Controls.Add(this.label11);
             this.recoveredDeathPanel.Controls.Add(this.deathCasesPanel);
             this.recoveredDeathPanel.Controls.Add(this.recoveredCasesPanel);
-            this.recoveredDeathPanel.Location = new System.Drawing.Point(-8, 605);
+            this.recoveredDeathPanel.Controls.Add(this.pictureBox1);
+            this.recoveredDeathPanel.Controls.Add(this.pictureBox2);
+            this.recoveredDeathPanel.Location = new System.Drawing.Point(-4, 605);
             this.recoveredDeathPanel.Name = "recoveredDeathPanel";
             this.recoveredDeathPanel.Size = new System.Drawing.Size(1301, 169);
             this.recoveredDeathPanel.TabIndex = 6;
@@ -120,17 +126,17 @@
             // 
             this.recoveredDeathChart.BackColor = System.Drawing.Color.Transparent;
             this.recoveredDeathChart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.recoveredDeathChart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.recoveredDeathChart.Legends.Add(legend4);
+            chartArea3.Name = "ChartArea1";
+            this.recoveredDeathChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.recoveredDeathChart.Legends.Add(legend3);
             this.recoveredDeathChart.Location = new System.Drawing.Point(952, 8);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
             this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.recoveredDeathChart.Series.Add(series4);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.recoveredDeathChart.Series.Add(series3);
             this.recoveredDeathChart.Size = new System.Drawing.Size(321, 147);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
@@ -222,6 +228,29 @@
             this.recoveredCasesLabel.TabIndex = 8;
             this.recoveredCasesLabel.Text = "RECOVERED CASES ";
             this.recoveredCasesLabel.Click += new System.EventHandler(this.recoveredCasesLabel_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
+            this.pictureBox1.Location = new System.Drawing.Point(630, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(313, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
+            this.pictureBox2.Location = new System.Drawing.Point(300, 1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(313, 162);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // label12
             // 
@@ -686,7 +715,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022150;
+            this.BackgroundImage = global::PBL.Properties.Resources.background1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.menuPanel);
@@ -709,6 +739,7 @@
             this.Controls.Add(this.recoveredDeathPanel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.extend1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cases";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -721,6 +752,8 @@
             this.deathCasesPanel.PerformLayout();
             this.recoveredCasesPanel.ResumeLayout(false);
             this.recoveredCasesPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.regionPanel.ResumeLayout(false);
             this.border.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).EndInit();
@@ -791,5 +824,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label recoveredNumber;
         private System.Windows.Forms.Label deathNumber;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
