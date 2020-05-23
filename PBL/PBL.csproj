@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8EF7D935-806C-4613-A9F4-B2DF3334E9B9}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>PBL</RootNamespace>
     <AssemblyName>PBL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -171,6 +171,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tests.resx">
       <DependentUpon>Tests.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +336,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
