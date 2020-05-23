@@ -107,7 +107,7 @@ namespace PBL
                     caseSaLugar = "0";
                     provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
                 }
-                if (sum > 501 && sum <= 1000)
+                if (sum > 500 && sum <= 1000)
                 {
                     caseSaLugar = "501";
                     provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
@@ -530,8 +530,6 @@ namespace PBL
                 provinceComboBox.SelectedIndex = -1;
                 this.Close();
                 Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
-                FormBorderStyle = FormBorderStyle.None;
-                WindowState = FormWindowState.Maximized;
                 aForm.Show();
                 
             }
