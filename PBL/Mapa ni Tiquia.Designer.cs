@@ -59,6 +59,9 @@
             this.mindanao = new System.Windows.Forms.Button();
             this.visayas = new System.Windows.Forms.Button();
             this.luzonButton = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.totalCases = new System.Windows.Forms.Label();
             this.panelOfImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.case1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.case2)).BeginInit();
@@ -66,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.case4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // islandLabel
@@ -392,11 +396,43 @@
             this.luzonButton.UseVisualStyleBackColor = false;
             this.luzonButton.Click += new System.EventHandler(this.luzonButton_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.Controls.Add(this.totalCases);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(886, 498);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(344, 252);
+            this.panel2.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(269, 46);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "TOTAL CASE";
+            // 
+            // totalCases
+            // 
+            this.totalCases.AutoSize = true;
+            this.totalCases.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCases.Location = new System.Drawing.Point(47, 104);
+            this.totalCases.Name = "totalCases";
+            this.totalCases.Size = new System.Drawing.Size(104, 113);
+            this.totalCases.TabIndex = 1;
+            this.totalCases.Text = "0";
+            // 
             // Mapa_ni_Tiquia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.currentIsland);
             this.Controls.Add(this.panelOfImage);
             this.Controls.Add(this.provinceMapComboBox);
@@ -423,6 +459,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.case4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,5 +497,8 @@
         private System.Windows.Forms.Label range501To1k;
         private System.Windows.Forms.Label range0To500;
         private System.Windows.Forms.Label tCase;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label totalCases;
+        private System.Windows.Forms.Label label3;
     }
 }
