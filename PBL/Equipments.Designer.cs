@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -159,7 +159,7 @@
             this.textBox3.BackColor = System.Drawing.Color.Gray;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(939, 133);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(176, 45);
             this.textBox3.TabIndex = 42;
@@ -289,7 +289,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel6.Location = new System.Drawing.Point(535, 193);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(163, 12);
             this.panel6.TabIndex = 38;
@@ -299,7 +299,7 @@
             this.textBox4.BackColor = System.Drawing.Color.Gray;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(1125, 133);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(284, 45);
             this.textBox4.TabIndex = 43;
@@ -309,7 +309,7 @@
             this.panel7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Location = new System.Drawing.Point(293, 193);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(223, 12);
             this.panel7.TabIndex = 32;
@@ -318,7 +318,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
             this.panel8.Location = new System.Drawing.Point(0, -21);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(631, 12);
             this.panel8.TabIndex = 11;
@@ -327,7 +327,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Location = new System.Drawing.Point(717, 192);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(209, 12);
             this.panel1.TabIndex = 39;
@@ -336,7 +336,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel3.Location = new System.Drawing.Point(939, 193);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(177, 12);
             this.panel3.TabIndex = 40;
@@ -358,7 +358,7 @@
             this.textBox1.BackColor = System.Drawing.Color.Gray;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(717, 132);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(208, 45);
             this.textBox1.TabIndex = 44;
@@ -367,7 +367,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel4.Location = new System.Drawing.Point(1125, 193);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(285, 12);
             this.panel4.TabIndex = 41;
@@ -377,7 +377,7 @@
             this.textBox2.BackColor = System.Drawing.Color.Gray;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(535, 132);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(161, 45);
             this.textBox2.TabIndex = 45;
@@ -398,7 +398,7 @@
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(7, 219);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1367, 304);
             this.listView1.TabIndex = 46;
@@ -452,18 +452,18 @@
             // 
             // chart1
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(1404, 217);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart1.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(300, 308);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
@@ -473,7 +473,7 @@
             this.textBox5.BackColor = System.Drawing.Color.Gray;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(140, 564);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(161, 45);
             this.textBox5.TabIndex = 45;
@@ -482,7 +482,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel5.Location = new System.Drawing.Point(689, 624);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(175, 12);
             this.panel5.TabIndex = 41;
@@ -492,7 +492,7 @@
             this.textBox6.BackColor = System.Drawing.Color.Gray;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(323, 564);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(161, 45);
             this.textBox6.TabIndex = 44;
@@ -501,7 +501,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel9.Location = new System.Drawing.Point(500, 624);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(177, 12);
             this.panel9.TabIndex = 40;
@@ -510,7 +510,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel10.Location = new System.Drawing.Point(323, 624);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(163, 12);
             this.panel10.TabIndex = 39;
@@ -520,7 +520,7 @@
             this.textBox7.BackColor = System.Drawing.Color.Gray;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(689, 564);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(173, 45);
             this.textBox7.TabIndex = 43;
@@ -529,7 +529,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel11.Location = new System.Drawing.Point(140, 625);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(163, 12);
             this.panel11.TabIndex = 38;
@@ -565,7 +565,7 @@
             this.textBox8.BackColor = System.Drawing.Color.Gray;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(500, 564);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(176, 45);
             this.textBox8.TabIndex = 42;
@@ -600,7 +600,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel12.Location = new System.Drawing.Point(1221, 624);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(175, 12);
             this.panel12.TabIndex = 41;
@@ -610,7 +610,7 @@
             this.textBox9.BackColor = System.Drawing.Color.Gray;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(872, 564);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(153, 45);
             this.textBox9.TabIndex = 44;
@@ -619,7 +619,7 @@
             // 
             this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel13.Location = new System.Drawing.Point(1036, 624);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(177, 12);
             this.panel13.TabIndex = 40;
@@ -628,7 +628,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel14.Location = new System.Drawing.Point(872, 624);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(155, 12);
             this.panel14.TabIndex = 39;
@@ -638,7 +638,7 @@
             this.textBox10.BackColor = System.Drawing.Color.Gray;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.Location = new System.Drawing.Point(1221, 564);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(173, 45);
             this.textBox10.TabIndex = 43;
@@ -661,7 +661,7 @@
             this.textBox11.BackColor = System.Drawing.Color.Gray;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(1036, 564);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(176, 45);
             this.textBox11.TabIndex = 42;
@@ -696,7 +696,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel15.Location = new System.Drawing.Point(1404, 624);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(175, 12);
             this.panel15.TabIndex = 41;
@@ -706,7 +706,7 @@
             this.textBox12.BackColor = System.Drawing.Color.Gray;
             this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.Location = new System.Drawing.Point(1404, 564);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(173, 45);
             this.textBox12.TabIndex = 43;
@@ -727,17 +727,17 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart2.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(145, 658);
-            this.chart2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart2.Margin = new System.Windows.Forms.Padding(4);
             this.chart2.Name = "chart2";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart2.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Personal Protective Equipment";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(1445, 274);
             this.chart2.TabIndex = 49;
             this.chart2.Text = "chart2";
@@ -763,7 +763,7 @@
             this.topPanel.Controls.Add(this.pictureBox1);
             this.topPanel.Controls.Add(this.pictureBox5);
             this.topPanel.Location = new System.Drawing.Point(-1, -1);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1755, 40);
             this.topPanel.TabIndex = 51;
@@ -773,7 +773,7 @@
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
             this.pictureBox6.Location = new System.Drawing.Point(57, 4);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 28);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -785,7 +785,7 @@
             // 
             this.pictureBox4.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
             this.pictureBox4.Location = new System.Drawing.Point(57, 4);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 28);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -798,7 +798,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(97, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -810,7 +810,7 @@
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
             this.pictureBox5.Location = new System.Drawing.Point(20, 4);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(31, 28);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -823,7 +823,7 @@
             this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
             this.extend2.Location = new System.Drawing.Point(9, 52);
-            this.extend2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend2.Margin = new System.Windows.Forms.Padding(4);
             this.extend2.Name = "extend2";
             this.extend2.Size = new System.Drawing.Size(51, 39);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -836,7 +836,7 @@
             this.map.Cursor = System.Windows.Forms.Cursors.Hand;
             this.map.Image = global::PBL.Properties.Resources.signs;
             this.map.Location = new System.Drawing.Point(11, 60);
-            this.map.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.map.Margin = new System.Windows.Forms.Padding(4);
             this.map.Name = "map";
             this.map.Size = new System.Drawing.Size(73, 62);
             this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -849,7 +849,7 @@
             this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
             this.casess.Location = new System.Drawing.Point(124, 60);
-            this.casess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.casess.Margin = new System.Windows.Forms.Padding(4);
             this.casess.Name = "casess";
             this.casess.Size = new System.Drawing.Size(73, 62);
             this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -862,7 +862,7 @@
             this.tests.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tests.Image = global::PBL.Properties.Resources.tools_and_utensils;
             this.tests.Location = new System.Drawing.Point(243, 60);
-            this.tests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tests.Margin = new System.Windows.Forms.Padding(4);
             this.tests.Name = "tests";
             this.tests.Size = new System.Drawing.Size(73, 62);
             this.tests.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -882,7 +882,7 @@
             this.panel16.Controls.Add(this.pictureBox2);
             this.panel16.Controls.Add(this.tests);
             this.panel16.Location = new System.Drawing.Point(32, 64);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(496, 202);
             this.panel16.TabIndex = 52;
@@ -941,7 +941,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
             this.pictureBox2.Location = new System.Drawing.Point(367, 60);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -954,7 +954,7 @@
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
             this.extend1.Location = new System.Drawing.Point(11, 53);
-            this.extend1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend1.Margin = new System.Windows.Forms.Padding(4);
             this.extend1.Name = "extend1";
             this.extend1.Size = new System.Drawing.Size(51, 39);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1085,7 +1085,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.textBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Equipments";
             this.Text = "Equipments";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
