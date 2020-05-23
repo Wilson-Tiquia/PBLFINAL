@@ -261,6 +261,8 @@ namespace PBL
                 provinceCityComboBox.Items.Add("GEENRAL SANTOS");
                 provinceCityComboBox.Items.Add("SARANGANI");
             }
+
+            //filter purposes - to find region for specific cases
             if (regionComboBox.SelectedIndex > -1)
             {
                 listView2.Items.Clear();
@@ -303,6 +305,7 @@ namespace PBL
 
         }
 
+        //either loads the whole listview if  no region selected or filter out when a region is selected in combobox
         private void Cases_Load(object sender, EventArgs e)
         {
 
@@ -343,8 +346,7 @@ namespace PBL
 
                 }
                 deathsStreamReader.Close();
-                recoveredDeathChart.Series["Death"].Points.AddXY("Total", deathNumber);
-                recoveredDeathChart.Series["Recovered"].Points.AddXY("Total", recoveredNumber);
+
                 
             }
             else
@@ -382,6 +384,7 @@ namespace PBL
             recoveredDeathChart.Series["Recovered"].Points.AddXY("Total", recoveredNumber.Text);
         }
 
+        //loads only the region and province selected in the combobox
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
@@ -430,10 +433,42 @@ namespace PBL
 
 
  
-
+        //if user inputs data it will be added with the recent data set
+        //gets the total recovered and deaths
+        //puts the total recovered and deaths to the chart
+        //adds the saved data to drive hq
         private void btnSave_Click_1(object sender, EventArgs e)
         {
             //Stream Writer
+            int TotalDC=0;
+            int TotalRC=0;
+            int val2 =0;
+            int val1=0;
+
+            if (deathTextBix.Text == "")
+            {
+                val1 = 0;
+            }
+            else
+            {
+                val1 = Convert.ToInt32(deathTextBix.Text);
+            }
+            if (recoveredTextBox.Text == "")
+            {
+                val2 = 0;
+            }
+            else
+            {
+                val2 = Convert.ToInt32(recoveredTextBox.Text);
+            }
+
+
+            TotalRC = val2 + Convert.ToInt32(recoveredNumber.Text);
+            TotalDC = val1 + Convert.ToInt32(deathNumber.Text);
+            recoveredNumber.Text = TotalRC.ToString();
+            deathNumber.Text = TotalDC.ToString();
+
+
             listView2.SelectedItems.Clear();
            StreamWriter sw = new StreamWriter("D://Death-Cases.txt", false);
             
@@ -461,6 +496,12 @@ namespace PBL
             listView1.Visible = false;
             recoveredTextBox.Clear();
             deathTextBix.Clear();
+            regionComboBox.Text = "";
+            provinceCityComboBox.Text = "";
+            recoveredDeathChart.Series["Deaths"].Points.Clear();
+            recoveredDeathChart.Series["Recovered"].Points.Clear();
+            recoveredDeathChart.Series["Deaths"].Points.AddXY("Total", deathNumber.Text);
+            recoveredDeathChart.Series["Recovered"].Points.AddXY("Total",recoveredNumber.Text);
 
             MessageBox.Show("Saved!!!");
             WebClient client = new WebClient();
@@ -468,8 +509,10 @@ namespace PBL
             client.UploadFile("ftp://66.220.9.50/My Documents/Sample.txt", "D://Death-Cases.txt");
         }
 
+        //changes the value of the death and recovered based on the filtered region and city
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
+
             string cmb1 = regionComboBox.Text.ToString();
             string cmb2 = provinceCityComboBox.Text.ToString();
             int val1;
@@ -491,6 +534,9 @@ namespace PBL
             {
                 val2 = Convert.ToInt32(recoveredTextBox.Text);
             }
+
+
+
 
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
             
@@ -521,7 +567,6 @@ namespace PBL
                         lvi1.SubItems.Add(val1.ToString());
                         lvi1.SubItems.Add(val2.ToString());
                         listView1.Items.Add(lvi1);
-
                     }
                 }
                 else
@@ -538,8 +583,10 @@ namespace PBL
 
         }
 
+        //changes the value of the death and recovered based on the filtered region and city
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
+
             string cmb1 = regionComboBox.Text.ToString();
             string cmb2 = provinceCityComboBox.Text.ToString();
             int val1;
@@ -561,7 +608,6 @@ namespace PBL
             {
                 val2 = Convert.ToInt32(recoveredTextBox.Text);
             }
-
 
 
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
@@ -593,7 +639,6 @@ namespace PBL
                         lvi1.SubItems.Add(val1.ToString());
                         lvi1.SubItems.Add(val2.ToString());
                         listView1.Items.Add(lvi1);
-
                     }
                 }
                 else
