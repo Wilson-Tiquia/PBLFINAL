@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -656,19 +656,18 @@
             // dailyTestChart
             // 
             this.dailyTestChart.BackColor = System.Drawing.Color.SlateGray;
-            chartArea11.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend11);
-            this.dailyTestChart.Location = new System.Drawing.Point(189, 920);
-            this.dailyTestChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            chartArea1.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend1);
+            this.dailyTestChart.Location = new System.Drawing.Point(126, 598);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.dailyTestChart.Series.Add(series11);
-            this.dailyTestChart.Size = new System.Drawing.Size(1314, 246);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.dailyTestChart.Series.Add(series1);
+            this.dailyTestChart.Size = new System.Drawing.Size(876, 160);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
             // 
