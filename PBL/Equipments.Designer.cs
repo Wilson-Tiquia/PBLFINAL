@@ -61,29 +61,29 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtcoverall = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtfaceshield = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtgown = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtgoggles = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtN95 = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtHeadCover = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtShoeCover = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtSurgicalMask = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label19 = new System.Windows.Forms.Label();
@@ -113,6 +113,7 @@
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -468,15 +469,15 @@
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
             // 
-            // textBox5
+            // txtcoverall
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Gray;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(140, 564);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(161, 45);
-            this.textBox5.TabIndex = 45;
+            this.txtcoverall.BackColor = System.Drawing.Color.Gray;
+            this.txtcoverall.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcoverall.Location = new System.Drawing.Point(140, 564);
+            this.txtcoverall.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcoverall.Name = "txtcoverall";
+            this.txtcoverall.Size = new System.Drawing.Size(161, 45);
+            this.txtcoverall.TabIndex = 45;
             // 
             // panel5
             // 
@@ -487,15 +488,15 @@
             this.panel5.Size = new System.Drawing.Size(175, 12);
             this.panel5.TabIndex = 41;
             // 
-            // textBox6
+            // txtfaceshield
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Gray;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(323, 564);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(161, 45);
-            this.textBox6.TabIndex = 44;
+            this.txtfaceshield.BackColor = System.Drawing.Color.Gray;
+            this.txtfaceshield.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfaceshield.Location = new System.Drawing.Point(323, 564);
+            this.txtfaceshield.Margin = new System.Windows.Forms.Padding(4);
+            this.txtfaceshield.Name = "txtfaceshield";
+            this.txtfaceshield.Size = new System.Drawing.Size(161, 45);
+            this.txtfaceshield.TabIndex = 44;
             // 
             // panel9
             // 
@@ -515,15 +516,15 @@
             this.panel10.Size = new System.Drawing.Size(163, 12);
             this.panel10.TabIndex = 39;
             // 
-            // textBox7
+            // txtgown
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Gray;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(689, 564);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(173, 45);
-            this.textBox7.TabIndex = 43;
+            this.txtgown.BackColor = System.Drawing.Color.Gray;
+            this.txtgown.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgown.Location = new System.Drawing.Point(689, 564);
+            this.txtgown.Margin = new System.Windows.Forms.Padding(4);
+            this.txtgown.Name = "txtgown";
+            this.txtgown.Size = new System.Drawing.Size(173, 45);
+            this.txtgown.TabIndex = 43;
             // 
             // panel11
             // 
@@ -560,15 +561,15 @@
             this.label10.TabIndex = 36;
             this.label10.Text = "face shield";
             // 
-            // textBox8
+            // txtgoggles
             // 
-            this.textBox8.BackColor = System.Drawing.Color.Gray;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(500, 564);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(176, 45);
-            this.textBox8.TabIndex = 42;
+            this.txtgoggles.BackColor = System.Drawing.Color.Gray;
+            this.txtgoggles.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoggles.Location = new System.Drawing.Point(500, 564);
+            this.txtgoggles.Margin = new System.Windows.Forms.Padding(4);
+            this.txtgoggles.Name = "txtgoggles";
+            this.txtgoggles.Size = new System.Drawing.Size(176, 45);
+            this.txtgoggles.TabIndex = 42;
             // 
             // label11
             // 
@@ -605,15 +606,15 @@
             this.panel12.Size = new System.Drawing.Size(175, 12);
             this.panel12.TabIndex = 41;
             // 
-            // textBox9
+            // txtN95
             // 
-            this.textBox9.BackColor = System.Drawing.Color.Gray;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(872, 564);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(153, 45);
-            this.textBox9.TabIndex = 44;
+            this.txtN95.BackColor = System.Drawing.Color.Gray;
+            this.txtN95.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN95.Location = new System.Drawing.Point(872, 564);
+            this.txtN95.Margin = new System.Windows.Forms.Padding(4);
+            this.txtN95.Name = "txtN95";
+            this.txtN95.Size = new System.Drawing.Size(153, 45);
+            this.txtN95.TabIndex = 44;
             // 
             // panel13
             // 
@@ -633,15 +634,15 @@
             this.panel14.Size = new System.Drawing.Size(155, 12);
             this.panel14.TabIndex = 39;
             // 
-            // textBox10
+            // txtHeadCover
             // 
-            this.textBox10.BackColor = System.Drawing.Color.Gray;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(1221, 564);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(173, 45);
-            this.textBox10.TabIndex = 43;
+            this.txtHeadCover.BackColor = System.Drawing.Color.Gray;
+            this.txtHeadCover.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeadCover.Location = new System.Drawing.Point(1221, 564);
+            this.txtHeadCover.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHeadCover.Name = "txtHeadCover";
+            this.txtHeadCover.Size = new System.Drawing.Size(173, 45);
+            this.txtHeadCover.TabIndex = 43;
             // 
             // label13
             // 
@@ -656,15 +657,15 @@
             this.label13.TabIndex = 36;
             this.label13.Text = "N95 Mask";
             // 
-            // textBox11
+            // txtShoeCover
             // 
-            this.textBox11.BackColor = System.Drawing.Color.Gray;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(1036, 564);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(176, 45);
-            this.textBox11.TabIndex = 42;
+            this.txtShoeCover.BackColor = System.Drawing.Color.Gray;
+            this.txtShoeCover.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtShoeCover.Location = new System.Drawing.Point(1036, 564);
+            this.txtShoeCover.Margin = new System.Windows.Forms.Padding(4);
+            this.txtShoeCover.Name = "txtShoeCover";
+            this.txtShoeCover.Size = new System.Drawing.Size(176, 45);
+            this.txtShoeCover.TabIndex = 42;
             // 
             // label14
             // 
@@ -701,15 +702,15 @@
             this.panel15.Size = new System.Drawing.Size(175, 12);
             this.panel15.TabIndex = 41;
             // 
-            // textBox12
+            // txtSurgicalMask
             // 
-            this.textBox12.BackColor = System.Drawing.Color.Gray;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(1404, 564);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(173, 45);
-            this.textBox12.TabIndex = 43;
+            this.txtSurgicalMask.BackColor = System.Drawing.Color.Gray;
+            this.txtSurgicalMask.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSurgicalMask.Location = new System.Drawing.Point(1404, 564);
+            this.txtSurgicalMask.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSurgicalMask.Name = "txtSurgicalMask";
+            this.txtSurgicalMask.Size = new System.Drawing.Size(173, 45);
+            this.txtSurgicalMask.TabIndex = 43;
             // 
             // label18
             // 
@@ -1030,12 +1031,23 @@
             this.columnHeader18.Text = "occupied mechinal ventilator";
             this.columnHeader18.Width = 148;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(1595, 564);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(89, 41);
+            this.btnSave.TabIndex = 55;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Equipments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1720, 948);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.panel16);
@@ -1051,8 +1063,8 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtShoeCover);
+            this.Controls.Add(this.txtgoggles);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
@@ -1063,9 +1075,9 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtSurgicalMask);
+            this.Controls.Add(this.txtHeadCover);
+            this.Controls.Add(this.txtgown);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel10);
@@ -1074,14 +1086,14 @@
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtN95);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtfaceshield);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtcoverall);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.textBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1139,29 +1151,29 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtcoverall;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtfaceshield;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtgown;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtgoggles;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtN95;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtHeadCover;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtShoeCover;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtSurgicalMask;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Label label19;
@@ -1191,5 +1203,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.Button btnSave;
     }
 }
