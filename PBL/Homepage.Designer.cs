@@ -466,12 +466,13 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::PBL.Properties.Resources.shadow;
-            this.pictureBox15.Location = new System.Drawing.Point(-41, 201);
+            this.pictureBox15.Location = new System.Drawing.Point(-143, 198);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(1435, 143);
+            this.pictureBox15.Size = new System.Drawing.Size(1561, 143);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 12;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // Homepage
             // 

@@ -74,7 +74,9 @@ namespace PBL
             aForm.Show();
         }
 
-       
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
