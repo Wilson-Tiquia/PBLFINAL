@@ -57,7 +57,24 @@ namespace PBL
         List<string> provinceAndCase = new List<string>();
         
         string temporary = "";
-     
+        public int totalAddedCase()
+        {
+            int total = 0;
+            StreamReader readTotal = new StreamReader(@"C:\Total-Cases.txt");
+            while (readTotal.Peek()!=-1)
+            {
+
+                string input = readTotal.ReadLine();
+                string[] splitted = input.Split(',');
+                string a = splitted[2].Replace("TOTAL_CASES", "0");
+                total += int.Parse(a);
+              
+
+            }
+            return total;
+           
+
+        }
       
         public void getTotalCase(string province, int sum)
          {
@@ -111,11 +128,7 @@ namespace PBL
 
             }
             read.Close();
-           
-        
-
-
-
+   
         }
         public Mapa_ni_Tiquia()
         {
@@ -453,6 +466,11 @@ namespace PBL
         {
             hideMap();
             populateIsland();
+            Console.WriteLine(totalAddedCase());
+            totalCases.Text = totalAddedCase().ToString();
+            this.Refresh();
+           
+           
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -495,6 +513,7 @@ namespace PBL
             bool mayLamanIslandRegionAtProvince = islandComboBox.Text != string.Empty && regionComboBox.Text != string.Empty && provinceComboBox.Text != string.Empty;
             if (e.KeyCode == Keys.Enter && mayLamanIslandRegionAtProvince)
             {
+               
                 MessageBox.Show("Added user");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
                 StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
@@ -509,9 +528,12 @@ namespace PBL
                 islandComboBox.SelectedIndex = -1;
                 regionComboBox.SelectedIndex = -1;
                 provinceComboBox.SelectedIndex = -1;
-
-
-
+                this.Close();
+                Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+                aForm.Show();
+                
             }
          
         }
