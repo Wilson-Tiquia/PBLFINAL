@@ -16,6 +16,8 @@ namespace PBL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //SplashScreen splashForm = new SplashScreen();
+            //splashForm.ShowDialog();
             Application.Run(new Homepage());
         }
     }

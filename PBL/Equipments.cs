@@ -14,6 +14,7 @@ namespace PBL
     public partial class Equipments : Form
     {
         StreamReader equipments = new StreamReader("D://Equipments.txt");
+        StreamReader ppe = new StreamReader("D://PPE.txt");
         public Equipments()
         {
             InitializeComponent();
@@ -273,6 +274,9 @@ namespace PBL
 
             }
             equipments.Close();
+
+            
+            
         }
     }
 }
