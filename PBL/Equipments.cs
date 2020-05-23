@@ -256,7 +256,6 @@ namespace PBL
             while (equipments.Peek() != -1)
             {
                 string x = equipments.ReadLine();
-                //string x = ashleyDeathStreamReader.ReadLine();
                 string[] xe = x.Split(',');
                 ListViewItem lvi = new ListViewItem(xe[0]);
                 //ListViewItem lvi1 = new ListViewItem(xe[0]);

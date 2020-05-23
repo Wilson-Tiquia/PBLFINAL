@@ -306,6 +306,7 @@ namespace PBL
 
         private void Cases_Load(object sender, EventArgs e)
         {
+
             int totalRC = 0;
             int totalDC = 0;
             if (regionComboBox.SelectedIndex > 1)
@@ -343,16 +344,18 @@ namespace PBL
 
                 }
                 deathsStreamReader.Close();
-                //ashleyDeathStreamReader.Close();
+                recoveredDeathChart.Series["Death"].Points.AddXY("Deaths", deathNumber);
+                recoveredDeathChart.Series["Recovered"].Points.AddXY("Recovered", recoveredNumber);
+                
             }
             else
             {
-                //while (ashleyDeathStreamReader.Peek() != -1)
+                
 
                 while (deathsStreamReader.Peek() != -1)
                 {
                     string x = deathsStreamReader.ReadLine();
-                    //string x = ashleyDeathStreamReader.ReadLine();
+                    
                     string[] xe = x.Split(',');
                     
                     totalRC += Convert.ToInt32(xe[2]);
@@ -372,10 +375,12 @@ namespace PBL
                     listView1.Items.Add(lvi1);
                 }
                 deathsStreamReader.Close();
-                //ashleyDeathStreamReader.Close();
+                
             }
             deathNumber.Text = totalRC.ToString();
             recoveredNumber.Text = totalDC.ToString();
+            recoveredDeathChart.Series["Deaths"].Points.AddXY("Deaths", deathNumber.Text);
+            recoveredDeathChart.Series["Recovered"].Points.AddXY("Recovered", recoveredNumber.Text);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
