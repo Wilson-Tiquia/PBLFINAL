@@ -258,7 +258,7 @@ namespace PBL
                 string x = equipments.ReadLine();
                 string[] xe = x.Split(',');
                 ListViewItem lvi = new ListViewItem(xe[0]);
-                //ListViewItem lvi1 = new ListViewItem(xe[0]);
+                
 
                 lvi.SubItems.Add(xe[1]);
                 lvi.SubItems.Add(xe[2]);
@@ -269,16 +269,7 @@ namespace PBL
                 lvi.SubItems.Add(xe[7]);
                 lvi.SubItems.Add(xe[8]);
                 listView2.Items.Add(lvi);
-                //if (xe[0] == tofind)
-                //{
-                //    lvi1.SubItems.Add(xe[1]);
-                //    lvi1.SubItems.Add(xe[2]);
-                //    lvi1.SubItems.Add(xe[3]);
-                //    listView1.Items.Add(lvi1);
-                //    listView2.Items[0].Focused = true;
-                //    listView2.Items[0].Selected = true;
-
-                //}
+               
 
             }
             equipments.Close();
