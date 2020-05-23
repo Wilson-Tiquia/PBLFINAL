@@ -197,5 +197,23 @@
   <ItemGroup>
     <None Include="Resources\first-aid-kit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523022150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523022155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523023050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2_20200523023132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shadow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

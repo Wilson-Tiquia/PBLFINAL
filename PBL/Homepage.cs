@@ -76,19 +76,5 @@ namespace PBL
 
        
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Homepage_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
