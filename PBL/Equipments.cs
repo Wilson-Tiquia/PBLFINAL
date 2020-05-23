@@ -111,36 +111,7 @@ namespace PBL
         {
 
 
-            while (equipments.Peek() != -1)
-            {
-                string x = equipments.ReadLine();
-                string[] xe = x.Split(',');
-                ListViewItem lvi = new ListViewItem(xe[0]);
-                ListViewItem lvi1 = new ListViewItem(xe[0]);
-
-                lvi.SubItems.Add(xe[1]);
-                lvi.SubItems.Add(xe[2]);
-                lvi.SubItems.Add(xe[3]);
-                lvi.SubItems.Add(xe[4]);
-                lvi.SubItems.Add(xe[5]);
-                lvi.SubItems.Add(xe[6]);
-                lvi.SubItems.Add(xe[7]);
-                lvi.SubItems.Add(xe[8]);
-                listView1.Items.Add(lvi);
-
-                //if (xe[0] == tofind)
-                //{
-                //    lvi1.SubItems.Add(xe[1]);
-                //    lvi1.SubItems.Add(xe[2]);
-                //    lvi1.SubItems.Add(xe[3]);
-                //listView1.Items.Add(lvi1);
-
-
-                //}
-
-            }
-            equipments.Close();
-
+            
         }
 
         private void label15_Click(object sender, EventArgs e)
@@ -161,35 +132,7 @@ namespace PBL
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            while (equipments.Peek() != -1)
-            {
-                string x = equipments.ReadLine();
-                string[] xe = x.Split(',');
-                ListViewItem lvi = new ListViewItem(xe[0]);
-                ListViewItem lvi1 = new ListViewItem(xe[0]);
-
-                lvi.SubItems.Add(xe[1]);
-                lvi.SubItems.Add(xe[2]);
-                lvi.SubItems.Add(xe[3]);
-                lvi.SubItems.Add(xe[4]);
-                lvi.SubItems.Add(xe[5]);
-                lvi.SubItems.Add(xe[6]);
-                lvi.SubItems.Add(xe[7]);
-                lvi.SubItems.Add(xe[8]);
-                listView1.Items.Add(lvi);
-
-                //if (xe[0] == tofind)
-                //{
-                //    lvi1.SubItems.Add(xe[1]);
-                //    lvi1.SubItems.Add(xe[2]);
-                //    lvi1.SubItems.Add(xe[3]);
-                //    listView1.Items.Add(lvi1);
-
-
-                //}
-
-            }
-            equipments.Close();
+           
 
         }
 
@@ -306,6 +249,40 @@ namespace PBL
         {
             Equipments equipmentsForm = new Equipments();
             equipmentsForm.Show();
+        }
+
+        private void Equipments_Load_1(object sender, EventArgs e)
+        {
+            while (equipments.Peek() != -1)
+            {
+                string x = equipments.ReadLine();
+                //string x = ashleyDeathStreamReader.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                //ListViewItem lvi1 = new ListViewItem(xe[0]);
+
+                lvi.SubItems.Add(xe[1]);
+                lvi.SubItems.Add(xe[2]);
+                lvi.SubItems.Add(xe[3]);
+                lvi.SubItems.Add(xe[4]);
+                lvi.SubItems.Add(xe[5]);
+                lvi.SubItems.Add(xe[6]);
+                lvi.SubItems.Add(xe[7]);
+                lvi.SubItems.Add(xe[8]);
+                listView2.Items.Add(lvi);
+                //if (xe[0] == tofind)
+                //{
+                //    lvi1.SubItems.Add(xe[1]);
+                //    lvi1.SubItems.Add(xe[2]);
+                //    lvi1.SubItems.Add(xe[3]);
+                //    listView1.Items.Add(lvi1);
+                //    listView2.Items[0].Focused = true;
+                //    listView2.Items[0].Selected = true;
+
+                //}
+
+            }
+            equipments.Close();
         }
     }
 }
