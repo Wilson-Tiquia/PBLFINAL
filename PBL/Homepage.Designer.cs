@@ -37,7 +37,6 @@
             this.headerPicture = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.testsLabel = new System.Windows.Forms.PictureBox();
             this.TestsPicture = new System.Windows.Forms.PictureBox();
             this.testButton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.testShadow = new System.Windows.Forms.PictureBox();
             this.caseShadow = new System.Windows.Forms.PictureBox();
             this.headerShadow = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.border.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
@@ -69,7 +69,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.testsLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TestsPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentsPicture)).BeginInit();
             this.panel4.SuspendLayout();
@@ -179,7 +178,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.testsLabel);
+            this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.TestsPicture);
             this.panel5.Controls.Add(this.testButton);
             this.panel5.Controls.Add(this.button4);
@@ -187,18 +186,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(288, 261);
             this.panel5.TabIndex = 6;
-            // 
-            // testsLabel
-            // 
-            this.testsLabel.BackColor = System.Drawing.Color.Transparent;
-            this.testsLabel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022155;
-            this.testsLabel.Image = global::PBL.Properties.Resources.tests_in_hospitals;
-            this.testsLabel.Location = new System.Drawing.Point(58, 209);
-            this.testsLabel.Name = "testsLabel";
-            this.testsLabel.Size = new System.Drawing.Size(168, 35);
-            this.testsLabel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.testsLabel.TabIndex = 10;
-            this.testsLabel.TabStop = false;
             // 
             // TestsPicture
             // 
@@ -219,22 +206,22 @@
             this.testButton.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022155;
             this.testButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.testButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.testButton.Location = new System.Drawing.Point(-4, -1);
+            this.testButton.Location = new System.Drawing.Point(0, -1);
             this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(296, 261);
+            this.testButton.Size = new System.Drawing.Size(296, 277);
             this.testButton.TabIndex = 8;
             this.testButton.UseVisualStyleBackColor = false;
             this.testButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022155;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(288, 261);
             this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // equipmentsPicture
@@ -253,8 +240,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022155;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.panel4.Controls.Add(this.casesPicture);
             this.panel4.Controls.Add(this.casesLabel);
             this.panel4.Controls.Add(this.casesButton);
@@ -292,9 +278,9 @@
             // 
             this.casesButton.BackColor = System.Drawing.Color.Transparent;
             this.casesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.casesButton.Location = new System.Drawing.Point(-1, 0);
+            this.casesButton.Location = new System.Drawing.Point(3, -4);
             this.casesButton.Name = "casesButton";
-            this.casesButton.Size = new System.Drawing.Size(288, 262);
+            this.casesButton.Size = new System.Drawing.Size(294, 281);
             this.casesButton.TabIndex = 9;
             this.casesButton.UseVisualStyleBackColor = false;
             this.casesButton.Click += new System.EventHandler(this.button2_Click);
@@ -339,19 +325,19 @@
             // 
             // mapButton
             // 
-            this.mapButton.BackColor = System.Drawing.Color.Transparent;
+            this.mapButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.mapButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mapButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.mapButton.Location = new System.Drawing.Point(0, -1);
+            this.mapButton.Location = new System.Drawing.Point(-1, -2);
             this.mapButton.Name = "mapButton";
-            this.mapButton.Size = new System.Drawing.Size(288, 261);
+            this.mapButton.Size = new System.Drawing.Size(308, 278);
             this.mapButton.TabIndex = 8;
             this.mapButton.UseVisualStyleBackColor = false;
             this.mapButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // background
             // 
-            this.background.Image = global::PBL.Properties.Resources.Untitled2_20200523022150;
+            this.background.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.background.Location = new System.Drawing.Point(-39, 154);
             this.background.Name = "background";
             this.background.Size = new System.Drawing.Size(1350, 567);
@@ -360,8 +346,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022155;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.panel6.Controls.Add(this.equipmentsLabel);
             this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.equipmentsButton);
@@ -398,7 +383,7 @@
             this.equipmentsButton.BackColor = System.Drawing.Color.Transparent;
             this.equipmentsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.equipmentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.equipmentsButton.Location = new System.Drawing.Point(-1, 0);
+            this.equipmentsButton.Location = new System.Drawing.Point(0, 0);
             this.equipmentsButton.Name = "equipmentsButton";
             this.equipmentsButton.Size = new System.Drawing.Size(296, 261);
             this.equipmentsButton.TabIndex = 8;
@@ -466,6 +451,18 @@
             this.headerShadow.TabIndex = 12;
             this.headerShadow.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.Location = new System.Drawing.Point(63, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 28);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Tests in Hospitals";
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,7 +493,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.testsLabel)).EndInit();
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TestsPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentsPicture)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -550,6 +547,6 @@
         private System.Windows.Forms.PictureBox testShadow;
         private System.Windows.Forms.PictureBox equipmentShadow;
         private System.Windows.Forms.PictureBox headerShadow;
-        private System.Windows.Forms.PictureBox testsLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
