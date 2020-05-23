@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
 
 namespace PBL
 {
@@ -20,19 +21,20 @@ namespace PBL
             "Muntinlupa City", "Navotas City", "Paranaque City", "Pasay City", "Pasig City", "Quezon City", "San Juan City", "Taguig City", "Valenzuela City"
         };
 
-
+        //16 //38
         string[,] luzonRegionOneToEight =
         {
             // nag multi dimensional array ako
             {"Region I", "Region II", "Region III", "Region IV-A", "Region IV-B", "Region V", "Cordillera Administrative Region" , "NCR"},
             {"Ilocos Norte", "Ilocos Sur", "La Union", "Pangasinan", "","","",""},                     // ilocos region or region 1
-            {"Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino Province","","",""},           //  region 2 or Cagayan Valley
+            {"Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino","","",""},           //  region 2 or Cagayan Valley
             {"Aurora", "Bataan", "Bulacan", "Nueva Ecija", "Pampanga", "Tarlac", "Zambales",""},       //region3 or Central Luzon
             {"Cavite", "Laguna","Batangas","Rizal", "Quezon","","",""},                                // region 4 a calabarzon 
             {"Occidental Mindoro", "Oriental Mindoro", "Marinduque", "Romblon", "Palawan", "","",""},  //region 4b mimaropa
             {"Albay", "Camarines Norte", "Camarines Sur", "Sorsogon","Catanduanes", "Masbate", "",""},    //region 5
             {"Abra", "Benguet", "Ifugao", "Kalinga", "Apayao", "Mountain Province", "",""},    //cordilierra administrative region
         };
+        //54
         string[,] visayasRegionSixToEight =
         {
             {"Region VI", "Region VII", "Region VIII", "", "", ""},
@@ -40,7 +42,7 @@ namespace PBL
             {"Cebu", "Bohol", "Negros Oriental", "Siquijor", "", "" }, // central visayas region 7
             {"Leyte", "Biliran", "Southern Leyte", "Samar", "Eastern Samar", "Northern Samar"  }, // eastern visayas
         };
-
+        // 80
         string[,] mindanaoRegions =
         {
             {"Region IX", "Region X", "Region XI", "Region XII","Region XIII", "BARMM" },
@@ -59,7 +61,7 @@ namespace PBL
       
         public void getTotalCase(string province, int sum)
          {
-            StreamReader read = new StreamReader(@"C:\Users\Denise\Downloads\Total-Cases.txt");
+            StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
                
@@ -77,13 +79,36 @@ namespace PBL
                 {
                     sum += int.Parse(caseSplitNew);
                     tCase.Text = "Total Case: " + sum.ToString();
-                    
                 }
-            
-               
-
-
                 provinceAndCase.Add(newSplit + "*"+caseSplitNew);
+                // conditions
+                string selectedPlace = provinceMapComboBox.Text.ToLower();
+                string caseSaLugar = "0";
+                provincePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                if (sum >= 0 && sum <= 500)
+                {
+                    caseSaLugar = "0";
+                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                }
+                if (sum > 501 && sum <= 1000)
+                {
+                    caseSaLugar = "501";
+                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                }
+                if (sum >1000 && sum <= 2000)
+                {
+                    caseSaLugar = "1k";
+                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                }
+                if (sum > 2000 )
+                {
+                    caseSaLugar = "2k";
+                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                }
+
+
+
+
             }
             read.Close();
            
@@ -472,7 +497,7 @@ namespace PBL
             {
                 MessageBox.Show("Added user");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
-                StreamWriter addUser = new StreamWriter(@"C:\Users\Denise\Downloads\Total-Cases.txt", true);
+                StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
                 addUser.WriteLine();
                 for (int i = 0; i < addedCase.Length; i++)
                 {
@@ -567,6 +592,11 @@ namespace PBL
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void caseInputTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

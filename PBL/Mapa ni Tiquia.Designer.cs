@@ -145,6 +145,7 @@
             this.caseInputTextBox.Name = "caseInputTextBox";
             this.caseInputTextBox.Size = new System.Drawing.Size(100, 26);
             this.caseInputTextBox.TabIndex = 6;
+            this.caseInputTextBox.TextChanged += new System.EventHandler(this.caseInputTextBox_TextChanged);
             this.caseInputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.caseInputTextBox_KeyDown);
             // 
             // regionMap
