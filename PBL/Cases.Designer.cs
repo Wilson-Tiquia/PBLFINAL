@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cases));
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -117,10 +117,9 @@
             this.recoveredDeathPanel.Controls.Add(this.recoveredCasesPanel);
             this.recoveredDeathPanel.Controls.Add(this.pictureBox1);
             this.recoveredDeathPanel.Controls.Add(this.pictureBox2);
-            this.recoveredDeathPanel.Location = new System.Drawing.Point(-5, 745);
-            this.recoveredDeathPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recoveredDeathPanel.Location = new System.Drawing.Point(-4, 605);
             this.recoveredDeathPanel.Name = "recoveredDeathPanel";
-            this.recoveredDeathPanel.Size = new System.Drawing.Size(1733, 207);
+            this.recoveredDeathPanel.Size = new System.Drawing.Size(1301, 169);
             this.recoveredDeathPanel.TabIndex = 6;
             this.recoveredDeathPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -128,23 +127,22 @@
             // 
             this.recoveredDeathChart.BackColor = System.Drawing.Color.Transparent;
             this.recoveredDeathChart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.recoveredDeathChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.recoveredDeathChart.Legends.Add(legend3);
-            this.recoveredDeathChart.Location = new System.Drawing.Point(1269, 10);
-            this.recoveredDeathChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            chartArea2.Name = "ChartArea1";
+            this.recoveredDeathChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.recoveredDeathChart.Legends.Add(legend2);
+            this.recoveredDeathChart.Location = new System.Drawing.Point(952, 8);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
             this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Deaths";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Recovered";
-            this.recoveredDeathChart.Series.Add(series5);
-            this.recoveredDeathChart.Series.Add(series6);
-            this.recoveredDeathChart.Size = new System.Drawing.Size(428, 181);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Deaths";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Recovered";
+            this.recoveredDeathChart.Series.Add(series3);
+            this.recoveredDeathChart.Series.Add(series4);
+            this.recoveredDeathChart.Size = new System.Drawing.Size(321, 147);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
             this.recoveredDeathChart.Click += new System.EventHandler(this.recoveredDeathChart_Click);
@@ -153,10 +151,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(181, 810);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(136, 658);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 20);
+            this.label11.Size = new System.Drawing.Size(140, 17);
             this.label11.TabIndex = 8;
             this.label11.Text = "recovered and death";
             // 
@@ -166,10 +163,9 @@
             this.deathCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.deathCasesPanel.Controls.Add(this.deathNumber);
             this.deathCasesPanel.Controls.Add(this.deathCasesLabel);
-            this.deathCasesPanel.Location = new System.Drawing.Point(857, 9);
-            this.deathCasesPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deathCasesPanel.Location = new System.Drawing.Point(643, 7);
             this.deathCasesPanel.Name = "deathCasesPanel";
-            this.deathCasesPanel.Size = new System.Drawing.Size(368, 181);
+            this.deathCasesPanel.Size = new System.Drawing.Size(277, 148);
             this.deathCasesPanel.TabIndex = 2;
             // 
             // deathNumber
@@ -178,9 +174,10 @@
             this.deathNumber.BackColor = System.Drawing.Color.Transparent;
             this.deathNumber.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deathNumber.ForeColor = System.Drawing.Color.Plum;
-            this.deathNumber.Location = new System.Drawing.Point(123, 75);
+            this.deathNumber.Location = new System.Drawing.Point(92, 61);
+            this.deathNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.deathNumber.Name = "deathNumber";
-            this.deathNumber.Size = new System.Drawing.Size(139, 63);
+            this.deathNumber.Size = new System.Drawing.Size(108, 48);
             this.deathNumber.TabIndex = 10;
             this.deathNumber.Text = "0000";
             // 
@@ -191,10 +188,9 @@
             this.deathCasesLabel.Enabled = false;
             this.deathCasesLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deathCasesLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.deathCasesLabel.Location = new System.Drawing.Point(65, 32);
-            this.deathCasesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deathCasesLabel.Location = new System.Drawing.Point(49, 26);
             this.deathCasesLabel.Name = "deathCasesLabel";
-            this.deathCasesLabel.Size = new System.Drawing.Size(228, 34);
+            this.deathCasesLabel.Size = new System.Drawing.Size(185, 29);
             this.deathCasesLabel.TabIndex = 8;
             this.deathCasesLabel.Text = "DEATH CASES";
             this.deathCasesLabel.Click += new System.EventHandler(this.deathCasesLabel_Click);
@@ -205,10 +201,9 @@
             this.recoveredCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recoveredCasesPanel.Controls.Add(this.recoveredNumber);
             this.recoveredCasesPanel.Controls.Add(this.recoveredCasesLabel);
-            this.recoveredCasesPanel.Location = new System.Drawing.Point(421, 9);
-            this.recoveredCasesPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recoveredCasesPanel.Location = new System.Drawing.Point(316, 7);
             this.recoveredCasesPanel.Name = "recoveredCasesPanel";
-            this.recoveredCasesPanel.Size = new System.Drawing.Size(368, 181);
+            this.recoveredCasesPanel.Size = new System.Drawing.Size(277, 148);
             this.recoveredCasesPanel.TabIndex = 1;
             this.recoveredCasesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -218,9 +213,10 @@
             this.recoveredNumber.BackColor = System.Drawing.Color.Transparent;
             this.recoveredNumber.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recoveredNumber.ForeColor = System.Drawing.Color.Plum;
-            this.recoveredNumber.Location = new System.Drawing.Point(103, 75);
+            this.recoveredNumber.Location = new System.Drawing.Point(77, 61);
+            this.recoveredNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.recoveredNumber.Name = "recoveredNumber";
-            this.recoveredNumber.Size = new System.Drawing.Size(139, 63);
+            this.recoveredNumber.Size = new System.Drawing.Size(112, 48);
             this.recoveredNumber.TabIndex = 9;
             this.recoveredNumber.Text = "9999";
             // 
@@ -231,10 +227,9 @@
             this.recoveredCasesLabel.Enabled = false;
             this.recoveredCasesLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recoveredCasesLabel.ForeColor = System.Drawing.Color.LightGray;
-            this.recoveredCasesLabel.Location = new System.Drawing.Point(17, 32);
-            this.recoveredCasesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.recoveredCasesLabel.Location = new System.Drawing.Point(13, 26);
             this.recoveredCasesLabel.Name = "recoveredCasesLabel";
-            this.recoveredCasesLabel.Size = new System.Drawing.Size(312, 34);
+            this.recoveredCasesLabel.Size = new System.Drawing.Size(253, 29);
             this.recoveredCasesLabel.TabIndex = 8;
             this.recoveredCasesLabel.Text = "RECOVERED CASES ";
             this.recoveredCasesLabel.Click += new System.EventHandler(this.recoveredCasesLabel_Click);
@@ -243,10 +238,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox1.Location = new System.Drawing.Point(840, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(630, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(417, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(313, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -255,10 +249,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox2.Location = new System.Drawing.Point(400, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(300, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(417, 199);
+            this.pictureBox2.Size = new System.Drawing.Size(313, 162);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -268,10 +261,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(324, 22);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(243, 18);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 43);
+            this.label12.Size = new System.Drawing.Size(0, 35);
             this.label12.TabIndex = 16;
             // 
             // deathTextBix
@@ -279,10 +271,9 @@
             this.deathTextBix.BackColor = System.Drawing.Color.Gainsboro;
             this.deathTextBix.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deathTextBix.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.deathTextBix.Location = new System.Drawing.Point(21, 450);
-            this.deathTextBix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deathTextBix.Location = new System.Drawing.Point(16, 366);
             this.deathTextBix.Name = "deathTextBix";
-            this.deathTextBix.Size = new System.Drawing.Size(407, 49);
+            this.deathTextBix.Size = new System.Drawing.Size(306, 40);
             this.deathTextBix.TabIndex = 25;
             this.deathTextBix.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
@@ -292,10 +283,10 @@
             this.provinceCityComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceCityComboBox.ForeColor = System.Drawing.SystemColors.GrayText;
             this.provinceCityComboBox.FormattingEnabled = true;
-            this.provinceCityComboBox.Location = new System.Drawing.Point(20, 299);
+            this.provinceCityComboBox.Location = new System.Drawing.Point(15, 243);
             this.provinceCityComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.provinceCityComboBox.Name = "provinceCityComboBox";
-            this.provinceCityComboBox.Size = new System.Drawing.Size(408, 50);
+            this.provinceCityComboBox.Size = new System.Drawing.Size(307, 42);
             this.provinceCityComboBox.TabIndex = 23;
             this.provinceCityComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -323,10 +314,10 @@
             "REGION X",
             "REGION XI",
             "REGION XII"});
-            this.regionComboBox.Location = new System.Drawing.Point(21, 160);
+            this.regionComboBox.Location = new System.Drawing.Point(16, 130);
             this.regionComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.regionComboBox.Name = "regionComboBox";
-            this.regionComboBox.Size = new System.Drawing.Size(408, 50);
+            this.regionComboBox.Size = new System.Drawing.Size(307, 42);
             this.regionComboBox.TabIndex = 24;
             this.regionComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -334,20 +325,18 @@
             // 
             this.deathPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.deathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
-            this.deathPanel.Location = new System.Drawing.Point(21, 521);
-            this.deathPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deathPanel.Location = new System.Drawing.Point(16, 423);
             this.deathPanel.Name = "deathPanel";
-            this.deathPanel.Size = new System.Drawing.Size(409, 12);
+            this.deathPanel.Size = new System.Drawing.Size(307, 10);
             this.deathPanel.TabIndex = 22;
             // 
             // provinceCityPanel
             // 
             this.provinceCityPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.provinceCityPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
-            this.provinceCityPanel.Location = new System.Drawing.Point(21, 364);
-            this.provinceCityPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.provinceCityPanel.Location = new System.Drawing.Point(16, 296);
             this.provinceCityPanel.Name = "provinceCityPanel";
-            this.provinceCityPanel.Size = new System.Drawing.Size(409, 12);
+            this.provinceCityPanel.Size = new System.Drawing.Size(307, 10);
             this.provinceCityPanel.TabIndex = 21;
             // 
             // regionPanel
@@ -355,19 +344,17 @@
             this.regionPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.regionPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.regionPanel.Controls.Add(this.panel8);
-            this.regionPanel.Location = new System.Drawing.Point(21, 222);
-            this.regionPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.regionPanel.Location = new System.Drawing.Point(16, 180);
             this.regionPanel.Name = "regionPanel";
-            this.regionPanel.Size = new System.Drawing.Size(409, 12);
+            this.regionPanel.Size = new System.Drawing.Size(307, 10);
             this.regionPanel.TabIndex = 20;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Location = new System.Drawing.Point(0, -21);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Location = new System.Drawing.Point(0, -17);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(631, 12);
+            this.panel8.Size = new System.Drawing.Size(473, 10);
             this.panel8.TabIndex = 11;
             // 
             // recoveredLabel
@@ -376,10 +363,9 @@
             this.recoveredLabel.BackColor = System.Drawing.Color.Transparent;
             this.recoveredLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recoveredLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.recoveredLabel.Location = new System.Drawing.Point(24, 556);
-            this.recoveredLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.recoveredLabel.Location = new System.Drawing.Point(18, 452);
             this.recoveredLabel.Name = "recoveredLabel";
-            this.recoveredLabel.Size = new System.Drawing.Size(262, 42);
+            this.recoveredLabel.Size = new System.Drawing.Size(210, 34);
             this.recoveredLabel.TabIndex = 17;
             this.recoveredLabel.Text = "RECOVERED CASES";
             // 
@@ -389,10 +375,9 @@
             this.provinceCityLabel.BackColor = System.Drawing.Color.Transparent;
             this.provinceCityLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceCityLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.provinceCityLabel.Location = new System.Drawing.Point(13, 249);
-            this.provinceCityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.provinceCityLabel.Location = new System.Drawing.Point(10, 202);
             this.provinceCityLabel.Name = "provinceCityLabel";
-            this.provinceCityLabel.Size = new System.Drawing.Size(225, 42);
+            this.provinceCityLabel.Size = new System.Drawing.Size(182, 34);
             this.provinceCityLabel.TabIndex = 18;
             this.provinceCityLabel.Text = "PROVINCE/CITY";
             // 
@@ -402,10 +387,9 @@
             this.regionLabel.BackColor = System.Drawing.Color.Transparent;
             this.regionLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.regionLabel.Location = new System.Drawing.Point(16, 110);
-            this.regionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.regionLabel.Location = new System.Drawing.Point(12, 89);
             this.regionLabel.Name = "regionLabel";
-            this.regionLabel.Size = new System.Drawing.Size(116, 42);
+            this.regionLabel.Size = new System.Drawing.Size(94, 34);
             this.regionLabel.TabIndex = 19;
             this.regionLabel.Text = "REGION";
             // 
@@ -415,10 +399,9 @@
             this.deathLabel.BackColor = System.Drawing.Color.Transparent;
             this.deathLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deathLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.deathLabel.Location = new System.Drawing.Point(16, 405);
-            this.deathLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.deathLabel.Location = new System.Drawing.Point(12, 329);
             this.deathLabel.Name = "deathLabel";
-            this.deathLabel.Size = new System.Drawing.Size(193, 42);
+            this.deathLabel.Size = new System.Drawing.Size(154, 34);
             this.deathLabel.TabIndex = 17;
             this.deathLabel.Text = "DEATH CASES";
             // 
@@ -426,10 +409,9 @@
             // 
             this.recoveredPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.recoveredPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
-            this.recoveredPanel.Location = new System.Drawing.Point(24, 673);
-            this.recoveredPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recoveredPanel.Location = new System.Drawing.Point(18, 547);
             this.recoveredPanel.Name = "recoveredPanel";
-            this.recoveredPanel.Size = new System.Drawing.Size(409, 12);
+            this.recoveredPanel.Size = new System.Drawing.Size(307, 10);
             this.recoveredPanel.TabIndex = 22;
             // 
             // recoveredTextBox
@@ -437,10 +419,9 @@
             this.recoveredTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.recoveredTextBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recoveredTextBox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.recoveredTextBox.Location = new System.Drawing.Point(24, 603);
-            this.recoveredTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recoveredTextBox.Location = new System.Drawing.Point(18, 490);
             this.recoveredTextBox.Name = "recoveredTextBox";
-            this.recoveredTextBox.Size = new System.Drawing.Size(407, 49);
+            this.recoveredTextBox.Size = new System.Drawing.Size(306, 40);
             this.recoveredTextBox.TabIndex = 25;
             this.recoveredTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
@@ -456,10 +437,9 @@
             this.listView2.ForeColor = System.Drawing.SystemColors.Info;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(533, 127);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView2.Location = new System.Drawing.Point(400, 103);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1155, 573);
+            this.listView2.Size = new System.Drawing.Size(867, 466);
             this.listView2.TabIndex = 35;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -492,20 +472,18 @@
             this.border.Controls.Add(this.maximizeButton);
             this.border.Controls.Add(this.hideButton);
             this.border.Controls.Add(this.exitButton);
-            this.border.Location = new System.Drawing.Point(-11, -1);
-            this.border.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.border.Location = new System.Drawing.Point(-8, -1);
             this.border.Name = "border";
-            this.border.Size = new System.Drawing.Size(1755, 40);
+            this.border.Size = new System.Drawing.Size(1317, 33);
             this.border.TabIndex = 36;
             // 
             // minimizeButton
             // 
             this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimizeButton.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.minimizeButton.Location = new System.Drawing.Point(57, 4);
-            this.minimizeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.minimizeButton.Location = new System.Drawing.Point(43, 3);
             this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(31, 28);
+            this.minimizeButton.Size = new System.Drawing.Size(23, 23);
             this.minimizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.minimizeButton.TabIndex = 2;
             this.minimizeButton.TabStop = false;
@@ -515,10 +493,9 @@
             // 
             this.maximizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.maximizeButton.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.maximizeButton.Location = new System.Drawing.Point(59, 4);
-            this.maximizeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maximizeButton.Location = new System.Drawing.Point(44, 3);
             this.maximizeButton.Name = "maximizeButton";
-            this.maximizeButton.Size = new System.Drawing.Size(31, 28);
+            this.maximizeButton.Size = new System.Drawing.Size(23, 23);
             this.maximizeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.maximizeButton.TabIndex = 2;
             this.maximizeButton.TabStop = false;
@@ -528,10 +505,9 @@
             // 
             this.hideButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hideButton.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
-            this.hideButton.Location = new System.Drawing.Point(97, 4);
-            this.hideButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hideButton.Location = new System.Drawing.Point(73, 3);
             this.hideButton.Name = "hideButton";
-            this.hideButton.Size = new System.Drawing.Size(31, 28);
+            this.hideButton.Size = new System.Drawing.Size(23, 23);
             this.hideButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hideButton.TabIndex = 2;
             this.hideButton.TabStop = false;
@@ -541,10 +517,9 @@
             // 
             this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitButton.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
-            this.exitButton.Location = new System.Drawing.Point(20, 4);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitButton.Location = new System.Drawing.Point(15, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(31, 28);
+            this.exitButton.Size = new System.Drawing.Size(23, 23);
             this.exitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exitButton.TabIndex = 2;
             this.exitButton.TabStop = false;
@@ -561,10 +536,9 @@
             this.menuPanel.Controls.Add(this.casesButton);
             this.menuPanel.Controls.Add(this.equipmentsButton);
             this.menuPanel.Controls.Add(this.testButton);
-            this.menuPanel.Location = new System.Drawing.Point(21, 69);
-            this.menuPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuPanel.Location = new System.Drawing.Point(16, 56);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(496, 202);
+            this.menuPanel.Size = new System.Drawing.Size(372, 164);
             this.menuPanel.TabIndex = 37;
             this.menuPanel.Visible = false;
             this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
@@ -574,10 +548,9 @@
             this.mapLabel.AutoSize = true;
             this.mapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mapLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.mapLabel.Location = new System.Drawing.Point(24, 138);
-            this.mapLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.mapLabel.Location = new System.Drawing.Point(18, 112);
             this.mapLabel.Name = "mapLabel";
-            this.mapLabel.Size = new System.Drawing.Size(41, 20);
+            this.mapLabel.Size = new System.Drawing.Size(35, 17);
             this.mapLabel.TabIndex = 38;
             this.mapLabel.Text = "map";
             // 
@@ -586,10 +559,9 @@
             this.casesLabel.AutoSize = true;
             this.casesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.casesLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.casesLabel.Location = new System.Drawing.Point(132, 137);
-            this.casesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.casesLabel.Location = new System.Drawing.Point(99, 111);
             this.casesLabel.Name = "casesLabel";
-            this.casesLabel.Size = new System.Drawing.Size(54, 20);
+            this.casesLabel.Size = new System.Drawing.Size(45, 17);
             this.casesLabel.TabIndex = 38;
             this.casesLabel.Text = "cases";
             // 
@@ -598,10 +570,9 @@
             this.testLabel.AutoSize = true;
             this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.testLabel.Location = new System.Drawing.Point(257, 137);
-            this.testLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.testLabel.Location = new System.Drawing.Point(193, 111);
             this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(46, 20);
+            this.testLabel.Size = new System.Drawing.Size(38, 17);
             this.testLabel.TabIndex = 38;
             this.testLabel.Text = "tests";
             // 
@@ -610,10 +581,9 @@
             this.equipmentsLabel.AutoSize = true;
             this.equipmentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentsLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.equipmentsLabel.Location = new System.Drawing.Point(351, 137);
-            this.equipmentsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.equipmentsLabel.Location = new System.Drawing.Point(263, 111);
             this.equipmentsLabel.Name = "equipmentsLabel";
-            this.equipmentsLabel.Size = new System.Drawing.Size(95, 20);
+            this.equipmentsLabel.Size = new System.Drawing.Size(81, 17);
             this.equipmentsLabel.TabIndex = 38;
             this.equipmentsLabel.Text = "equipments";
             // 
@@ -621,10 +591,9 @@
             // 
             this.mapButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mapButton.Image = global::PBL.Properties.Resources.signs;
-            this.mapButton.Location = new System.Drawing.Point(11, 60);
-            this.mapButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mapButton.Location = new System.Drawing.Point(8, 49);
             this.mapButton.Name = "mapButton";
-            this.mapButton.Size = new System.Drawing.Size(73, 62);
+            this.mapButton.Size = new System.Drawing.Size(55, 50);
             this.mapButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mapButton.TabIndex = 3;
             this.mapButton.TabStop = false;
@@ -634,10 +603,9 @@
             // 
             this.casesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casesButton.Image = global::PBL.Properties.Resources.first_aid_kit;
-            this.casesButton.Location = new System.Drawing.Point(124, 60);
-            this.casesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.casesButton.Location = new System.Drawing.Point(93, 49);
             this.casesButton.Name = "casesButton";
-            this.casesButton.Size = new System.Drawing.Size(73, 62);
+            this.casesButton.Size = new System.Drawing.Size(55, 50);
             this.casesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.casesButton.TabIndex = 3;
             this.casesButton.TabStop = false;
@@ -647,10 +615,9 @@
             // 
             this.equipmentsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.equipmentsButton.Image = global::PBL.Properties.Resources.medical;
-            this.equipmentsButton.Location = new System.Drawing.Point(367, 60);
-            this.equipmentsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipmentsButton.Location = new System.Drawing.Point(275, 49);
             this.equipmentsButton.Name = "equipmentsButton";
-            this.equipmentsButton.Size = new System.Drawing.Size(73, 62);
+            this.equipmentsButton.Size = new System.Drawing.Size(55, 50);
             this.equipmentsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.equipmentsButton.TabIndex = 3;
             this.equipmentsButton.TabStop = false;
@@ -660,10 +627,9 @@
             // 
             this.testButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.testButton.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.testButton.Location = new System.Drawing.Point(243, 60);
-            this.testButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testButton.Location = new System.Drawing.Point(182, 49);
             this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(73, 62);
+            this.testButton.Size = new System.Drawing.Size(55, 50);
             this.testButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.testButton.TabIndex = 3;
             this.testButton.TabStop = false;
@@ -681,10 +647,9 @@
             this.listView1.ForeColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(533, 127);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Location = new System.Drawing.Point(400, 103);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1155, 573);
+            this.listView1.Size = new System.Drawing.Size(867, 466);
             this.listView1.TabIndex = 38;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -715,10 +680,10 @@
             this.btnSave.BackColor = System.Drawing.Color.DimGray;
             this.btnSave.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Location = new System.Drawing.Point(332, 692);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(249, 562);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(103, 47);
+            this.btnSave.Size = new System.Drawing.Size(77, 38);
             this.btnSave.TabIndex = 39;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -729,10 +694,9 @@
             this.extend2.BackColor = System.Drawing.Color.Transparent;
             this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(8, 48);
-            this.extend2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend2.Location = new System.Drawing.Point(6, 39);
             this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(51, 39);
+            this.extend2.Size = new System.Drawing.Size(38, 32);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend2.TabIndex = 3;
             this.extend2.TabStop = false;
@@ -743,10 +707,9 @@
             this.extend1.BackColor = System.Drawing.Color.Transparent;
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(8, 48);
-            this.extend1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.extend1.Location = new System.Drawing.Point(6, 39);
             this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(51, 39);
+            this.extend1.Size = new System.Drawing.Size(38, 32);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend1.TabIndex = 3;
             this.extend1.TabStop = false;
@@ -754,12 +717,12 @@
             // 
             // Cases
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::PBL.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1720, 948);
+            this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView1);
@@ -783,11 +746,9 @@
             this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cases";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cases";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cases_Load);
             this.recoveredDeathPanel.ResumeLayout(false);
             this.recoveredDeathPanel.PerformLayout();
