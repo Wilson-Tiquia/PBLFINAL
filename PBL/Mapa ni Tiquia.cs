@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+
 namespace PBL
 {
     public partial class Mapa_ni_Tiquia : Form
@@ -18,6 +19,8 @@ namespace PBL
             "Caloocan City", "Las Pinas City", "Makati City", "Malabon City", "Mandaluyong City", "Manila City", "Marikina City",
             "Muntinlupa City", "Navotas City", "Paranaque City", "Pasay City", "Pasig City", "Quezon City", "San Juan City", "Taguig City", "Valenzuela City"
         };
+
+
         string[,] luzonRegionOneToEight =
         {
             // nag multi dimensional array ako
@@ -48,6 +51,42 @@ namespace PBL
             {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands", "" }, // region 13 caraga
             {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", "", ""},                  // BARMM
         };
+
+        List<string> provinceAndCase = new List<string>();
+        List<string> allProvinces = new List<string>();
+       
+
+         public void getTotalCase(string province)
+         {
+            StreamReader read = new StreamReader(@"C:\Users\Denise\Downloads\Total-Cases.txt");
+            while (read.Peek ()!=-1)
+            {
+                string input = read.ReadLine();
+                string[] splitInput = input.Split(',');
+                string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
+                string caseSplitNew = splitInput[2].Replace(",", "");
+                provinceAndCase.Add(newSplit + "*"+caseSplitNew);
+            }
+            read.Close();
+           
+            foreach(string provCase in provinceAndCase)
+            {
+                string[] provCaseSplit = provCase.Split('*');
+                Console.Write(appended);
+                if (provinceMapComboBox.Text.ToLower() ==provCaseSplit[0])
+                {
+                    MessageBox.Show("SAME KAMI " + provCaseSplit[0] +"total case is " + provCaseSplit[1]);
+                   
+
+
+                    tCase.Text = "Total Case: " + provCaseSplit[1];
+                }
+            }
+
+
+
+
+        }
         public Mapa_ni_Tiquia()
         {
             InitializeComponent();
@@ -166,6 +205,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[1, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[1, i]);
+                        allProvinces.Add(luzonRegionOneToEight[1, i].ToLower());
                     }
                 }
             }
@@ -178,6 +218,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[2, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[2, i]);
+                        allProvinces.Add(luzonRegionOneToEight[2, i].ToLower());
                     }
                 }
             }
@@ -190,6 +231,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[3, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[3, i]);
+                        allProvinces.Add(luzonRegionOneToEight[3, i].ToLower());
                     }
                 }
             }
@@ -203,6 +245,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[4, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[4, i]);
+                        allProvinces.Add(luzonRegionOneToEight[4, i].ToLower());
                     }
                 }
             }
@@ -215,6 +258,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[5, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[5, i]);
+                        allProvinces.Add(luzonRegionOneToEight[5, i].ToLower());
 
                     }
                 }
@@ -228,6 +272,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[6, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[6, i]);
+                        allProvinces.Add(luzonRegionOneToEight[6, i].ToLower());
                     }
                 }
             }
@@ -240,6 +285,8 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(luzonRegionOneToEight[7, i]);
                         provinceMapComboBox.Items.Add(luzonRegionOneToEight[7, i]);
+                        allProvinces.Add(luzonRegionOneToEight[7, i].ToLower());
+
                     }
                 }
             }
@@ -254,6 +301,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[1, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[1, i]);
+                        allProvinces.Add(visayasRegionSixToEight[1, i].ToLower());
                     }
                 }
             }
@@ -266,6 +314,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[2, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[2, i]);
+                        allProvinces.Add(visayasRegionSixToEight[2, i].ToLower());
                     }
                 }
             }
@@ -278,6 +327,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(visayasRegionSixToEight[3, i]);
                         provinceMapComboBox.Items.Add(visayasRegionSixToEight[3, i]);
+                        allProvinces.Add(visayasRegionSixToEight[3, i].ToLower());
                     }
                 }
             }
@@ -293,6 +343,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[1, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[1, i]);
+                        allProvinces.Add(mindanaoRegions[1, i].ToLower());
 
                     }
                 }
@@ -306,6 +357,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[2, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[2, i]);
+                        allProvinces.Add(mindanaoRegions[2, i].ToLower());
                     }
                 }
             }
@@ -318,6 +370,8 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[3, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[3, i]);
+                        allProvinces.Add(mindanaoRegions[3, i].ToLower());
+
                     }
                 }
             }
@@ -330,6 +384,8 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[4, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[4, i]);
+                        allProvinces.Add(mindanaoRegions[4, i].ToLower());
+
                     }
                 }
             }
@@ -342,6 +398,8 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[5, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[5, i]);
+                        allProvinces.Add(mindanaoRegions[5, i].ToLower());
+
                     }
                 }
             }
@@ -354,6 +412,7 @@ namespace PBL
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[6, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[6, i]);
+                        allProvinces.Add(mindanaoRegions[6, i].ToLower());
                     }
                 }
             }
@@ -367,6 +426,12 @@ namespace PBL
         {
             hideMap();
             populateIsland();
+            
+           
+           
+            
+
+
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -419,19 +484,20 @@ namespace PBL
             if (e.KeyCode == Keys.Enter && mayLamanIslandRegionAtProvince)
             {
                 MessageBox.Show("Added user");
-                string[] addedCase = { islandComboBox.Text, ", ",regionComboBox.Text, ", ", provinceComboBox.Text, ", ", caseInputTextBox.Text };
-                StreamWriter addUser = new StreamWriter("C:\\ADDCASE\\newcases.txt", true);
+                string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
+                StreamWriter addUser = new StreamWriter(@"C:\Users\Denise\Downloads\Total-Cases.txt", true);
+                addUser.WriteLine();
                 for (int i = 0; i < addedCase.Length; i++)
                 {
                     addUser.Write(addedCase[i]);
                 }
-                addUser.WriteLine();
                 addUser.Close();
                 islandComboBox.Text = regionComboBox.Text = provinceComboBox.Text = caseInputTextBox.Text = string.Empty;
                 islandComboBox.Focus();
                 islandComboBox.SelectedIndex = -1;
                 regionComboBox.SelectedIndex = -1;
                 provinceComboBox.SelectedIndex = -1;
+
 
 
             }
@@ -474,7 +540,7 @@ namespace PBL
 
         private void regionMapComboBox_DropDown(object sender, EventArgs e)
         {
-            provinceMapComboBox.Text = string.Empty;
+            
            
         }
 
@@ -483,7 +549,13 @@ namespace PBL
             if (regionMapComboBox.Text != string.Empty && provinceMapComboBox.Text != string.Empty)
             {
                 panelOfImage.Visible = true;
-                
+                string province= provinceMapComboBox.GetItemText(provinceMapComboBox.SelectedItem);
+                provinceName.Text = province;
+                getTotalCase(province);
+                foreach (var a in allProvinces)
+                {
+                    Console.WriteLine(a);
+                }
 
 
             }
@@ -495,7 +567,10 @@ namespace PBL
             string selectedIsland = currentIsland.Text = "Mindanao";
             emptyRegionProvince();
             populateRegions(selectedIsland);
+        }
 
+        private void tCase_Click(object sender, EventArgs e)
+        {
 
         }
     }
