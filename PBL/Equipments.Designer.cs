@@ -1050,7 +1050,6 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.extend2);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
@@ -1096,6 +1095,7 @@
             this.Controls.Add(this.txtcoverall);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.panel16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Equipments";
