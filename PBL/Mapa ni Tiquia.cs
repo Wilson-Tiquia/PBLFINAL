@@ -61,7 +61,7 @@ namespace PBL
         public int totalAddedCase()
         {
             int total = 0;
-            StreamReader readTotal = new StreamReader(@"D:\Total-Cases.txt");
+            StreamReader readTotal = new StreamReader(@"C:\Total-Cases.txt");
             while (readTotal.Peek()!=-1)
             {
 
@@ -79,7 +79,7 @@ namespace PBL
       
         public void getTotalCase(string province, int sum)
          {
-            StreamReader read = new StreamReader(@"D:\Total-Cases.txt");
+            StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
                 
@@ -123,10 +123,6 @@ namespace PBL
                     caseSaLugar = "2k";
                     provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
                 }
-
-
-
-
             }
             read.Close();
    
@@ -349,6 +345,16 @@ namespace PBL
                     }
                 }
             }
+            if (region == "NCR")
+            {
+                for (int i = 0; i <ncrCity.Length;i++)
+                {
+                    provinceComboBox.Items.Add(ncrCity[i]);
+                    provinceMapComboBox.Items.Add(ncrCity[i]);
+                }
+            }
+
+
             // end ng luzon
             // start ng visayas
             if (region == "Region VI")
@@ -482,6 +488,8 @@ namespace PBL
         {
             hideMap();
             populateIsland();
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
             totalCASE += totalAddedCase();
             totalCases.Text = totalCASE.ToString();
             
@@ -515,14 +523,6 @@ namespace PBL
             
         }
 
-        private void regionComboBox_DropDown(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        
-
         private void caseInputTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             bool mayLamanIslandRegionAtProvince = islandComboBox.Text != string.Empty && regionComboBox.Text != string.Empty && provinceComboBox.Text != string.Empty;
@@ -533,7 +533,7 @@ namespace PBL
                 totalCases.Text = totalCASE.ToString();
                 MessageBox.Show("Added Case");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
-                StreamWriter addUser = new StreamWriter(@"D:\Total-Cases.txt", true);
+                StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
                 addUser.WriteLine();
                 for (int i = 0; i < addedCase.Length; i++)
                 {
@@ -635,15 +635,7 @@ namespace PBL
             panelOfImage.Visible = false;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void caseInputTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void minimize_Click(object sender, EventArgs e)
         {
@@ -697,58 +689,7 @@ namespace PBL
             equipmentsForm.Show();
         }
 
-        private void case4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void case3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void case2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void range501To1k_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void range0To500_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void case1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void provinceName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void currentIsland_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void extend1_Click(object sender, EventArgs e)
         {
             panel16.Visible = true;
@@ -778,5 +719,7 @@ namespace PBL
             extend2.Visible = false;
             extend1.Visible = true;
         }
+
+      
     }
 }

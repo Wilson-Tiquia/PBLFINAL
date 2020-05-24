@@ -135,10 +135,9 @@
             this.islandLabel.BackColor = System.Drawing.Color.Transparent;
             this.islandLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.islandLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.islandLabel.Location = new System.Drawing.Point(72, 132);
-            this.islandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.islandLabel.Location = new System.Drawing.Point(108, 203);
             this.islandLabel.Name = "islandLabel";
-            this.islandLabel.Size = new System.Drawing.Size(85, 34);
+            this.islandLabel.Size = new System.Drawing.Size(127, 51);
             this.islandLabel.TabIndex = 1;
             this.islandLabel.Text = "Island";
             // 
@@ -148,10 +147,9 @@
             this.regionLabel.BackColor = System.Drawing.Color.Transparent;
             this.regionLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.regionLabel.Location = new System.Drawing.Point(72, 253);
-            this.regionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.regionLabel.Location = new System.Drawing.Point(108, 389);
             this.regionLabel.Name = "regionLabel";
-            this.regionLabel.Size = new System.Drawing.Size(93, 34);
+            this.regionLabel.Size = new System.Drawing.Size(139, 51);
             this.regionLabel.TabIndex = 2;
             this.regionLabel.Text = "Region";
             // 
@@ -161,10 +159,9 @@
             this.provinceLabel.BackColor = System.Drawing.Color.Transparent;
             this.provinceLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.provinceLabel.Location = new System.Drawing.Point(72, 377);
-            this.provinceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.provinceLabel.Location = new System.Drawing.Point(108, 580);
             this.provinceLabel.Name = "provinceLabel";
-            this.provinceLabel.Size = new System.Drawing.Size(114, 34);
+            this.provinceLabel.Size = new System.Drawing.Size(170, 51);
             this.provinceLabel.TabIndex = 1;
             this.provinceLabel.Text = "Province";
             // 
@@ -174,10 +171,9 @@
             this.cases.BackColor = System.Drawing.Color.Transparent;
             this.cases.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cases.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cases.Location = new System.Drawing.Point(73, 504);
-            this.cases.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cases.Location = new System.Drawing.Point(110, 775);
             this.cases.Name = "cases";
-            this.cases.Size = new System.Drawing.Size(84, 34);
+            this.cases.Size = new System.Drawing.Size(125, 51);
             this.cases.TabIndex = 2;
             this.cases.Text = "Cases";
             // 
@@ -189,10 +185,9 @@
             this.islandComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.islandComboBox.ForeColor = System.Drawing.Color.Gray;
             this.islandComboBox.FormattingEnabled = true;
-            this.islandComboBox.Location = new System.Drawing.Point(78, 168);
-            this.islandComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.islandComboBox.Location = new System.Drawing.Point(117, 258);
             this.islandComboBox.Name = "islandComboBox";
-            this.islandComboBox.Size = new System.Drawing.Size(400, 42);
+            this.islandComboBox.Size = new System.Drawing.Size(598, 59);
             this.islandComboBox.TabIndex = 3;
             this.islandComboBox.DropDown += new System.EventHandler(this.islandComboBox_DropDown);
             this.islandComboBox.SelectedIndexChanged += new System.EventHandler(this.islandComboBox_SelectedIndexChanged);
@@ -205,12 +200,11 @@
             this.regionComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionComboBox.ForeColor = System.Drawing.Color.Gray;
             this.regionComboBox.FormattingEnabled = true;
-            this.regionComboBox.Location = new System.Drawing.Point(78, 291);
-            this.regionComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.regionComboBox.Location = new System.Drawing.Point(117, 448);
             this.regionComboBox.Name = "regionComboBox";
-            this.regionComboBox.Size = new System.Drawing.Size(399, 42);
+            this.regionComboBox.Size = new System.Drawing.Size(596, 59);
             this.regionComboBox.TabIndex = 4;
-            this.regionComboBox.DropDown += new System.EventHandler(this.regionComboBox_DropDown);
+
             this.regionComboBox.SelectedIndexChanged += new System.EventHandler(this.regionComboBox_SelectedIndexChanged);
             // 
             // provinceComboBox
@@ -220,23 +214,22 @@
             this.provinceComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceComboBox.ForeColor = System.Drawing.Color.Gray;
             this.provinceComboBox.FormattingEnabled = true;
-            this.provinceComboBox.Location = new System.Drawing.Point(78, 416);
-            this.provinceComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.provinceComboBox.Location = new System.Drawing.Point(117, 640);
             this.provinceComboBox.Name = "provinceComboBox";
-            this.provinceComboBox.Size = new System.Drawing.Size(400, 42);
+            this.provinceComboBox.Size = new System.Drawing.Size(598, 59);
             this.provinceComboBox.TabIndex = 5;
+            
             // 
             // caseInputTextBox
             // 
             this.caseInputTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.caseInputTextBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caseInputTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.caseInputTextBox.Location = new System.Drawing.Point(78, 540);
-            this.caseInputTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.caseInputTextBox.Location = new System.Drawing.Point(117, 831);
             this.caseInputTextBox.Name = "caseInputTextBox";
-            this.caseInputTextBox.Size = new System.Drawing.Size(399, 40);
+            this.caseInputTextBox.Size = new System.Drawing.Size(596, 57);
             this.caseInputTextBox.TabIndex = 6;
-            this.caseInputTextBox.TextChanged += new System.EventHandler(this.caseInputTextBox_TextChanged);
+        
             this.caseInputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.caseInputTextBox_KeyDown);
             // 
             // regionMap
@@ -245,10 +238,9 @@
             this.regionMap.BackColor = System.Drawing.Color.Transparent;
             this.regionMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.regionMap.Location = new System.Drawing.Point(71, 168);
-            this.regionMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.regionMap.Location = new System.Drawing.Point(106, 258);
             this.regionMap.Name = "regionMap";
-            this.regionMap.Size = new System.Drawing.Size(93, 34);
+            this.regionMap.Size = new System.Drawing.Size(139, 51);
             this.regionMap.TabIndex = 8;
             this.regionMap.Text = "Region";
             // 
@@ -258,10 +250,9 @@
             this.provinceMap.BackColor = System.Drawing.Color.Transparent;
             this.provinceMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.provinceMap.Location = new System.Drawing.Point(75, 293);
-            this.provinceMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.provinceMap.Location = new System.Drawing.Point(112, 451);
             this.provinceMap.Name = "provinceMap";
-            this.provinceMap.Size = new System.Drawing.Size(114, 34);
+            this.provinceMap.Size = new System.Drawing.Size(170, 51);
             this.provinceMap.TabIndex = 9;
             this.provinceMap.Text = "Province";
             // 
@@ -273,10 +264,9 @@
             this.regionMapComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionMapComboBox.ForeColor = System.Drawing.Color.Gray;
             this.regionMapComboBox.FormattingEnabled = true;
-            this.regionMapComboBox.Location = new System.Drawing.Point(77, 205);
-            this.regionMapComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.regionMapComboBox.Location = new System.Drawing.Point(116, 315);
             this.regionMapComboBox.Name = "regionMapComboBox";
-            this.regionMapComboBox.Size = new System.Drawing.Size(400, 42);
+            this.regionMapComboBox.Size = new System.Drawing.Size(598, 59);
             this.regionMapComboBox.TabIndex = 10;
             this.regionMapComboBox.DropDown += new System.EventHandler(this.regionMapComboBox_DropDown);
             this.regionMapComboBox.SelectedIndexChanged += new System.EventHandler(this.regionMapComboBox_SelectedIndexChanged);
@@ -289,10 +279,9 @@
             this.provinceMapComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceMapComboBox.ForeColor = System.Drawing.Color.Gray;
             this.provinceMapComboBox.FormattingEnabled = true;
-            this.provinceMapComboBox.Location = new System.Drawing.Point(78, 332);
-            this.provinceMapComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.provinceMapComboBox.Location = new System.Drawing.Point(117, 511);
             this.provinceMapComboBox.Name = "provinceMapComboBox";
-            this.provinceMapComboBox.Size = new System.Drawing.Size(400, 42);
+            this.provinceMapComboBox.Size = new System.Drawing.Size(598, 59);
             this.provinceMapComboBox.TabIndex = 11;
             this.provinceMapComboBox.DropDown += new System.EventHandler(this.provinceMapComboBox_DropDown);
             this.provinceMapComboBox.SelectedIndexChanged += new System.EventHandler(this.provinceMapComboBox_SelectedIndexChanged);
@@ -313,10 +302,9 @@
             this.panelOfImage.Controls.Add(this.case3);
             this.panelOfImage.Controls.Add(this.case4);
             this.panelOfImage.Controls.Add(this.provincePicture);
-            this.panelOfImage.Location = new System.Drawing.Point(56, 437);
-            this.panelOfImage.Margin = new System.Windows.Forms.Padding(2);
+            this.panelOfImage.Location = new System.Drawing.Point(84, 672);
             this.panelOfImage.Name = "panelOfImage";
-            this.panelOfImage.Size = new System.Drawing.Size(451, 235);
+            this.panelOfImage.Size = new System.Drawing.Size(674, 359);
             this.panelOfImage.TabIndex = 1;
             // 
             // btnSave
@@ -325,10 +313,9 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Location = new System.Drawing.Point(300, 187);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Location = new System.Drawing.Point(450, 288);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(92, 37);
+            this.btnSave.Size = new System.Drawing.Size(138, 57);
             this.btnSave.TabIndex = 62;
             this.btnSave.Text = "Back";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -339,10 +326,9 @@
             this.tCase.AutoSize = true;
             this.tCase.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tCase.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tCase.Location = new System.Drawing.Point(233, 51);
-            this.tCase.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tCase.Location = new System.Drawing.Point(350, 78);
             this.tCase.Name = "tCase";
-            this.tCase.Size = new System.Drawing.Size(103, 26);
+            this.tCase.Size = new System.Drawing.Size(153, 39);
             this.tCase.TabIndex = 5;
             this.tCase.Text = "Total Case";
             // 
@@ -351,13 +337,12 @@
             this.provinceName.AutoSize = true;
             this.provinceName.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceName.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.provinceName.Location = new System.Drawing.Point(233, 12);
-            this.provinceName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.provinceName.Location = new System.Drawing.Point(350, 18);
             this.provinceName.Name = "provinceName";
-            this.provinceName.Size = new System.Drawing.Size(140, 26);
+            this.provinceName.Size = new System.Drawing.Size(212, 39);
             this.provinceName.TabIndex = 4;
             this.provinceName.Text = "Province Name";
-            this.provinceName.Click += new System.EventHandler(this.provinceName_Click);
+         
             // 
             // label2
             // 
@@ -366,13 +351,12 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label2.Location = new System.Drawing.Point(211, 187);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(316, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 21);
+            this.label2.Size = new System.Drawing.Size(74, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "2000+";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+        
             // 
             // label1
             // 
@@ -381,13 +365,12 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(132, 187);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(198, 288);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 21);
+            this.label1.Size = new System.Drawing.Size(114, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "1000-2000";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+           
             // 
             // range501To1k
             // 
@@ -396,13 +379,12 @@
             this.range501To1k.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.range501To1k.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.range501To1k.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.range501To1k.Location = new System.Drawing.Point(64, 188);
-            this.range501To1k.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.range501To1k.Location = new System.Drawing.Point(96, 289);
             this.range501To1k.Name = "range501To1k";
-            this.range501To1k.Size = new System.Drawing.Size(67, 21);
+            this.range501To1k.Size = new System.Drawing.Size(99, 30);
             this.range501To1k.TabIndex = 3;
             this.range501To1k.Text = "501-1000";
-            this.range501To1k.Click += new System.EventHandler(this.range501To1k_Click);
+        
             // 
             // range0To500
             // 
@@ -411,66 +393,60 @@
             this.range0To500.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.range0To500.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.range0To500.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.range0To500.Location = new System.Drawing.Point(15, 188);
-            this.range0To500.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.range0To500.Location = new System.Drawing.Point(22, 289);
             this.range0To500.Name = "range0To500";
-            this.range0To500.Size = new System.Drawing.Size(47, 21);
+            this.range0To500.Size = new System.Drawing.Size(69, 30);
             this.range0To500.TabIndex = 3;
             this.range0To500.Text = "0-500";
-            this.range0To500.Click += new System.EventHandler(this.range0To500_Click);
+          
             // 
             // case1
             // 
             this.case1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case1.BackgroundImage")));
-            this.case1.Location = new System.Drawing.Point(20, 153);
-            this.case1.Margin = new System.Windows.Forms.Padding(2);
+            this.case1.Location = new System.Drawing.Point(30, 235);
             this.case1.Name = "case1";
-            this.case1.Size = new System.Drawing.Size(33, 23);
+            this.case1.Size = new System.Drawing.Size(50, 35);
             this.case1.TabIndex = 2;
             this.case1.TabStop = false;
-            this.case1.Click += new System.EventHandler(this.case1_Click);
+          
             // 
             // case2
             // 
             this.case2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case2.BackgroundImage")));
-            this.case2.Location = new System.Drawing.Point(81, 153);
-            this.case2.Margin = new System.Windows.Forms.Padding(2);
+            this.case2.Location = new System.Drawing.Point(122, 235);
             this.case2.Name = "case2";
-            this.case2.Size = new System.Drawing.Size(33, 23);
+            this.case2.Size = new System.Drawing.Size(50, 35);
             this.case2.TabIndex = 2;
             this.case2.TabStop = false;
-            this.case2.Click += new System.EventHandler(this.case2_Click);
+         
             // 
             // case3
             // 
             this.case3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case3.BackgroundImage")));
-            this.case3.Location = new System.Drawing.Point(147, 153);
-            this.case3.Margin = new System.Windows.Forms.Padding(2);
+            this.case3.Location = new System.Drawing.Point(220, 235);
             this.case3.Name = "case3";
-            this.case3.Size = new System.Drawing.Size(33, 23);
+            this.case3.Size = new System.Drawing.Size(50, 35);
             this.case3.TabIndex = 2;
             this.case3.TabStop = false;
-            this.case3.Click += new System.EventHandler(this.case3_Click);
+            
             // 
             // case4
             // 
             this.case4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case4.BackgroundImage")));
-            this.case4.Location = new System.Drawing.Point(216, 153);
-            this.case4.Margin = new System.Windows.Forms.Padding(2);
+            this.case4.Location = new System.Drawing.Point(324, 235);
             this.case4.Name = "case4";
-            this.case4.Size = new System.Drawing.Size(33, 23);
+            this.case4.Size = new System.Drawing.Size(50, 35);
             this.case4.TabIndex = 2;
             this.case4.TabStop = false;
-            this.case4.Click += new System.EventHandler(this.case4_Click);
+           
             // 
             // provincePicture
             // 
             this.provincePicture.BackColor = System.Drawing.Color.SlateGray;
             this.provincePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.provincePicture.Location = new System.Drawing.Point(49, 12);
-            this.provincePicture.Margin = new System.Windows.Forms.Padding(2);
+            this.provincePicture.Location = new System.Drawing.Point(74, 18);
             this.provincePicture.Name = "provincePicture";
-            this.provincePicture.Size = new System.Drawing.Size(160, 120);
+            this.provincePicture.Size = new System.Drawing.Size(240, 185);
             this.provincePicture.TabIndex = 0;
             this.provincePicture.TabStop = false;
             // 
@@ -480,13 +456,12 @@
             this.currentIsland.BackColor = System.Drawing.Color.Transparent;
             this.currentIsland.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentIsland.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.currentIsland.Location = new System.Drawing.Point(147, 69);
-            this.currentIsland.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.currentIsland.Location = new System.Drawing.Point(220, 106);
             this.currentIsland.Name = "currentIsland";
-            this.currentIsland.Size = new System.Drawing.Size(263, 45);
+            this.currentIsland.Size = new System.Drawing.Size(395, 68);
             this.currentIsland.TabIndex = 0;
             this.currentIsland.Text = "CURRENT ISLAND";
-            this.currentIsland.Click += new System.EventHandler(this.currentIsland_Click);
+        
             // 
             // panel2
             // 
@@ -494,10 +469,9 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.totalCases);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(670, 636);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(1005, 978);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(593, 109);
+            this.panel2.Size = new System.Drawing.Size(888, 166);
             this.panel2.TabIndex = 12;
             // 
             // totalCases
@@ -507,10 +481,9 @@
             this.totalCases.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.totalCases.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalCases.ForeColor = System.Drawing.Color.Plum;
-            this.totalCases.Location = new System.Drawing.Point(267, 11);
-            this.totalCases.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totalCases.Location = new System.Drawing.Point(400, 17);
             this.totalCases.Name = "totalCases";
-            this.totalCases.Size = new System.Drawing.Size(68, 80);
+            this.totalCases.Size = new System.Drawing.Size(101, 117);
             this.totalCases.TabIndex = 1;
             this.totalCases.Text = "0";
             // 
@@ -521,10 +494,9 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label3.Location = new System.Drawing.Point(21, 27);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(32, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 45);
+            this.label3.Size = new System.Drawing.Size(278, 68);
             this.label3.TabIndex = 0;
             this.label3.Text = "TOTAL CASE";
             // 
@@ -536,18 +508,20 @@
             this.topPanel.Controls.Add(this.maximize);
             this.topPanel.Controls.Add(this.hide);
             this.topPanel.Controls.Add(this.exit);
-            this.topPanel.Location = new System.Drawing.Point(-2, -2);
+            this.topPanel.Location = new System.Drawing.Point(-3, -3);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1317, 33);
+            this.topPanel.Size = new System.Drawing.Size(1974, 49);
             this.topPanel.TabIndex = 53;
             // 
             // minimize
             // 
             this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.minimize.Location = new System.Drawing.Point(43, 3);
+            this.minimize.Location = new System.Drawing.Point(64, 5);
+            this.minimize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(23, 23);
+            this.minimize.Size = new System.Drawing.Size(34, 35);
             this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.minimize.TabIndex = 2;
             this.minimize.TabStop = false;
@@ -556,9 +530,10 @@
             // maximize
             // 
             this.maximize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.maximize.Location = new System.Drawing.Point(43, 3);
+            this.maximize.Location = new System.Drawing.Point(64, 5);
+            this.maximize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maximize.Name = "maximize";
-            this.maximize.Size = new System.Drawing.Size(23, 23);
+            this.maximize.Size = new System.Drawing.Size(34, 35);
             this.maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.maximize.TabIndex = 2;
             this.maximize.TabStop = false;
@@ -568,9 +543,10 @@
             // 
             this.hide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hide.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
-            this.hide.Location = new System.Drawing.Point(73, 3);
+            this.hide.Location = new System.Drawing.Point(110, 5);
+            this.hide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.hide.Name = "hide";
-            this.hide.Size = new System.Drawing.Size(23, 23);
+            this.hide.Size = new System.Drawing.Size(34, 35);
             this.hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hide.TabIndex = 2;
             this.hide.TabStop = false;
@@ -580,9 +556,10 @@
             // 
             this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
-            this.exit.Location = new System.Drawing.Point(15, 3);
+            this.exit.Location = new System.Drawing.Point(22, 5);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(23, 23);
+            this.exit.Size = new System.Drawing.Size(34, 35);
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exit.TabIndex = 2;
             this.exit.TabStop = false;
@@ -599,9 +576,10 @@
             this.panel16.Controls.Add(this.casess);
             this.panel16.Controls.Add(this.pictureBox2);
             this.panel16.Controls.Add(this.pictureBox3);
-            this.panel16.Location = new System.Drawing.Point(24, 52);
+            this.panel16.Location = new System.Drawing.Point(36, 80);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(376, 173);
+            this.panel16.Size = new System.Drawing.Size(564, 266);
             this.panel16.TabIndex = 58;
             this.panel16.Visible = false;
             // 
@@ -610,9 +588,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(18, 112);
+            this.label6.Location = new System.Drawing.Point(27, 172);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 17);
+            this.label6.Size = new System.Drawing.Size(50, 25);
             this.label6.TabIndex = 38;
             this.label6.Text = "map";
             // 
@@ -621,9 +600,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(99, 111);
+            this.label5.Location = new System.Drawing.Point(148, 171);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 17);
+            this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 38;
             this.label5.Text = "cases";
             // 
@@ -632,9 +612,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(193, 111);
+            this.label4.Location = new System.Drawing.Point(290, 171);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 17);
+            this.label4.Size = new System.Drawing.Size(53, 25);
             this.label4.TabIndex = 38;
             this.label4.Text = "tests";
             // 
@@ -643,9 +624,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(263, 111);
+            this.label7.Location = new System.Drawing.Point(394, 171);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 17);
+            this.label7.Size = new System.Drawing.Size(113, 25);
             this.label7.TabIndex = 38;
             this.label7.Text = "equipments";
             // 
@@ -653,9 +635,10 @@
             // 
             this.map.Cursor = System.Windows.Forms.Cursors.Hand;
             this.map.Image = global::PBL.Properties.Resources.signs;
-            this.map.Location = new System.Drawing.Point(8, 49);
+            this.map.Location = new System.Drawing.Point(12, 75);
+            this.map.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(55, 50);
+            this.map.Size = new System.Drawing.Size(82, 77);
             this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.map.TabIndex = 3;
             this.map.TabStop = false;
@@ -665,9 +648,10 @@
             // 
             this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
-            this.casess.Location = new System.Drawing.Point(93, 49);
+            this.casess.Location = new System.Drawing.Point(140, 75);
+            this.casess.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.casess.Name = "casess";
-            this.casess.Size = new System.Drawing.Size(55, 50);
+            this.casess.Size = new System.Drawing.Size(82, 77);
             this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.casess.TabIndex = 3;
             this.casess.TabStop = false;
@@ -677,9 +661,10 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
-            this.pictureBox2.Location = new System.Drawing.Point(275, 49);
+            this.pictureBox2.Location = new System.Drawing.Point(412, 75);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(82, 77);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -689,9 +674,10 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.pictureBox3.Location = new System.Drawing.Point(182, 49);
+            this.pictureBox3.Location = new System.Drawing.Point(273, 75);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(82, 77);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -702,10 +688,9 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(194)))), ((int)(((byte)(205)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.panel1);
-            this.panel5.Location = new System.Drawing.Point(670, 50);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(1005, 77);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(593, 558);
+            this.panel5.Size = new System.Drawing.Size(888, 856);
             this.panel5.TabIndex = 13;
             // 
             // panel1
@@ -716,20 +701,19 @@
             this.panel1.Controls.Add(this.mindanao);
             this.panel1.Controls.Add(this.visayas);
             this.panel1.Controls.Add(this.luzonButton);
-            this.panel1.Location = new System.Drawing.Point(2, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(589, 555);
+            this.panel1.Size = new System.Drawing.Size(884, 854);
             this.panel1.TabIndex = 7;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // mindanao
             // 
             this.mindanao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mindanao.Image = global::PBL.Properties.Resources.mindanao_map;
-            this.mindanao.Location = new System.Drawing.Point(174, 325);
+            this.mindanao.Location = new System.Drawing.Point(261, 500);
+            this.mindanao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mindanao.Name = "mindanao";
-            this.mindanao.Size = new System.Drawing.Size(407, 232);
+            this.mindanao.Size = new System.Drawing.Size(610, 357);
             this.mindanao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mindanao.TabIndex = 15;
             this.mindanao.TabStop = false;
@@ -739,9 +723,10 @@
             // 
             this.visayas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.visayas.Image = global::PBL.Properties.Resources.visayas_map;
-            this.visayas.Location = new System.Drawing.Point(7, 219);
+            this.visayas.Location = new System.Drawing.Point(10, 337);
+            this.visayas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.visayas.Name = "visayas";
-            this.visayas.Size = new System.Drawing.Size(542, 225);
+            this.visayas.Size = new System.Drawing.Size(813, 346);
             this.visayas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.visayas.TabIndex = 14;
             this.visayas.TabStop = false;
@@ -751,9 +736,10 @@
             // 
             this.luzonButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.luzonButton.Image = global::PBL.Properties.Resources.luzon_map;
-            this.luzonButton.Location = new System.Drawing.Point(159, -3);
+            this.luzonButton.Location = new System.Drawing.Point(238, -5);
+            this.luzonButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.luzonButton.Name = "luzonButton";
-            this.luzonButton.Size = new System.Drawing.Size(321, 299);
+            this.luzonButton.Size = new System.Drawing.Size(482, 460);
             this.luzonButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.luzonButton.TabIndex = 13;
             this.luzonButton.TabStop = false;
@@ -764,17 +750,19 @@
             this.casesPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.casesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("casesPanel.BackgroundImage")));
             this.casesPanel.Controls.Add(this.panel10);
-            this.casesPanel.Location = new System.Drawing.Point(77, 587);
+            this.casesPanel.Location = new System.Drawing.Point(116, 903);
+            this.casesPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.casesPanel.Name = "casesPanel";
-            this.casesPanel.Size = new System.Drawing.Size(400, 10);
+            this.casesPanel.Size = new System.Drawing.Size(600, 15);
             this.casesPanel.TabIndex = 64;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.DimGray;
-            this.panel10.Location = new System.Drawing.Point(0, -17);
+            this.panel10.Location = new System.Drawing.Point(0, -26);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(473, 10);
+            this.panel10.Size = new System.Drawing.Size(710, 15);
             this.panel10.TabIndex = 11;
             // 
             // province1Panel
@@ -782,17 +770,19 @@
             this.province1Panel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.province1Panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("province1Panel.BackgroundImage")));
             this.province1Panel.Controls.Add(this.panel9);
-            this.province1Panel.Location = new System.Drawing.Point(79, 466);
+            this.province1Panel.Location = new System.Drawing.Point(118, 717);
+            this.province1Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.province1Panel.Name = "province1Panel";
-            this.province1Panel.Size = new System.Drawing.Size(400, 10);
+            this.province1Panel.Size = new System.Drawing.Size(600, 15);
             this.province1Panel.TabIndex = 63;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.DimGray;
-            this.panel9.Location = new System.Drawing.Point(0, -17);
+            this.panel9.Location = new System.Drawing.Point(0, -26);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(473, 10);
+            this.panel9.Size = new System.Drawing.Size(710, 15);
             this.panel9.TabIndex = 11;
             // 
             // region1Panel
@@ -800,17 +790,19 @@
             this.region1Panel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.region1Panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("region1Panel.BackgroundImage")));
             this.region1Panel.Controls.Add(this.panel7);
-            this.region1Panel.Location = new System.Drawing.Point(78, 339);
+            this.region1Panel.Location = new System.Drawing.Point(117, 522);
+            this.region1Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.region1Panel.Name = "region1Panel";
-            this.region1Panel.Size = new System.Drawing.Size(400, 10);
+            this.region1Panel.Size = new System.Drawing.Size(600, 15);
             this.region1Panel.TabIndex = 62;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.Location = new System.Drawing.Point(0, -17);
+            this.panel7.Location = new System.Drawing.Point(0, -26);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(473, 10);
+            this.panel7.Size = new System.Drawing.Size(710, 15);
             this.panel7.TabIndex = 11;
             // 
             // islandPanel
@@ -818,17 +810,19 @@
             this.islandPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.islandPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("islandPanel.BackgroundImage")));
             this.islandPanel.Controls.Add(this.panel6);
-            this.islandPanel.Location = new System.Drawing.Point(78, 215);
+            this.islandPanel.Location = new System.Drawing.Point(117, 331);
+            this.islandPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.islandPanel.Name = "islandPanel";
-            this.islandPanel.Size = new System.Drawing.Size(400, 10);
+            this.islandPanel.Size = new System.Drawing.Size(600, 15);
             this.islandPanel.TabIndex = 61;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DimGray;
-            this.panel6.Location = new System.Drawing.Point(0, -17);
+            this.panel6.Location = new System.Drawing.Point(0, -26);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(473, 10);
+            this.panel6.Size = new System.Drawing.Size(710, 15);
             this.panel6.TabIndex = 11;
             // 
             // provincePanel
@@ -836,18 +830,20 @@
             this.provincePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.provincePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("provincePanel.BackgroundImage")));
             this.provincePanel.Controls.Add(this.panel4);
-            this.provincePanel.Location = new System.Drawing.Point(78, 381);
+            this.provincePanel.Location = new System.Drawing.Point(117, 586);
+            this.provincePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.provincePanel.Name = "provincePanel";
-            this.provincePanel.Size = new System.Drawing.Size(400, 10);
+            this.provincePanel.Size = new System.Drawing.Size(600, 15);
             this.provincePanel.TabIndex = 61;
             this.provincePanel.Visible = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DimGray;
-            this.panel4.Location = new System.Drawing.Point(0, -17);
+            this.panel4.Location = new System.Drawing.Point(0, -26);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(473, 10);
+            this.panel4.Size = new System.Drawing.Size(710, 15);
             this.panel4.TabIndex = 11;
             // 
             // regionPanel
@@ -855,18 +851,20 @@
             this.regionPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.regionPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("regionPanel.BackgroundImage")));
             this.regionPanel.Controls.Add(this.panel8);
-            this.regionPanel.Location = new System.Drawing.Point(78, 253);
+            this.regionPanel.Location = new System.Drawing.Point(117, 389);
+            this.regionPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.regionPanel.Name = "regionPanel";
-            this.regionPanel.Size = new System.Drawing.Size(400, 10);
+            this.regionPanel.Size = new System.Drawing.Size(600, 15);
             this.regionPanel.TabIndex = 60;
             this.regionPanel.Visible = false;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Location = new System.Drawing.Point(0, -17);
+            this.panel8.Location = new System.Drawing.Point(0, -26);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(473, 10);
+            this.panel8.Size = new System.Drawing.Size(710, 15);
             this.panel8.TabIndex = 11;
             // 
             // extend2
@@ -874,9 +872,10 @@
             this.extend2.BackColor = System.Drawing.Color.Transparent;
             this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(5, 41);
+            this.extend2.Location = new System.Drawing.Point(8, 63);
+            this.extend2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(38, 32);
+            this.extend2.Size = new System.Drawing.Size(57, 49);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend2.TabIndex = 57;
             this.extend2.TabStop = false;
@@ -887,9 +886,10 @@
             this.extend1.BackColor = System.Drawing.Color.Transparent;
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(5, 41);
+            this.extend1.Location = new System.Drawing.Point(8, 63);
+            this.extend1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(38, 32);
+            this.extend1.Size = new System.Drawing.Size(57, 49);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend1.TabIndex = 59;
             this.extend1.TabStop = false;
@@ -899,9 +899,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox1.Location = new System.Drawing.Point(675, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(1012, 66);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(621, 581);
+            this.pictureBox1.Size = new System.Drawing.Size(932, 894);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
@@ -910,9 +911,10 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox4.Location = new System.Drawing.Point(675, 635);
+            this.pictureBox4.Location = new System.Drawing.Point(1012, 977);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(621, 120);
+            this.pictureBox4.Size = new System.Drawing.Size(932, 185);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 66;
             this.pictureBox4.TabStop = false;
@@ -921,9 +923,10 @@
             // 
             this.mapShadow.BackColor = System.Drawing.Color.Transparent;
             this.mapShadow.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.mapShadow.Location = new System.Drawing.Point(59, 444);
+            this.mapShadow.Location = new System.Drawing.Point(88, 683);
+            this.mapShadow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mapShadow.Name = "mapShadow";
-            this.mapShadow.Size = new System.Drawing.Size(483, 249);
+            this.mapShadow.Size = new System.Drawing.Size(724, 383);
             this.mapShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mapShadow.TabIndex = 67;
             this.mapShadow.TabStop = false;
@@ -931,12 +934,12 @@
             // 
             // Mapa_ni_Tiquia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
             this.BackgroundImage = global::PBL.Properties.Resources._72969fd2668e33d52f215a3573b485a0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1290, 770);
+            this.ClientSize = new System.Drawing.Size(1935, 1106);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.casesPanel);
@@ -967,7 +970,6 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.mapShadow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mapa_ni_Tiquia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mapa_ni_Tiquia";
