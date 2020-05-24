@@ -57,6 +57,7 @@ namespace PBL
         List<string> provinceAndCase = new List<string>();
         
         string temporary = "";
+        int totalCASE = 0;
         public int totalAddedCase()
         {
             int total = 0;
@@ -81,7 +82,7 @@ namespace PBL
             StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
-               
+                
                 string input = read.ReadLine();
                 string[] splitInput = input.Split(',');
                 string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
@@ -144,38 +145,53 @@ namespace PBL
             // hide
             islandLabel.Visible = false;
             islandComboBox.Visible = false;
+            islandPanel.Visible = false;
             regionLabel.Visible = false;
             regionComboBox.Visible = false;
+            region1Panel.Visible = false;
             provinceLabel.Visible = false;
             provinceComboBox.Visible = false;
+            province1Panel.Visible = false;
             cases.Visible = false;
             caseInputTextBox.Visible = false;
+            casesPanel.Visible = false;
             // clear laman
             islandComboBox.Text = regionComboBox.Text = provinceComboBox.Text = caseInputTextBox.Text = string.Empty;
             // visible na ngyon yung second
             regionMap.Visible = true;
             regionMapComboBox.Visible = true;
+            regionPanel.Visible = true;
             provinceMap.Visible = true;
             provinceMapComboBox.Visible = true;
+            provincePanel.Visible = true;
             currentIsland.Visible = true;
+            panelOfImage.Visible = true;
+            mapShadow.Visible = true;
             
         }
         public void hideMap ()
         {
             regionMap.Visible = false;
             regionMapComboBox.Visible = false;
+            regionPanel.Visible = false;
             provinceMapComboBox.Visible = false;
             provinceMap.Visible = false;
+            provincePanel.Visible = false;
             currentIsland.Visible = false;
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
             // vvisible mo ung orig
             islandLabel.Visible = true;
             islandComboBox.Visible = true;
+            islandPanel.Visible = true;
             regionLabel.Visible = true;
             regionComboBox.Visible = true;
+            region1Panel.Visible = true;
             provinceLabel.Visible = true;
             provinceComboBox.Visible = true;
+            province1Panel.Visible = true;
             cases.Visible = true;
+            casesPanel.Visible = true;
             caseInputTextBox.Visible = true;
         }
         public void populateIsland()
@@ -466,10 +482,9 @@ namespace PBL
         {
             hideMap();
             populateIsland();
-            Console.WriteLine(totalAddedCase());
-            totalCases.Text = totalAddedCase().ToString();
-            this.Refresh();
-           
+            totalCASE += totalAddedCase();
+            totalCases.Text = totalCASE.ToString();
+            
            
         }
 
@@ -506,15 +521,17 @@ namespace PBL
 
         }
 
-     
+        
 
         private void caseInputTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             bool mayLamanIslandRegionAtProvince = islandComboBox.Text != string.Empty && regionComboBox.Text != string.Empty && provinceComboBox.Text != string.Empty;
             if (e.KeyCode == Keys.Enter && mayLamanIslandRegionAtProvince)
             {
-               
-                MessageBox.Show("Added user");
+                int a = int.Parse(caseInputTextBox.Text);
+                totalCASE += a;
+                totalCases.Text = totalCASE.ToString();
+                MessageBox.Show("Added Case");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
                 StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
                 addUser.WriteLine();
@@ -528,35 +545,42 @@ namespace PBL
                 islandComboBox.SelectedIndex = -1;
                 regionComboBox.SelectedIndex = -1;
                 provinceComboBox.SelectedIndex = -1;
-                this.Close();
-                Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
-                aForm.Show();
-                
+             
             }
          
         }
 
         private void luzonButton_Click(object sender, EventArgs e)
         {
+            
             showMap();
             string island = currentIsland.Text = "Luzon";
             emptyRegionProvince();
             populateRegions(island);
+            panelOfImage.Visible = false;
+            mapShadow.Visible = false;
 
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
             hideMap();
+            islandComboBox.SelectedIndex = -1;
+            regionComboBox.SelectedIndex = -1;
+            provinceComboBox.SelectedIndex = -1;
+            caseInputTextBox.Text = string.Empty;
+            islandComboBox.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             showMap();
             string island = currentIsland.Text = "Visayas";
             emptyRegionProvince();
             populateRegions(island);
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
         }
 
         private void regionMapComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -571,6 +595,7 @@ namespace PBL
         private void regionMapComboBox_DropDown(object sender, EventArgs e)
         {
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
             provinceMapComboBox.SelectedIndex = -1;
             
            
@@ -581,23 +606,24 @@ namespace PBL
             if (regionMapComboBox.Text != string.Empty && provinceMapComboBox.Text != string.Empty)
             {
                 panelOfImage.Visible = true;
+                mapShadow.Visible = true;
                 string province= provinceMapComboBox.GetItemText(provinceMapComboBox.SelectedItem);
                 provinceName.Text = province;
                 int sum = 0;
                 getTotalCase(province, sum);
                 
-
-
             }
         }
 
         private void mindanao_Click(object sender, EventArgs e)
         {
+            
             showMap();
             string selectedIsland = currentIsland.Text = "Mindanao";
             emptyRegionProvince();
             populateRegions(selectedIsland);
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
         }
 
        
@@ -617,6 +643,140 @@ namespace PBL
         private void caseInputTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void minimize_Click(object sender, EventArgs e)
+        {
+            this.Width = 550;
+            this.Height = 370;
+            minimize.Visible = false;
+            maximize.Visible = true;
+        }
+
+        private void maximize_Click(object sender, EventArgs e)
+        {
+            this.Width = 1290;
+            this.Height = 770;
+            minimize.Visible = true;
+            maximize.Visible = false;
+        }
+
+        private void hide_Click(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Minimized;
+            TopMost = false;
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void map_Click(object sender, EventArgs e)
+        {
+            Mapa_ni_Tiquia mapsForm = new Mapa_ni_Tiquia();
+            mapsForm.Show();
+        }
+
+        private void casess_Click(object sender, EventArgs e)
+        {
+            Cases casesForm = new Cases();
+            casesForm.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Tests testForm = new Tests();
+            testForm.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Equipments equipmentsForm = new Equipments();
+            equipmentsForm.Show();
+        }
+
+        private void case4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void case3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void case2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void range501To1k_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void range0To500_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void case1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void provinceName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void currentIsland_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void extend1_Click(object sender, EventArgs e)
+        {
+            panel16.Visible = true;
+            map.Visible = true;
+            casess.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox2.Visible = true;
+           // label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            extend2.Visible = true;
+            extend1.Visible = false;
+        }
+
+        private void extend2_Click(object sender, EventArgs e)
+        {
+            panel16.Visible = false;
+            map.Visible = false;
+            casess.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox2.Visible = false;
+           // label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            extend2.Visible = false;
+            extend1.Visible = true;
         }
     }
 }

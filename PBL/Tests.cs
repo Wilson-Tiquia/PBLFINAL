@@ -267,34 +267,34 @@ namespace PBL
 
         private void remainingTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (remainingTextBox.Text != string.Empty)
-            {
-                StreamWriter moveToTxt = new StreamWriter(@"C:\TESTS\test.txt",true);
+            //if (remainingTextBox.Text != string.Empty)
+            //{
+            //    StreamWriter moveToTxt = new StreamWriter(@"C:\TESTS\test.txt",true);
             
             
-                string hospital = hospitalComboBox.Text;
-                string unique = uniqueTextBox.Text;
-                string positive = positiveTextBox.Text;
-                string negative = negativeTextBox.Text;
-                string equivocal = equivocalTextBox.Text;
-                string invalid = invalidTextBox.Text;
-                string total = totalTextBox.Text;
-                string remaining = remainingTextBox.Text;
-                ListViewItem lvi = new ListViewItem(hospital);
-                lvi.SubItems.Add(unique);
-                lvi.SubItems.Add(positive);
-                lvi.SubItems.Add(negative);
-                lvi.SubItems.Add(equivocal);
-                lvi.SubItems.Add(invalid);
-                lvi.SubItems.Add(total);
-                lvi.SubItems.Add(remaining);
-                listView1.Items.Add(lvi);
-                // lagay mo sa txt
-                moveToTxt.WriteLine($"{hospital},{unique},{positive},{negative},{equivocal},{invalid},{total},{remaining}");
-                moveToTxt.Close();
-                clearEntriesAndDisableTextBox();
-                hospitalComboBox.Focus();
-            }
+            //    string hospital = hospitalComboBox.Text;
+            //    string unique = uniqueTextBox.Text;
+            //    string positive = positiveTextBox.Text;
+            //    string negative = negativeTextBox.Text;
+            //    string equivocal = equivocalTextBox.Text;
+            //    string invalid = invalidTextBox.Text;
+            //    string total = totalTextBox.Text;
+            //    string remaining = remainingTextBox.Text;
+            //    ListViewItem lvi = new ListViewItem(hospital);
+            //    lvi.SubItems.Add(unique);
+            //    lvi.SubItems.Add(positive);
+            //    lvi.SubItems.Add(negative);
+            //    lvi.SubItems.Add(equivocal);
+            //    lvi.SubItems.Add(invalid);
+            //    lvi.SubItems.Add(total);
+            //    lvi.SubItems.Add(remaining);
+            //    listView1.Items.Add(lvi);
+            //    // lagay mo sa txt
+            //    moveToTxt.WriteLine($"{hospital},{unique},{positive},{negative},{equivocal},{invalid},{total},{remaining}");
+            //    moveToTxt.Close();
+            //    clearEntriesAndDisableTextBox();
+            //    hospitalComboBox.Focus();
+            //}
            
         }
 
@@ -320,52 +320,33 @@ namespace PBL
 
         private void uniqueTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (uniqueTextBox.Text != string.Empty)
-            {
-                positiveTextBox.Enabled = true;
-
-            }
+           
         }
 
         private void positiveTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (positiveTextBox.Text != string.Empty)
-            {
-                negativeTextBox.Enabled = true;
-            }
+          
         }
 
         private void negativeTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (negativeTextBox.Text != string.Empty)
-            {
-                equivocalTextBox.Enabled = true;
-            }
+          
         }
 
         private void invalidTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (invalidTextBox.Text != string.Empty)
-            {
-                totalTextBox.Enabled = true;
-            }
+            
 
         }
 
         private void equivocalTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (equivocalTextBox.Text != string.Empty)
-            {
-                invalidTextBox.Enabled = true;
-            }
+            
         }
 
         private void totalTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (totalTextBox.Text != string.Empty)
-            {
-                remainingTextBox.Enabled = true;
-            }
+           
         }
     }
 }

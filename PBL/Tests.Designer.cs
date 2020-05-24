@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,47 +43,32 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hospitalLabel = new System.Windows.Forms.Label();
-            this.hospitalPanel = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.hospitalComboBox = new System.Windows.Forms.ComboBox();
             this.uniqueLabel = new System.Windows.Forms.Label();
-            this.uniquePanel = new System.Windows.Forms.Panel();
             this.uniqueTextBox = new System.Windows.Forms.TextBox();
             this.positiveTextBox = new System.Windows.Forms.TextBox();
-            this.positivePanel = new System.Windows.Forms.Panel();
             this.positiveLabel = new System.Windows.Forms.Label();
             this.negativeTextBox = new System.Windows.Forms.TextBox();
-            this.negativePanel = new System.Windows.Forms.Panel();
             this.negativeLabel = new System.Windows.Forms.Label();
             this.equivocalTextBox = new System.Windows.Forms.TextBox();
-            this.equivocalPanel = new System.Windows.Forms.Panel();
             this.equivocalLabel = new System.Windows.Forms.Label();
             this.invalidTextBox = new System.Windows.Forms.TextBox();
-            this.invalidPanel = new System.Windows.Forms.Panel();
             this.invalidLabel = new System.Windows.Forms.Label();
             this.totalTextBox = new System.Windows.Forms.TextBox();
-            this.totalPanel = new System.Windows.Forms.Panel();
             this.totalLabel = new System.Windows.Forms.Label();
             this.remainingTextBox = new System.Windows.Forms.TextBox();
-            this.remainingPanel = new System.Windows.Forms.Panel();
             this.remainingLabel = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateLabel = new System.Windows.Forms.Label();
-            this.datePanel = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.dailyTestChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.topPanel = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.extend2 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -93,40 +78,56 @@
             this.casess = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.extend1 = new System.Windows.Forms.PictureBox();
             this.dailyTestLabel = new System.Windows.Forms.Label();
             this.cumulativePanel = new System.Windows.Forms.Panel();
-            this.closeAdd = new System.Windows.Forms.PictureBox();
-            this.openAdd = new System.Windows.Forms.PictureBox();
+            this.equivocalPanel = new System.Windows.Forms.Panel();
+            this.invalidPanel = new System.Windows.Forms.Panel();
+            this.negativePanel = new System.Windows.Forms.Panel();
+            this.totalPanel = new System.Windows.Forms.Panel();
+            this.positivePanel = new System.Windows.Forms.Panel();
+            this.hospitalPanel = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.remainingPanel = new System.Windows.Forms.Panel();
+            this.uniquePanel = new System.Windows.Forms.Panel();
             this.conductedLabel = new System.Windows.Forms.Label();
-            this.conductedPanel = new System.Windows.Forms.Panel();
             this.conductedTextBox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.testPanel = new System.Windows.Forms.Panel();
-            this.openTest = new System.Windows.Forms.PictureBox();
+            this.conductedPanel = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.datePanel = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.closeTest = new System.Windows.Forms.PictureBox();
-            this.hospitalPanel.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.datePanel.SuspendLayout();
+            this.closeAdd = new System.Windows.Forms.PictureBox();
+            this.extend2 = new System.Windows.Forms.PictureBox();
+            this.extend1 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.openAdd = new System.Windows.Forms.PictureBox();
+            this.openTest = new System.Windows.Forms.PictureBox();
+            this.saveButtonTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.casess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
             this.cumulativePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeAdd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.openAdd)).BeginInit();
+            this.hospitalPanel.SuspendLayout();
             this.testPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.openTest)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.datePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openTest)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -220,26 +221,6 @@
             this.hospitalLabel.TabIndex = 25;
             this.hospitalLabel.Text = "Hospital";
             // 
-            // hospitalPanel
-            // 
-            this.hospitalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.hospitalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hospitalPanel.BackgroundImage")));
-            this.hospitalPanel.Controls.Add(this.panel8);
-            this.hospitalPanel.Location = new System.Drawing.Point(39, 137);
-            this.hospitalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.hospitalPanel.Name = "hospitalPanel";
-            this.hospitalPanel.Size = new System.Drawing.Size(614, 15);
-            this.hospitalPanel.TabIndex = 26;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Location = new System.Drawing.Point(0, -26);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(710, 15);
-            this.panel8.TabIndex = 11;
-            // 
             // hospitalComboBox
             // 
             this.hospitalComboBox.BackColor = System.Drawing.Color.Gainsboro;
@@ -300,16 +281,6 @@
             this.uniqueLabel.TabIndex = 28;
             this.uniqueLabel.Text = "Unique ";
             // 
-            // uniquePanel
-            // 
-            this.uniquePanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.uniquePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uniquePanel.BackgroundImage")));
-            this.uniquePanel.Location = new System.Drawing.Point(38, 282);
-            this.uniquePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uniquePanel.Name = "uniquePanel";
-            this.uniquePanel.Size = new System.Drawing.Size(117, 15);
-            this.uniquePanel.TabIndex = 29;
-            // 
             // uniqueTextBox
             // 
             this.uniqueTextBox.BackColor = System.Drawing.Color.Gainsboro;
@@ -334,16 +305,6 @@
             this.positiveTextBox.Size = new System.Drawing.Size(103, 44);
             this.positiveTextBox.TabIndex = 30;
             this.positiveTextBox.TextChanged += new System.EventHandler(this.positiveTextBox_TextChanged);
-            // 
-            // positivePanel
-            // 
-            this.positivePanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.positivePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("positivePanel.BackgroundImage")));
-            this.positivePanel.Location = new System.Drawing.Point(168, 283);
-            this.positivePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.positivePanel.Name = "positivePanel";
-            this.positivePanel.Size = new System.Drawing.Size(105, 15);
-            this.positivePanel.TabIndex = 29;
             // 
             // positiveLabel
             // 
@@ -371,16 +332,6 @@
             this.negativeTextBox.TabIndex = 30;
             this.negativeTextBox.TextChanged += new System.EventHandler(this.negativeTextBox_TextChanged);
             // 
-            // negativePanel
-            // 
-            this.negativePanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.negativePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("negativePanel.BackgroundImage")));
-            this.negativePanel.Location = new System.Drawing.Point(285, 283);
-            this.negativePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.negativePanel.Name = "negativePanel";
-            this.negativePanel.Size = new System.Drawing.Size(128, 15);
-            this.negativePanel.TabIndex = 29;
-            // 
             // negativeLabel
             // 
             this.negativeLabel.AutoSize = true;
@@ -406,16 +357,6 @@
             this.equivocalTextBox.Size = new System.Drawing.Size(118, 44);
             this.equivocalTextBox.TabIndex = 30;
             this.equivocalTextBox.TextChanged += new System.EventHandler(this.equivocalTextBox_TextChanged);
-            // 
-            // equivocalPanel
-            // 
-            this.equivocalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.equivocalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equivocalPanel.BackgroundImage")));
-            this.equivocalPanel.Location = new System.Drawing.Point(424, 282);
-            this.equivocalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.equivocalPanel.Name = "equivocalPanel";
-            this.equivocalPanel.Size = new System.Drawing.Size(120, 15);
-            this.equivocalPanel.TabIndex = 29;
             // 
             // equivocalLabel
             // 
@@ -443,16 +384,6 @@
             this.invalidTextBox.TabIndex = 30;
             this.invalidTextBox.TextChanged += new System.EventHandler(this.invalidTextBox_TextChanged);
             // 
-            // invalidPanel
-            // 
-            this.invalidPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.invalidPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("invalidPanel.BackgroundImage")));
-            this.invalidPanel.Location = new System.Drawing.Point(556, 282);
-            this.invalidPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invalidPanel.Name = "invalidPanel";
-            this.invalidPanel.Size = new System.Drawing.Size(96, 15);
-            this.invalidPanel.TabIndex = 29;
-            // 
             // invalidLabel
             // 
             this.invalidLabel.AutoSize = true;
@@ -479,16 +410,6 @@
             this.totalTextBox.TabIndex = 30;
             this.totalTextBox.TextChanged += new System.EventHandler(this.totalTextBox_TextChanged);
             // 
-            // totalPanel
-            // 
-            this.totalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.totalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("totalPanel.BackgroundImage")));
-            this.totalPanel.Location = new System.Drawing.Point(38, 429);
-            this.totalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.totalPanel.Name = "totalPanel";
-            this.totalPanel.Size = new System.Drawing.Size(274, 15);
-            this.totalPanel.TabIndex = 29;
-            // 
             // totalLabel
             // 
             this.totalLabel.AutoSize = true;
@@ -514,16 +435,6 @@
             this.remainingTextBox.Size = new System.Drawing.Size(320, 44);
             this.remainingTextBox.TabIndex = 30;
             this.remainingTextBox.TextChanged += new System.EventHandler(this.remainingTextBox_TextChanged);
-            // 
-            // remainingPanel
-            // 
-            this.remainingPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.remainingPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("remainingPanel.BackgroundImage")));
-            this.remainingPanel.Location = new System.Drawing.Point(332, 429);
-            this.remainingPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.remainingPanel.Name = "remainingPanel";
-            this.remainingPanel.Size = new System.Drawing.Size(322, 15);
-            this.remainingPanel.TabIndex = 29;
             // 
             // remainingLabel
             // 
@@ -561,36 +472,6 @@
             this.label12.Size = new System.Drawing.Size(119, 37);
             this.label12.TabIndex = 25;
             this.label12.Text = "Hospital";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(44, 157);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(442, 15);
-            this.panel11.TabIndex = 26;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.DimGray;
-            this.panel12.Location = new System.Drawing.Point(0, -26);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(710, 15);
-            this.panel12.TabIndex = 11;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(2314, 886);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(196, 15);
-            this.panel13.TabIndex = 29;
             // 
             // label13
             // 
@@ -633,26 +514,6 @@
             this.dateLabel.TabIndex = 25;
             this.dateLabel.Text = "Date";
             // 
-            // datePanel
-            // 
-            this.datePanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.datePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("datePanel.BackgroundImage")));
-            this.datePanel.Controls.Add(this.panel15);
-            this.datePanel.Location = new System.Drawing.Point(50, 278);
-            this.datePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.datePanel.Name = "datePanel";
-            this.datePanel.Size = new System.Drawing.Size(435, 15);
-            this.datePanel.TabIndex = 26;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.DimGray;
-            this.panel15.Location = new System.Drawing.Point(0, -26);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(710, 15);
-            this.panel15.TabIndex = 11;
-            // 
             // dailyTestChart
             // 
             this.dailyTestChart.BackColor = System.Drawing.Color.SlateGray;
@@ -660,7 +521,7 @@
             this.dailyTestChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.dailyTestChart.Legends.Add(legend1);
-            this.dailyTestChart.Location = new System.Drawing.Point(126, 598);
+            this.dailyTestChart.Location = new System.Drawing.Point(140, 992);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -736,20 +597,6 @@
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // extend2
-            // 
-            this.extend2.BackColor = System.Drawing.Color.Transparent;
-            this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(15, 65);
-            this.extend2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(57, 49);
-            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend2.TabIndex = 54;
-            this.extend2.TabStop = false;
-            this.extend2.Click += new System.EventHandler(this.extend2_Click_1);
             // 
             // panel16
             // 
@@ -870,20 +717,6 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
-            // extend1
-            // 
-            this.extend1.BackColor = System.Drawing.Color.Transparent;
-            this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(15, 65);
-            this.extend1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(57, 49);
-            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.extend1.TabIndex = 56;
-            this.extend1.TabStop = false;
-            this.extend1.Click += new System.EventHandler(this.extend1_Click_1);
-            // 
             // dailyTestLabel
             // 
             this.dailyTestLabel.AutoSize = true;
@@ -931,33 +764,95 @@
             this.cumulativePanel.TabIndex = 58;
             this.cumulativePanel.Visible = false;
             // 
-            // closeAdd
+            // equivocalPanel
             // 
-            this.closeAdd.BackColor = System.Drawing.Color.Transparent;
-            this.closeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeAdd.Image = global::PBL.Properties.Resources.more;
-            this.closeAdd.Location = new System.Drawing.Point(8, 394);
-            this.closeAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.closeAdd.Name = "closeAdd";
-            this.closeAdd.Size = new System.Drawing.Size(64, 65);
-            this.closeAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.closeAdd.TabIndex = 59;
-            this.closeAdd.TabStop = false;
-            this.closeAdd.Click += new System.EventHandler(this.closeAdd_Click);
+            this.equivocalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.equivocalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equivocalPanel.BackgroundImage")));
+            this.equivocalPanel.Location = new System.Drawing.Point(424, 282);
+            this.equivocalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.equivocalPanel.Name = "equivocalPanel";
+            this.equivocalPanel.Size = new System.Drawing.Size(120, 15);
+            this.equivocalPanel.TabIndex = 29;
             // 
-            // openAdd
+            // invalidPanel
             // 
-            this.openAdd.BackColor = System.Drawing.Color.Transparent;
-            this.openAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openAdd.Image = global::PBL.Properties.Resources.more;
-            this.openAdd.Location = new System.Drawing.Point(8, 394);
-            this.openAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.openAdd.Name = "openAdd";
-            this.openAdd.Size = new System.Drawing.Size(64, 65);
-            this.openAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.openAdd.TabIndex = 60;
-            this.openAdd.TabStop = false;
-            this.openAdd.Click += new System.EventHandler(this.openAdd_Click);
+            this.invalidPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.invalidPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("invalidPanel.BackgroundImage")));
+            this.invalidPanel.Location = new System.Drawing.Point(556, 282);
+            this.invalidPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invalidPanel.Name = "invalidPanel";
+            this.invalidPanel.Size = new System.Drawing.Size(96, 15);
+            this.invalidPanel.TabIndex = 29;
+            // 
+            // negativePanel
+            // 
+            this.negativePanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.negativePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("negativePanel.BackgroundImage")));
+            this.negativePanel.Location = new System.Drawing.Point(285, 283);
+            this.negativePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.negativePanel.Name = "negativePanel";
+            this.negativePanel.Size = new System.Drawing.Size(128, 15);
+            this.negativePanel.TabIndex = 29;
+            // 
+            // totalPanel
+            // 
+            this.totalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.totalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("totalPanel.BackgroundImage")));
+            this.totalPanel.Location = new System.Drawing.Point(38, 429);
+            this.totalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.totalPanel.Name = "totalPanel";
+            this.totalPanel.Size = new System.Drawing.Size(274, 15);
+            this.totalPanel.TabIndex = 29;
+            // 
+            // positivePanel
+            // 
+            this.positivePanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.positivePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("positivePanel.BackgroundImage")));
+            this.positivePanel.Location = new System.Drawing.Point(168, 283);
+            this.positivePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.positivePanel.Name = "positivePanel";
+            this.positivePanel.Size = new System.Drawing.Size(105, 15);
+            this.positivePanel.TabIndex = 29;
+            // 
+            // hospitalPanel
+            // 
+            this.hospitalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.hospitalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hospitalPanel.BackgroundImage")));
+            this.hospitalPanel.Controls.Add(this.panel8);
+            this.hospitalPanel.Location = new System.Drawing.Point(39, 137);
+            this.hospitalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.hospitalPanel.Name = "hospitalPanel";
+            this.hospitalPanel.Size = new System.Drawing.Size(614, 15);
+            this.hospitalPanel.TabIndex = 26;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DimGray;
+            this.panel8.Location = new System.Drawing.Point(0, -26);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(710, 15);
+            this.panel8.TabIndex = 11;
+            // 
+            // remainingPanel
+            // 
+            this.remainingPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.remainingPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("remainingPanel.BackgroundImage")));
+            this.remainingPanel.Location = new System.Drawing.Point(332, 429);
+            this.remainingPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.remainingPanel.Name = "remainingPanel";
+            this.remainingPanel.Size = new System.Drawing.Size(322, 15);
+            this.remainingPanel.TabIndex = 29;
+            // 
+            // uniquePanel
+            // 
+            this.uniquePanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.uniquePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uniquePanel.BackgroundImage")));
+            this.uniquePanel.Location = new System.Drawing.Point(38, 282);
+            this.uniquePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uniquePanel.Name = "uniquePanel";
+            this.uniquePanel.Size = new System.Drawing.Size(117, 15);
+            this.uniquePanel.TabIndex = 29;
             // 
             // conductedLabel
             // 
@@ -971,16 +866,6 @@
             this.conductedLabel.Size = new System.Drawing.Size(208, 37);
             this.conductedLabel.TabIndex = 61;
             this.conductedLabel.Text = "Test Conducted";
-            // 
-            // conductedPanel
-            // 
-            this.conductedPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.conductedPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("conductedPanel.BackgroundImage")));
-            this.conductedPanel.Location = new System.Drawing.Point(46, 431);
-            this.conductedPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.conductedPanel.Name = "conductedPanel";
-            this.conductedPanel.Size = new System.Drawing.Size(438, 15);
-            this.conductedPanel.TabIndex = 62;
             // 
             // conductedTextBox
             // 
@@ -1025,19 +910,55 @@
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
             // 
-            // openTest
+            // conductedPanel
             // 
-            this.openTest.BackColor = System.Drawing.Color.Transparent;
-            this.openTest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openTest.Image = global::PBL.Properties.Resources.more;
-            this.openTest.Location = new System.Drawing.Point(1292, 466);
-            this.openTest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.openTest.Name = "openTest";
-            this.openTest.Size = new System.Drawing.Size(64, 65);
-            this.openTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.openTest.TabIndex = 66;
-            this.openTest.TabStop = false;
-            this.openTest.Click += new System.EventHandler(this.openTest_Click);
+            this.conductedPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.conductedPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("conductedPanel.BackgroundImage")));
+            this.conductedPanel.Location = new System.Drawing.Point(46, 431);
+            this.conductedPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.conductedPanel.Name = "conductedPanel";
+            this.conductedPanel.Size = new System.Drawing.Size(438, 15);
+            this.conductedPanel.TabIndex = 62;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Location = new System.Drawing.Point(44, 157);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(442, 15);
+            this.panel11.TabIndex = 26;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.DimGray;
+            this.panel12.Location = new System.Drawing.Point(0, -26);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(710, 15);
+            this.panel12.TabIndex = 11;
+            // 
+            // datePanel
+            // 
+            this.datePanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.datePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("datePanel.BackgroundImage")));
+            this.datePanel.Controls.Add(this.panel15);
+            this.datePanel.Location = new System.Drawing.Point(50, 278);
+            this.datePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.datePanel.Name = "datePanel";
+            this.datePanel.Size = new System.Drawing.Size(435, 15);
+            this.datePanel.TabIndex = 26;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.DimGray;
+            this.panel15.Location = new System.Drawing.Point(0, -26);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(710, 15);
+            this.panel15.TabIndex = 11;
             // 
             // closeTest
             // 
@@ -1053,6 +974,99 @@
             this.closeTest.TabStop = false;
             this.closeTest.Click += new System.EventHandler(this.closeTest_Click);
             // 
+            // closeAdd
+            // 
+            this.closeAdd.BackColor = System.Drawing.Color.Transparent;
+            this.closeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeAdd.Image = global::PBL.Properties.Resources.more;
+            this.closeAdd.Location = new System.Drawing.Point(8, 394);
+            this.closeAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.closeAdd.Name = "closeAdd";
+            this.closeAdd.Size = new System.Drawing.Size(64, 65);
+            this.closeAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closeAdd.TabIndex = 59;
+            this.closeAdd.TabStop = false;
+            this.closeAdd.Click += new System.EventHandler(this.closeAdd_Click);
+            // 
+            // extend2
+            // 
+            this.extend2.BackColor = System.Drawing.Color.Transparent;
+            this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.extend2.Image = global::PBL.Properties.Resources._interface;
+            this.extend2.Location = new System.Drawing.Point(15, 65);
+            this.extend2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.extend2.Name = "extend2";
+            this.extend2.Size = new System.Drawing.Size(57, 49);
+            this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend2.TabIndex = 54;
+            this.extend2.TabStop = false;
+            this.extend2.Click += new System.EventHandler(this.extend2_Click_1);
+            // 
+            // extend1
+            // 
+            this.extend1.BackColor = System.Drawing.Color.Transparent;
+            this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.extend1.Image = global::PBL.Properties.Resources._interface;
+            this.extend1.Location = new System.Drawing.Point(15, 65);
+            this.extend1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.extend1.Name = "extend1";
+            this.extend1.Size = new System.Drawing.Size(57, 49);
+            this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extend1.TabIndex = 56;
+            this.extend1.TabStop = false;
+            this.extend1.Click += new System.EventHandler(this.extend1_Click_1);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.Location = new System.Drawing.Point(2314, 886);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(196, 15);
+            this.panel13.TabIndex = 29;
+            // 
+            // openAdd
+            // 
+            this.openAdd.BackColor = System.Drawing.Color.Transparent;
+            this.openAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openAdd.Image = global::PBL.Properties.Resources.more;
+            this.openAdd.Location = new System.Drawing.Point(8, 394);
+            this.openAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.openAdd.Name = "openAdd";
+            this.openAdd.Size = new System.Drawing.Size(64, 65);
+            this.openAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.openAdd.TabIndex = 60;
+            this.openAdd.TabStop = false;
+            this.openAdd.Click += new System.EventHandler(this.openAdd_Click);
+            // 
+            // openTest
+            // 
+            this.openTest.BackColor = System.Drawing.Color.Transparent;
+            this.openTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openTest.Image = global::PBL.Properties.Resources.more;
+            this.openTest.Location = new System.Drawing.Point(1292, 466);
+            this.openTest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.openTest.Name = "openTest";
+            this.openTest.Size = new System.Drawing.Size(64, 65);
+            this.openTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.openTest.TabIndex = 66;
+            this.openTest.TabStop = false;
+            this.openTest.Click += new System.EventHandler(this.openTest_Click);
+            // 
+            // saveButtonTest
+            // 
+            this.saveButtonTest.BackColor = System.Drawing.Color.DimGray;
+            this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveButtonTest.Location = new System.Drawing.Point(705, 791);
+            this.saveButtonTest.Name = "saveButtonTest";
+            this.saveButtonTest.Size = new System.Drawing.Size(116, 58);
+            this.saveButtonTest.TabIndex = 68;
+            this.saveButtonTest.Text = "Save";
+            this.saveButtonTest.UseVisualStyleBackColor = false;
+            // 
             // Tests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1060,6 +1074,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1935, 1106);
+            this.Controls.Add(this.saveButtonTest);
             this.Controls.Add(this.closeTest);
             this.Controls.Add(this.testPanel);
             this.Controls.Add(this.closeAdd);
@@ -1074,9 +1089,9 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.openAdd);
             this.Controls.Add(this.openTest);
+            this.Controls.Add(this.panel16);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1084,31 +1099,31 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tests";
             this.Load += new System.EventHandler(this.Tests_Load);
-            this.hospitalPanel.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.datePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).EndInit();
             this.topPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.casess)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
             this.cumulativePanel.ResumeLayout(false);
             this.cumulativePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeAdd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.openAdd)).EndInit();
+            this.hospitalPanel.ResumeLayout(false);
             this.testPanel.ResumeLayout(false);
             this.testPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.openTest)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.datePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.closeTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openTest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1188,5 +1203,6 @@
         private System.Windows.Forms.Panel testPanel;
         private System.Windows.Forms.PictureBox openTest;
         private System.Windows.Forms.PictureBox closeTest;
+        private System.Windows.Forms.Button saveButtonTest;
     }
 }

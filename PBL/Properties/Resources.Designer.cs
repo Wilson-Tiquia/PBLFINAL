@@ -73,9 +73,29 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _72969fd2668e33d52f215a3573b485a0 {
+            get {
+                object obj = ResourceManager.GetObject("72969fd2668e33d52f215a3573b485a0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _74d89a98bc607c5ddb9ac8addf359f21 {
             get {
                 object obj = ResourceManager.GetObject("74d89a98bc607c5ddb9ac8addf359f21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7d235144ec8b8059c6e0b23c23425222 {
+            get {
+                object obj = ResourceManager.GetObject("7d235144ec8b8059c6e0b23c23425222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +223,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e8087638e98d19ee1da7934ffa9f6591 {
+            get {
+                object obj = ResourceManager.GetObject("e8087638e98d19ee1da7934ffa9f6591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap equipments {
             get {
                 object obj = ResourceManager.GetObject("equipments", resourceCulture);
@@ -253,6 +283,26 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap luzon {
+            get {
+                object obj = ResourceManager.GetObject("luzon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap luzon_map {
+            get {
+                object obj = ResourceManager.GetObject("luzon map", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap map {
             get {
                 object obj = ResourceManager.GetObject("map", resourceCulture);
@@ -266,6 +316,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap medical {
             get {
                 object obj = ResourceManager.GetObject("medical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mindanao_map {
+            get {
+                object obj = ResourceManager.GetObject("mindanao map", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +463,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap splashscreen {
+            get {
+                object obj = ResourceManager.GetObject("splashscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tests {
             get {
                 object obj = ResourceManager.GetObject("tests", resourceCulture);
@@ -506,6 +576,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap Untitled2_20200523023156 {
             get {
                 object obj = ResourceManager.GetObject("Untitled2_20200523023156", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visayas_map {
+            get {
+                object obj = ResourceManager.GetObject("visayas map", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
