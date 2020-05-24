@@ -633,6 +633,7 @@ namespace PBL
             provinceMapComboBox.Text = string.Empty;
             provinceMapComboBox.SelectedIndex = -1;
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
         }
 
       
