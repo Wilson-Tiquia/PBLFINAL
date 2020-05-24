@@ -121,7 +121,7 @@ namespace PBL
 
         private void map_Click_1(object sender, EventArgs e)
         {
-            Form1 mapForm = new Form1();
+            Mapa_ni_Tiquia mapForm = new Mapa_ni_Tiquia();
             mapForm.Show();
         }
 

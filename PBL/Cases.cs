@@ -57,7 +57,7 @@ namespace PBL
 
         private void map_Click(object sender, EventArgs e)
         {
-            Form1 mapForm = new Form1();
+            Mapa_ni_Tiquia mapForm = new Mapa_ni_Tiquia();
             mapForm.Show();
         }
 
