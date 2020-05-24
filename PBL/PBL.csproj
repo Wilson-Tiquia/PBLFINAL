@@ -388,5 +388,11 @@
   <ItemGroup>
     <None Include="Resources\mindanao map.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7d235144ec8b8059c6e0b23c23425222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e8087638e98d19ee1da7934ffa9f6591.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

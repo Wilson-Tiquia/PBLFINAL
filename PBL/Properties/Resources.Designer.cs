@@ -83,6 +83,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _7d235144ec8b8059c6e0b23c23425222 {
+            get {
+                object obj = ResourceManager.GetObject("7d235144ec8b8059c6e0b23c23425222", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _88e30448229cc6044ca1b29c0f100c0e {
             get {
                 object obj = ResourceManager.GetObject("88e30448229cc6044ca1b29c0f100c0e", resourceCulture);
@@ -196,6 +206,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap ce99f99bd558e1fbd91e364ca6566c602 {
             get {
                 object obj = ResourceManager.GetObject("ce99f99bd558e1fbd91e364ca6566c602", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e8087638e98d19ee1da7934ffa9f6591 {
+            get {
+                object obj = ResourceManager.GetObject("e8087638e98d19ee1da7934ffa9f6591", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

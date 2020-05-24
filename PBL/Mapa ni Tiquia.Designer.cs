@@ -49,17 +49,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.range501To1k = new System.Windows.Forms.Label();
             this.range0To500 = new System.Windows.Forms.Label();
+            this.case1 = new System.Windows.Forms.PictureBox();
+            this.case2 = new System.Windows.Forms.PictureBox();
+            this.case3 = new System.Windows.Forms.PictureBox();
+            this.case4 = new System.Windows.Forms.PictureBox();
+            this.provincePicture = new System.Windows.Forms.PictureBox();
             this.currentIsland = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.totalCases = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.minimize = new System.Windows.Forms.PictureBox();
+            this.maximize = new System.Windows.Forms.PictureBox();
+            this.hide = new System.Windows.Forms.PictureBox();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.map = new System.Windows.Forms.PictureBox();
+            this.casess = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.mindanao = new System.Windows.Forms.PictureBox();
+            this.visayas = new System.Windows.Forms.PictureBox();
+            this.luzonButton = new System.Windows.Forms.PictureBox();
             this.casesPanel = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.province1Panel = new System.Windows.Forms.Panel();
@@ -74,31 +91,31 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.extend2 = new System.Windows.Forms.PictureBox();
             this.extend1 = new System.Windows.Forms.PictureBox();
-            this.minimize = new System.Windows.Forms.PictureBox();
-            this.maximize = new System.Windows.Forms.PictureBox();
-            this.hide = new System.Windows.Forms.PictureBox();
-            this.exit = new System.Windows.Forms.PictureBox();
-            this.case1 = new System.Windows.Forms.PictureBox();
-            this.case2 = new System.Windows.Forms.PictureBox();
-            this.case3 = new System.Windows.Forms.PictureBox();
-            this.case4 = new System.Windows.Forms.PictureBox();
-            this.provincePicture = new System.Windows.Forms.PictureBox();
-            this.map = new System.Windows.Forms.PictureBox();
-            this.casess = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.mindanao = new System.Windows.Forms.PictureBox();
-            this.visayas = new System.Windows.Forms.PictureBox();
-            this.luzonButton = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.mapShadow = new System.Windows.Forms.PictureBox();
             this.panelOfImage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.case1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).BeginInit();
             this.panel2.SuspendLayout();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casess)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mindanao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visayas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luzonButton)).BeginInit();
             this.casesPanel.SuspendLayout();
             this.province1Panel.SuspendLayout();
             this.region1Panel.SuspendLayout();
@@ -107,23 +124,6 @@
             this.regionPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casess)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mindanao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visayas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.luzonButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).BeginInit();
@@ -134,7 +134,7 @@
             this.islandLabel.AutoSize = true;
             this.islandLabel.BackColor = System.Drawing.Color.Transparent;
             this.islandLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.islandLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.islandLabel.ForeColor = System.Drawing.SystemColors.GrayText;
             this.islandLabel.Location = new System.Drawing.Point(72, 132);
             this.islandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.islandLabel.Name = "islandLabel";
@@ -147,7 +147,7 @@
             this.regionLabel.AutoSize = true;
             this.regionLabel.BackColor = System.Drawing.Color.Transparent;
             this.regionLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regionLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.regionLabel.ForeColor = System.Drawing.SystemColors.GrayText;
             this.regionLabel.Location = new System.Drawing.Point(72, 253);
             this.regionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.regionLabel.Name = "regionLabel";
@@ -205,7 +205,7 @@
             this.regionComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionComboBox.ForeColor = System.Drawing.Color.Gray;
             this.regionComboBox.FormattingEnabled = true;
-            this.regionComboBox.Location = new System.Drawing.Point(78, 291);
+            this.regionComboBox.Location = new System.Drawing.Point(78, 293);
             this.regionComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.regionComboBox.Name = "regionComboBox";
             this.regionComboBox.Size = new System.Drawing.Size(399, 42);
@@ -244,7 +244,7 @@
             this.regionMap.AutoSize = true;
             this.regionMap.BackColor = System.Drawing.Color.Transparent;
             this.regionMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regionMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.regionMap.ForeColor = System.Drawing.SystemColors.GrayText;
             this.regionMap.Location = new System.Drawing.Point(71, 168);
             this.regionMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.regionMap.Name = "regionMap";
@@ -257,7 +257,7 @@
             this.provinceMap.AutoSize = true;
             this.provinceMap.BackColor = System.Drawing.Color.Transparent;
             this.provinceMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.provinceMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.provinceMap.ForeColor = System.Drawing.SystemColors.GrayText;
             this.provinceMap.Location = new System.Drawing.Point(75, 293);
             this.provinceMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.provinceMap.Name = "provinceMap";
@@ -419,12 +419,67 @@
             this.range0To500.Text = "0-500";
             this.range0To500.Click += new System.EventHandler(this.range0To500_Click);
             // 
+            // case1
+            // 
+            this.case1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case1.BackgroundImage")));
+            this.case1.Location = new System.Drawing.Point(20, 153);
+            this.case1.Margin = new System.Windows.Forms.Padding(2);
+            this.case1.Name = "case1";
+            this.case1.Size = new System.Drawing.Size(33, 23);
+            this.case1.TabIndex = 2;
+            this.case1.TabStop = false;
+            this.case1.Click += new System.EventHandler(this.case1_Click);
+            // 
+            // case2
+            // 
+            this.case2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case2.BackgroundImage")));
+            this.case2.Location = new System.Drawing.Point(81, 153);
+            this.case2.Margin = new System.Windows.Forms.Padding(2);
+            this.case2.Name = "case2";
+            this.case2.Size = new System.Drawing.Size(33, 23);
+            this.case2.TabIndex = 2;
+            this.case2.TabStop = false;
+            this.case2.Click += new System.EventHandler(this.case2_Click);
+            // 
+            // case3
+            // 
+            this.case3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case3.BackgroundImage")));
+            this.case3.Location = new System.Drawing.Point(147, 153);
+            this.case3.Margin = new System.Windows.Forms.Padding(2);
+            this.case3.Name = "case3";
+            this.case3.Size = new System.Drawing.Size(33, 23);
+            this.case3.TabIndex = 2;
+            this.case3.TabStop = false;
+            this.case3.Click += new System.EventHandler(this.case3_Click);
+            // 
+            // case4
+            // 
+            this.case4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case4.BackgroundImage")));
+            this.case4.Location = new System.Drawing.Point(216, 153);
+            this.case4.Margin = new System.Windows.Forms.Padding(2);
+            this.case4.Name = "case4";
+            this.case4.Size = new System.Drawing.Size(33, 23);
+            this.case4.TabIndex = 2;
+            this.case4.TabStop = false;
+            this.case4.Click += new System.EventHandler(this.case4_Click);
+            // 
+            // provincePicture
+            // 
+            this.provincePicture.BackColor = System.Drawing.Color.SlateGray;
+            this.provincePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.provincePicture.Location = new System.Drawing.Point(49, 12);
+            this.provincePicture.Margin = new System.Windows.Forms.Padding(2);
+            this.provincePicture.Name = "provincePicture";
+            this.provincePicture.Size = new System.Drawing.Size(160, 120);
+            this.provincePicture.TabIndex = 0;
+            this.provincePicture.TabStop = false;
+            // 
             // currentIsland
             // 
             this.currentIsland.AutoSize = true;
             this.currentIsland.BackColor = System.Drawing.Color.Transparent;
             this.currentIsland.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentIsland.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.currentIsland.ForeColor = System.Drawing.SystemColors.GrayText;
             this.currentIsland.Location = new System.Drawing.Point(147, 69);
             this.currentIsland.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentIsland.Name = "currentIsland";
@@ -485,6 +540,53 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1317, 33);
             this.topPanel.TabIndex = 53;
+            // 
+            // minimize
+            // 
+            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
+            this.minimize.Location = new System.Drawing.Point(43, 3);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(23, 23);
+            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minimize.TabIndex = 2;
+            this.minimize.TabStop = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
+            // maximize
+            // 
+            this.maximize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
+            this.maximize.Location = new System.Drawing.Point(43, 3);
+            this.maximize.Name = "maximize";
+            this.maximize.Size = new System.Drawing.Size(23, 23);
+            this.maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.maximize.TabIndex = 2;
+            this.maximize.TabStop = false;
+            this.maximize.Click += new System.EventHandler(this.maximize_Click);
+            // 
+            // hide
+            // 
+            this.hide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hide.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
+            this.hide.Location = new System.Drawing.Point(73, 3);
+            this.hide.Name = "hide";
+            this.hide.Size = new System.Drawing.Size(23, 23);
+            this.hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hide.TabIndex = 2;
+            this.hide.TabStop = false;
+            this.hide.Click += new System.EventHandler(this.hide_Click);
+            // 
+            // exit
+            // 
+            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
+            this.exit.Location = new System.Drawing.Point(15, 3);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(23, 23);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exit.TabIndex = 2;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // panel16
             // 
@@ -547,6 +649,54 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "equipments";
             // 
+            // map
+            // 
+            this.map.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.map.Image = global::PBL.Properties.Resources.signs;
+            this.map.Location = new System.Drawing.Point(8, 49);
+            this.map.Name = "map";
+            this.map.Size = new System.Drawing.Size(55, 50);
+            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.map.TabIndex = 3;
+            this.map.TabStop = false;
+            this.map.Click += new System.EventHandler(this.map_Click);
+            // 
+            // casess
+            // 
+            this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
+            this.casess.Location = new System.Drawing.Point(93, 49);
+            this.casess.Name = "casess";
+            this.casess.Size = new System.Drawing.Size(55, 50);
+            this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.casess.TabIndex = 3;
+            this.casess.TabStop = false;
+            this.casess.Click += new System.EventHandler(this.casess_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
+            this.pictureBox2.Location = new System.Drawing.Point(275, 49);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::PBL.Properties.Resources.tools_and_utensils;
+            this.pictureBox3.Location = new System.Drawing.Point(182, 49);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(194)))), ((int)(((byte)(205)))));
@@ -557,6 +707,57 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(593, 558);
             this.panel5.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.mindanao);
+            this.panel1.Controls.Add(this.visayas);
+            this.panel1.Controls.Add(this.luzonButton);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(589, 555);
+            this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // mindanao
+            // 
+            this.mindanao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mindanao.Image = global::PBL.Properties.Resources.mindanao_map;
+            this.mindanao.Location = new System.Drawing.Point(174, 325);
+            this.mindanao.Name = "mindanao";
+            this.mindanao.Size = new System.Drawing.Size(407, 232);
+            this.mindanao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mindanao.TabIndex = 15;
+            this.mindanao.TabStop = false;
+            this.mindanao.Click += new System.EventHandler(this.mindanao_Click);
+            // 
+            // visayas
+            // 
+            this.visayas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.visayas.Image = global::PBL.Properties.Resources.visayas_map;
+            this.visayas.Location = new System.Drawing.Point(7, 219);
+            this.visayas.Name = "visayas";
+            this.visayas.Size = new System.Drawing.Size(542, 225);
+            this.visayas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.visayas.TabIndex = 14;
+            this.visayas.TabStop = false;
+            this.visayas.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // luzonButton
+            // 
+            this.luzonButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.luzonButton.Image = global::PBL.Properties.Resources.luzon_map;
+            this.luzonButton.Location = new System.Drawing.Point(159, -3);
+            this.luzonButton.Name = "luzonButton";
+            this.luzonButton.Size = new System.Drawing.Size(321, 299);
+            this.luzonButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.luzonButton.TabIndex = 13;
+            this.luzonButton.TabStop = false;
+            this.luzonButton.Click += new System.EventHandler(this.luzonButton_Click);
             // 
             // casesPanel
             // 
@@ -694,209 +895,9 @@
             this.extend1.TabStop = false;
             this.extend1.Click += new System.EventHandler(this.extend1_Click);
             // 
-            // minimize
-            // 
-            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.minimize.Location = new System.Drawing.Point(43, 3);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(23, 23);
-            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minimize.TabIndex = 2;
-            this.minimize.TabStop = false;
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
-            // maximize
-            // 
-            this.maximize.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.maximize.Location = new System.Drawing.Point(43, 3);
-            this.maximize.Name = "maximize";
-            this.maximize.Size = new System.Drawing.Size(23, 23);
-            this.maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.maximize.TabIndex = 2;
-            this.maximize.TabStop = false;
-            this.maximize.Click += new System.EventHandler(this.maximize_Click);
-            // 
-            // hide
-            // 
-            this.hide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hide.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
-            this.hide.Location = new System.Drawing.Point(73, 3);
-            this.hide.Name = "hide";
-            this.hide.Size = new System.Drawing.Size(23, 23);
-            this.hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.hide.TabIndex = 2;
-            this.hide.TabStop = false;
-            this.hide.Click += new System.EventHandler(this.hide_Click);
-            // 
-            // exit
-            // 
-            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
-            this.exit.Location = new System.Drawing.Point(15, 3);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(23, 23);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.exit.TabIndex = 2;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // case1
-            // 
-            this.case1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case1.BackgroundImage")));
-            this.case1.Location = new System.Drawing.Point(20, 153);
-            this.case1.Margin = new System.Windows.Forms.Padding(2);
-            this.case1.Name = "case1";
-            this.case1.Size = new System.Drawing.Size(33, 23);
-            this.case1.TabIndex = 2;
-            this.case1.TabStop = false;
-            this.case1.Click += new System.EventHandler(this.case1_Click);
-            // 
-            // case2
-            // 
-            this.case2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case2.BackgroundImage")));
-            this.case2.Location = new System.Drawing.Point(81, 153);
-            this.case2.Margin = new System.Windows.Forms.Padding(2);
-            this.case2.Name = "case2";
-            this.case2.Size = new System.Drawing.Size(33, 23);
-            this.case2.TabIndex = 2;
-            this.case2.TabStop = false;
-            this.case2.Click += new System.EventHandler(this.case2_Click);
-            // 
-            // case3
-            // 
-            this.case3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case3.BackgroundImage")));
-            this.case3.Location = new System.Drawing.Point(147, 153);
-            this.case3.Margin = new System.Windows.Forms.Padding(2);
-            this.case3.Name = "case3";
-            this.case3.Size = new System.Drawing.Size(33, 23);
-            this.case3.TabIndex = 2;
-            this.case3.TabStop = false;
-            this.case3.Click += new System.EventHandler(this.case3_Click);
-            // 
-            // case4
-            // 
-            this.case4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("case4.BackgroundImage")));
-            this.case4.Location = new System.Drawing.Point(216, 153);
-            this.case4.Margin = new System.Windows.Forms.Padding(2);
-            this.case4.Name = "case4";
-            this.case4.Size = new System.Drawing.Size(33, 23);
-            this.case4.TabIndex = 2;
-            this.case4.TabStop = false;
-            this.case4.Click += new System.EventHandler(this.case4_Click);
-            // 
-            // provincePicture
-            // 
-            this.provincePicture.BackColor = System.Drawing.Color.SlateGray;
-            this.provincePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.provincePicture.Location = new System.Drawing.Point(49, 12);
-            this.provincePicture.Margin = new System.Windows.Forms.Padding(2);
-            this.provincePicture.Name = "provincePicture";
-            this.provincePicture.Size = new System.Drawing.Size(160, 120);
-            this.provincePicture.TabIndex = 0;
-            this.provincePicture.TabStop = false;
-            // 
-            // map
-            // 
-            this.map.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.map.Image = global::PBL.Properties.Resources.signs;
-            this.map.Location = new System.Drawing.Point(8, 49);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(55, 50);
-            this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.map.TabIndex = 3;
-            this.map.TabStop = false;
-            this.map.Click += new System.EventHandler(this.map_Click);
-            // 
-            // casess
-            // 
-            this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
-            this.casess.Location = new System.Drawing.Point(93, 49);
-            this.casess.Name = "casess";
-            this.casess.Size = new System.Drawing.Size(55, 50);
-            this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.casess.TabIndex = 3;
-            this.casess.TabStop = false;
-            this.casess.Click += new System.EventHandler(this.casess_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
-            this.pictureBox2.Location = new System.Drawing.Point(275, 49);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.pictureBox3.Location = new System.Drawing.Point(182, 49);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.mindanao);
-            this.panel1.Controls.Add(this.visayas);
-            this.panel1.Controls.Add(this.luzonButton);
-            this.panel1.Location = new System.Drawing.Point(2, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(589, 555);
-            this.panel1.TabIndex = 7;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // mindanao
-            // 
-            this.mindanao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mindanao.Image = global::PBL.Properties.Resources.mindanao_map;
-            this.mindanao.Location = new System.Drawing.Point(174, 325);
-            this.mindanao.Name = "mindanao";
-            this.mindanao.Size = new System.Drawing.Size(407, 232);
-            this.mindanao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mindanao.TabIndex = 15;
-            this.mindanao.TabStop = false;
-            this.mindanao.Click += new System.EventHandler(this.mindanao_Click);
-            // 
-            // visayas
-            // 
-            this.visayas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.visayas.Image = global::PBL.Properties.Resources.visayas_map;
-            this.visayas.Location = new System.Drawing.Point(7, 219);
-            this.visayas.Name = "visayas";
-            this.visayas.Size = new System.Drawing.Size(542, 225);
-            this.visayas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.visayas.TabIndex = 14;
-            this.visayas.TabStop = false;
-            this.visayas.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // luzonButton
-            // 
-            this.luzonButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.luzonButton.Image = global::PBL.Properties.Resources.luzon_map;
-            this.luzonButton.Location = new System.Drawing.Point(159, -3);
-            this.luzonButton.Name = "luzonButton";
-            this.luzonButton.Size = new System.Drawing.Size(321, 299);
-            this.luzonButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.luzonButton.TabIndex = 13;
-            this.luzonButton.TabStop = false;
-            this.luzonButton.Click += new System.EventHandler(this.luzonButton_Click);
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
             this.pictureBox1.Location = new System.Drawing.Point(675, 43);
             this.pictureBox1.Name = "pictureBox1";
@@ -907,6 +908,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
             this.pictureBox4.Location = new System.Drawing.Point(675, 635);
             this.pictureBox4.Name = "pictureBox4";
@@ -917,6 +919,7 @@
             // 
             // mapShadow
             // 
+            this.mapShadow.BackColor = System.Drawing.Color.Transparent;
             this.mapShadow.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
             this.mapShadow.Location = new System.Drawing.Point(59, 444);
             this.mapShadow.Name = "mapShadow";
@@ -931,9 +934,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
+            this.BackgroundImage = global::PBL.Properties.Resources.e8087638e98d19ee1da7934ffa9f6591;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.casesPanel);
             this.Controls.Add(this.province1Panel);
             this.Controls.Add(this.region1Panel);
@@ -961,6 +965,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.mapShadow);
+            this.Controls.Add(this.panel16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mapa_ni_Tiquia";
@@ -969,12 +974,29 @@
             this.Load += new System.EventHandler(this.Mapa_ni_Tiquia_Load);
             this.panelOfImage.ResumeLayout(false);
             this.panelOfImage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.case1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.case4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casess)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mindanao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visayas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luzonButton)).EndInit();
             this.casesPanel.ResumeLayout(false);
             this.province1Panel.ResumeLayout(false);
             this.region1Panel.ResumeLayout(false);
@@ -983,23 +1005,6 @@
             this.regionPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.case4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casess)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.mindanao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visayas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.luzonButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).EndInit();

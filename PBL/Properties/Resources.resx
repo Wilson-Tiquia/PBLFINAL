@@ -232,6 +232,12 @@
   <data name="c3a3db832386897bab824c95ed60461b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c3a3db832386897bab824c95ed60461b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mindanao map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mindanao map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7d235144ec8b8059c6e0b23c23425222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7d235144ec8b8059c6e0b23c23425222.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6d793418e3dc259c738c0b5897e053fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6d793418e3dc259c738c0b5897e053fa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -274,7 +280,7 @@
   <data name="tests in hospitals" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tests in hospitals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mindanao map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mindanao map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e8087638e98d19ee1da7934ffa9f6591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e8087638e98d19ee1da7934ffa9f6591.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
