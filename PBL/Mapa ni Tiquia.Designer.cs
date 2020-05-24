@@ -134,7 +134,7 @@
             this.islandLabel.AutoSize = true;
             this.islandLabel.BackColor = System.Drawing.Color.Transparent;
             this.islandLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.islandLabel.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.islandLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.islandLabel.Location = new System.Drawing.Point(72, 132);
             this.islandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.islandLabel.Name = "islandLabel";
@@ -147,7 +147,7 @@
             this.regionLabel.AutoSize = true;
             this.regionLabel.BackColor = System.Drawing.Color.Transparent;
             this.regionLabel.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regionLabel.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.regionLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.regionLabel.Location = new System.Drawing.Point(72, 253);
             this.regionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.regionLabel.Name = "regionLabel";
@@ -205,7 +205,7 @@
             this.regionComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionComboBox.ForeColor = System.Drawing.Color.Gray;
             this.regionComboBox.FormattingEnabled = true;
-            this.regionComboBox.Location = new System.Drawing.Point(78, 293);
+            this.regionComboBox.Location = new System.Drawing.Point(78, 291);
             this.regionComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.regionComboBox.Name = "regionComboBox";
             this.regionComboBox.Size = new System.Drawing.Size(399, 42);
@@ -244,7 +244,7 @@
             this.regionMap.AutoSize = true;
             this.regionMap.BackColor = System.Drawing.Color.Transparent;
             this.regionMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regionMap.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.regionMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.regionMap.Location = new System.Drawing.Point(71, 168);
             this.regionMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.regionMap.Name = "regionMap";
@@ -257,7 +257,7 @@
             this.provinceMap.AutoSize = true;
             this.provinceMap.BackColor = System.Drawing.Color.Transparent;
             this.provinceMap.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.provinceMap.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.provinceMap.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.provinceMap.Location = new System.Drawing.Point(75, 293);
             this.provinceMap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.provinceMap.Name = "provinceMap";
@@ -479,7 +479,7 @@
             this.currentIsland.AutoSize = true;
             this.currentIsland.BackColor = System.Drawing.Color.Transparent;
             this.currentIsland.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentIsland.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.currentIsland.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.currentIsland.Location = new System.Drawing.Point(147, 69);
             this.currentIsland.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentIsland.Name = "currentIsland";
@@ -934,10 +934,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
-            this.BackgroundImage = global::PBL.Properties.Resources.e8087638e98d19ee1da7934ffa9f6591;
+            this.BackgroundImage = global::PBL.Properties.Resources._72969fd2668e33d52f215a3573b485a0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.casesPanel);
             this.Controls.Add(this.province1Panel);
             this.Controls.Add(this.region1Panel);
@@ -965,7 +966,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.mapShadow);
-            this.Controls.Add(this.panel16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mapa_ni_Tiquia";
