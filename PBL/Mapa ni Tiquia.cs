@@ -57,6 +57,7 @@ namespace PBL
         List<string> provinceAndCase = new List<string>();
         
         string temporary = "";
+        int totalCASE = 0;
         public int totalAddedCase()
         {
             int total = 0;
@@ -81,7 +82,7 @@ namespace PBL
             StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
-               
+                
                 string input = read.ReadLine();
                 string[] splitInput = input.Split(',');
                 string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
@@ -481,10 +482,9 @@ namespace PBL
         {
             hideMap();
             populateIsland();
-            Console.WriteLine(totalAddedCase());
-            totalCases.Text = totalAddedCase().ToString();
-            this.Refresh();
-           
+            totalCASE += totalAddedCase();
+            totalCases.Text = totalCASE.ToString();
+            
            
         }
 
@@ -528,8 +528,10 @@ namespace PBL
             bool mayLamanIslandRegionAtProvince = islandComboBox.Text != string.Empty && regionComboBox.Text != string.Empty && provinceComboBox.Text != string.Empty;
             if (e.KeyCode == Keys.Enter && mayLamanIslandRegionAtProvince)
             {
-               
-                MessageBox.Show("Added user");
+                int a = int.Parse(caseInputTextBox.Text);
+                totalCASE += a;
+                totalCases.Text = totalCASE.ToString();
+                MessageBox.Show("Added Case");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
                 StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
                 addUser.WriteLine();
@@ -543,10 +545,7 @@ namespace PBL
                 islandComboBox.SelectedIndex = -1;
                 regionComboBox.SelectedIndex = -1;
                 provinceComboBox.SelectedIndex = -1;
-                this.Close();
-                Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
-                aForm.Show();
-                
+             
             }
          
         }
@@ -558,12 +557,19 @@ namespace PBL
             string island = currentIsland.Text = "Luzon";
             emptyRegionProvince();
             populateRegions(island);
-            
+            panelOfImage.Visible = false;
+            mapShadow.Visible = false;
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
             hideMap();
+            islandComboBox.SelectedIndex = -1;
+            regionComboBox.SelectedIndex = -1;
+            provinceComboBox.SelectedIndex = -1;
+            caseInputTextBox.Text = string.Empty;
+            islandComboBox.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -573,7 +579,8 @@ namespace PBL
             string island = currentIsland.Text = "Visayas";
             emptyRegionProvince();
             populateRegions(island);
-            //panelOfImage.Visible = false;
+            panelOfImage.Visible = false;
+            mapShadow.Visible = false;
         }
 
         private void regionMapComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -588,6 +595,7 @@ namespace PBL
         private void regionMapComboBox_DropDown(object sender, EventArgs e)
         {
             panelOfImage.Visible = false;
+            mapShadow.Visible = false;
             provinceMapComboBox.SelectedIndex = -1;
             
            
@@ -598,10 +606,12 @@ namespace PBL
             if (regionMapComboBox.Text != string.Empty && provinceMapComboBox.Text != string.Empty)
             {
                 panelOfImage.Visible = true;
+                mapShadow.Visible = true;
                 string province= provinceMapComboBox.GetItemText(provinceMapComboBox.SelectedItem);
                 provinceName.Text = province;
                 int sum = 0;
                 getTotalCase(province, sum);
+                
             }
         }
 
@@ -612,7 +622,8 @@ namespace PBL
             string selectedIsland = currentIsland.Text = "Mindanao";
             emptyRegionProvince();
             populateRegions(selectedIsland);
-            //panelOfImage.Visible = false;
+            panelOfImage.Visible = false;
+            mapShadow.Visible = false;
         }
 
        
