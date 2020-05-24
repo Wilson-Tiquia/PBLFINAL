@@ -177,6 +177,7 @@ namespace PBL
             remainingTextBox.Visible = true;
             openAdd.Visible = false;
             closeAdd.Visible = true;
+            saveButtonTest.Visible = true;
         }
         public void clearEntries()
         {
@@ -222,7 +223,7 @@ namespace PBL
             remainingTextBox.Visible = false;
             openAdd.Visible = true;
             closeAdd.Visible = false;
-            
+            saveButtonTest.Visible = false;
         }
 
         private void openTest_Click(object sender, EventArgs e)
@@ -338,7 +339,7 @@ namespace PBL
         private void Tests_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
+           // WindowState = FormWindowState.Maximized;
             string selectedHospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
             if (selectedHospital == string.Empty)
             {

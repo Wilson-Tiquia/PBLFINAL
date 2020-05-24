@@ -213,7 +213,7 @@
             this.hospitalLabel.BackColor = System.Drawing.Color.Transparent;
             this.hospitalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hospitalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.hospitalLabel.Location = new System.Drawing.Point(25, 20);
+            this.hospitalLabel.Location = new System.Drawing.Point(25, 11);
             this.hospitalLabel.Name = "hospitalLabel";
             this.hospitalLabel.Size = new System.Drawing.Size(78, 25);
             this.hospitalLabel.TabIndex = 25;
@@ -259,7 +259,7 @@
             "SINGAPORE DIAGNOSTICS",
             "UP-PGH MOLECULAR LABORATORY",
             "ZAMBOANGA CITY MEDICAL CENTER GENEXPERT LABORATORY"});
-            this.hospitalComboBox.Location = new System.Drawing.Point(26, 52);
+            this.hospitalComboBox.Location = new System.Drawing.Point(26, 43);
             this.hospitalComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.hospitalComboBox.Name = "hospitalComboBox";
             this.hospitalComboBox.Size = new System.Drawing.Size(409, 33);
@@ -272,7 +272,7 @@
             this.uniqueLabel.BackColor = System.Drawing.Color.Transparent;
             this.uniqueLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uniqueLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.uniqueLabel.Location = new System.Drawing.Point(23, 113);
+            this.uniqueLabel.Location = new System.Drawing.Point(23, 104);
             this.uniqueLabel.Name = "uniqueLabel";
             this.uniqueLabel.Size = new System.Drawing.Size(72, 25);
             this.uniqueLabel.TabIndex = 28;
@@ -283,7 +283,7 @@
             this.uniqueTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.uniqueTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uniqueTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.uniqueTextBox.Location = new System.Drawing.Point(25, 144);
+            this.uniqueTextBox.Location = new System.Drawing.Point(25, 135);
             this.uniqueTextBox.Name = "uniqueTextBox";
             this.uniqueTextBox.Size = new System.Drawing.Size(78, 32);
             this.uniqueTextBox.TabIndex = 30;
@@ -295,7 +295,7 @@
             this.positiveTextBox.Enabled = false;
             this.positiveTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positiveTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.positiveTextBox.Location = new System.Drawing.Point(112, 144);
+            this.positiveTextBox.Location = new System.Drawing.Point(112, 135);
             this.positiveTextBox.Name = "positiveTextBox";
             this.positiveTextBox.Size = new System.Drawing.Size(70, 32);
             this.positiveTextBox.TabIndex = 30;
@@ -307,7 +307,7 @@
             this.positiveLabel.BackColor = System.Drawing.Color.Transparent;
             this.positiveLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positiveLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.positiveLabel.Location = new System.Drawing.Point(110, 114);
+            this.positiveLabel.Location = new System.Drawing.Point(110, 105);
             this.positiveLabel.Name = "positiveLabel";
             this.positiveLabel.Size = new System.Drawing.Size(80, 25);
             this.positiveLabel.TabIndex = 28;
@@ -319,7 +319,7 @@
             this.negativeTextBox.Enabled = false;
             this.negativeTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.negativeTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.negativeTextBox.Location = new System.Drawing.Point(190, 144);
+            this.negativeTextBox.Location = new System.Drawing.Point(190, 135);
             this.negativeTextBox.Name = "negativeTextBox";
             this.negativeTextBox.Size = new System.Drawing.Size(85, 32);
             this.negativeTextBox.TabIndex = 30;
@@ -331,7 +331,7 @@
             this.negativeLabel.BackColor = System.Drawing.Color.Transparent;
             this.negativeLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.negativeLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.negativeLabel.Location = new System.Drawing.Point(188, 114);
+            this.negativeLabel.Location = new System.Drawing.Point(188, 105);
             this.negativeLabel.Name = "negativeLabel";
             this.negativeLabel.Size = new System.Drawing.Size(87, 25);
             this.negativeLabel.TabIndex = 28;
@@ -343,7 +343,7 @@
             this.equivocalTextBox.Enabled = false;
             this.equivocalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equivocalTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.equivocalTextBox.Location = new System.Drawing.Point(283, 144);
+            this.equivocalTextBox.Location = new System.Drawing.Point(283, 135);
             this.equivocalTextBox.Name = "equivocalTextBox";
             this.equivocalTextBox.Size = new System.Drawing.Size(80, 32);
             this.equivocalTextBox.TabIndex = 30;
@@ -355,7 +355,7 @@
             this.equivocalLabel.BackColor = System.Drawing.Color.Transparent;
             this.equivocalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equivocalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.equivocalLabel.Location = new System.Drawing.Point(281, 114);
+            this.equivocalLabel.Location = new System.Drawing.Point(281, 105);
             this.equivocalLabel.Name = "equivocalLabel";
             this.equivocalLabel.Size = new System.Drawing.Size(89, 25);
             this.equivocalLabel.TabIndex = 28;
@@ -367,7 +367,7 @@
             this.invalidTextBox.Enabled = false;
             this.invalidTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.invalidTextBox.Location = new System.Drawing.Point(371, 144);
+            this.invalidTextBox.Location = new System.Drawing.Point(371, 135);
             this.invalidTextBox.Name = "invalidTextBox";
             this.invalidTextBox.Size = new System.Drawing.Size(64, 32);
             this.invalidTextBox.TabIndex = 30;
@@ -379,7 +379,7 @@
             this.invalidLabel.BackColor = System.Drawing.Color.Transparent;
             this.invalidLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.invalidLabel.Location = new System.Drawing.Point(369, 114);
+            this.invalidLabel.Location = new System.Drawing.Point(369, 105);
             this.invalidLabel.Name = "invalidLabel";
             this.invalidLabel.Size = new System.Drawing.Size(67, 25);
             this.invalidLabel.TabIndex = 28;
@@ -391,7 +391,7 @@
             this.totalTextBox.Enabled = false;
             this.totalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.totalTextBox.Location = new System.Drawing.Point(24, 236);
+            this.totalTextBox.Location = new System.Drawing.Point(24, 227);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.Size = new System.Drawing.Size(183, 32);
             this.totalTextBox.TabIndex = 30;
@@ -415,7 +415,7 @@
             this.remainingTextBox.Enabled = false;
             this.remainingTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.remainingTextBox.Location = new System.Drawing.Point(220, 236);
+            this.remainingTextBox.Location = new System.Drawing.Point(220, 227);
             this.remainingTextBox.Name = "remainingTextBox";
             this.remainingTextBox.Size = new System.Drawing.Size(215, 32);
             this.remainingTextBox.TabIndex = 30;
@@ -427,7 +427,7 @@
             this.remainingLabel.BackColor = System.Drawing.Color.Transparent;
             this.remainingLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.remainingLabel.Location = new System.Drawing.Point(218, 209);
+            this.remainingLabel.Location = new System.Drawing.Point(218, 200);
             this.remainingLabel.Name = "remainingLabel";
             this.remainingLabel.Size = new System.Drawing.Size(222, 25);
             this.remainingLabel.TabIndex = 28;
@@ -700,6 +700,7 @@
             // 
             this.cumulativePanel.BackColor = System.Drawing.Color.SlateGray;
             this.cumulativePanel.Controls.Add(this.hospitalLabel);
+            this.cumulativePanel.Controls.Add(this.saveButtonTest);
             this.cumulativePanel.Controls.Add(this.uniqueTextBox);
             this.cumulativePanel.Controls.Add(this.equivocalPanel);
             this.cumulativePanel.Controls.Add(this.invalidPanel);
@@ -725,7 +726,7 @@
             this.cumulativePanel.Controls.Add(this.hospitalComboBox);
             this.cumulativePanel.Location = new System.Drawing.Point(29, 272);
             this.cumulativePanel.Name = "cumulativePanel";
-            this.cumulativePanel.Size = new System.Drawing.Size(463, 312);
+            this.cumulativePanel.Size = new System.Drawing.Size(460, 342);
             this.cumulativePanel.TabIndex = 58;
             this.cumulativePanel.Visible = false;
             // 
@@ -733,7 +734,7 @@
             // 
             this.equivocalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.equivocalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equivocalPanel.BackgroundImage")));
-            this.equivocalPanel.Location = new System.Drawing.Point(283, 183);
+            this.equivocalPanel.Location = new System.Drawing.Point(283, 174);
             this.equivocalPanel.Name = "equivocalPanel";
             this.equivocalPanel.Size = new System.Drawing.Size(80, 10);
             this.equivocalPanel.TabIndex = 29;
@@ -742,7 +743,7 @@
             // 
             this.invalidPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.invalidPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("invalidPanel.BackgroundImage")));
-            this.invalidPanel.Location = new System.Drawing.Point(371, 183);
+            this.invalidPanel.Location = new System.Drawing.Point(371, 174);
             this.invalidPanel.Name = "invalidPanel";
             this.invalidPanel.Size = new System.Drawing.Size(64, 10);
             this.invalidPanel.TabIndex = 29;
@@ -751,7 +752,7 @@
             // 
             this.negativePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.negativePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("negativePanel.BackgroundImage")));
-            this.negativePanel.Location = new System.Drawing.Point(190, 184);
+            this.negativePanel.Location = new System.Drawing.Point(190, 175);
             this.negativePanel.Name = "negativePanel";
             this.negativePanel.Size = new System.Drawing.Size(85, 10);
             this.negativePanel.TabIndex = 29;
@@ -760,7 +761,7 @@
             // 
             this.totalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.totalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("totalPanel.BackgroundImage")));
-            this.totalPanel.Location = new System.Drawing.Point(25, 279);
+            this.totalPanel.Location = new System.Drawing.Point(25, 270);
             this.totalPanel.Name = "totalPanel";
             this.totalPanel.Size = new System.Drawing.Size(183, 10);
             this.totalPanel.TabIndex = 29;
@@ -769,7 +770,7 @@
             // 
             this.positivePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.positivePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("positivePanel.BackgroundImage")));
-            this.positivePanel.Location = new System.Drawing.Point(112, 184);
+            this.positivePanel.Location = new System.Drawing.Point(112, 175);
             this.positivePanel.Name = "positivePanel";
             this.positivePanel.Size = new System.Drawing.Size(70, 10);
             this.positivePanel.TabIndex = 29;
@@ -779,7 +780,7 @@
             this.hospitalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.hospitalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hospitalPanel.BackgroundImage")));
             this.hospitalPanel.Controls.Add(this.panel8);
-            this.hospitalPanel.Location = new System.Drawing.Point(26, 89);
+            this.hospitalPanel.Location = new System.Drawing.Point(26, 80);
             this.hospitalPanel.Name = "hospitalPanel";
             this.hospitalPanel.Size = new System.Drawing.Size(409, 10);
             this.hospitalPanel.TabIndex = 26;
@@ -796,7 +797,7 @@
             // 
             this.remainingPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.remainingPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("remainingPanel.BackgroundImage")));
-            this.remainingPanel.Location = new System.Drawing.Point(221, 279);
+            this.remainingPanel.Location = new System.Drawing.Point(221, 270);
             this.remainingPanel.Name = "remainingPanel";
             this.remainingPanel.Size = new System.Drawing.Size(215, 10);
             this.remainingPanel.TabIndex = 29;
@@ -805,7 +806,7 @@
             // 
             this.uniquePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.uniquePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uniquePanel.BackgroundImage")));
-            this.uniquePanel.Location = new System.Drawing.Point(25, 183);
+            this.uniquePanel.Location = new System.Drawing.Point(25, 174);
             this.uniquePanel.Name = "uniquePanel";
             this.uniquePanel.Size = new System.Drawing.Size(78, 10);
             this.uniquePanel.TabIndex = 29;
@@ -1000,13 +1001,14 @@
             this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveButtonTest.Location = new System.Drawing.Point(470, 514);
+            this.saveButtonTest.Location = new System.Drawing.Point(24, 305);
             this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2);
             this.saveButtonTest.Name = "saveButtonTest";
-            this.saveButtonTest.Size = new System.Drawing.Size(77, 38);
+            this.saveButtonTest.Size = new System.Drawing.Size(411, 25);
             this.saveButtonTest.TabIndex = 68;
             this.saveButtonTest.Text = "Save";
             this.saveButtonTest.UseVisualStyleBackColor = false;
+            this.saveButtonTest.Visible = false;
             // 
             // button2
             // 
@@ -1025,7 +1027,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.saveButtonTest);
             this.Controls.Add(this.closeTest);
             this.Controls.Add(this.testPanel);
             this.Controls.Add(this.closeAdd);
