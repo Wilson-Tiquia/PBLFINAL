@@ -106,6 +106,7 @@
             this.openAdd = new System.Windows.Forms.PictureBox();
             this.openTest = new System.Windows.Forms.PictureBox();
             this.saveButtonTest = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -501,7 +502,7 @@
             legend1.Name = "Legend1";
             this.dailyTestChart.Legends.Add(legend1);
             this.dailyTestChart.Location = new System.Drawing.Point(93, 645);
-            this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -1000,12 +1001,21 @@
             this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.saveButtonTest.Location = new System.Drawing.Point(470, 514);
-            this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2);
             this.saveButtonTest.Name = "saveButtonTest";
             this.saveButtonTest.Size = new System.Drawing.Size(77, 38);
             this.saveButtonTest.TabIndex = 68;
             this.saveButtonTest.Text = "Save";
             this.saveButtonTest.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(658, 371);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 70;
+            this.button2.Text = "hello";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Tests
             // 
@@ -1014,6 +1024,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.saveButtonTest);
             this.Controls.Add(this.closeTest);
             this.Controls.Add(this.testPanel);
@@ -1143,5 +1154,6 @@
         private System.Windows.Forms.PictureBox openTest;
         private System.Windows.Forms.PictureBox closeTest;
         private System.Windows.Forms.Button saveButtonTest;
+        private System.Windows.Forms.Button button2;
     }
 }

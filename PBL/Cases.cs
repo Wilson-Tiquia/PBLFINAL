@@ -4,9 +4,11 @@ using System.Windows.Forms;
 using System.Text;
 using System.Net;
 using System.Drawing;
+using System.Runtime.Remoting.Channels;
 
 namespace PBL
 {
+
     public partial class Cases : Form
     {
         StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
@@ -506,7 +508,7 @@ namespace PBL
             MessageBox.Show("Saved!!!");
             WebClient client = new WebClient();
             client.Credentials = new NetworkCredential("JeonLana", "lana0316");
-            client.UploadFile("ftp://66.220.9.50/My Documents/Sample.txt", "D://Death-Cases.txt");
+            client.UploadFile("ftp://66.220.9.50/My Documents/Death Cases.txt", "D://Death-Cases.txt");
         }
 
         //changes the value of the death and recovered based on the filtered region and city
@@ -686,39 +688,5 @@ namespace PBL
             minimizeButton.Visible = true;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void recoveredCasesLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void deathCasesLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void recoveredDeathChart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

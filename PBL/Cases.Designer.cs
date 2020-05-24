@@ -145,7 +145,7 @@
             this.recoveredDeathChart.Size = new System.Drawing.Size(321, 147);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
-            this.recoveredDeathChart.Click += new System.EventHandler(this.recoveredDeathChart_Click);
+            
             // 
             // label11
             // 
@@ -193,7 +193,7 @@
             this.deathCasesLabel.Size = new System.Drawing.Size(185, 29);
             this.deathCasesLabel.TabIndex = 8;
             this.deathCasesLabel.Text = "DEATH CASES";
-            this.deathCasesLabel.Click += new System.EventHandler(this.deathCasesLabel_Click);
+            
             // 
             // recoveredCasesPanel
             // 
@@ -205,7 +205,7 @@
             this.recoveredCasesPanel.Name = "recoveredCasesPanel";
             this.recoveredCasesPanel.Size = new System.Drawing.Size(277, 148);
             this.recoveredCasesPanel.TabIndex = 1;
-            this.recoveredCasesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            
             // 
             // recoveredNumber
             // 
@@ -232,7 +232,7 @@
             this.recoveredCasesLabel.Size = new System.Drawing.Size(253, 29);
             this.recoveredCasesLabel.TabIndex = 8;
             this.recoveredCasesLabel.Text = "RECOVERED CASES ";
-            this.recoveredCasesLabel.Click += new System.EventHandler(this.recoveredCasesLabel_Click);
+            
             // 
             // pictureBox1
             // 
@@ -255,7 +255,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            
             // 
             // label12
             // 
@@ -540,7 +540,7 @@
             this.menuPanel.Size = new System.Drawing.Size(372, 164);
             this.menuPanel.TabIndex = 37;
             this.menuPanel.Visible = false;
-            this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            
             // 
             // mapLabel
             // 
@@ -652,7 +652,6 @@
             this.listView1.TabIndex = 38;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 

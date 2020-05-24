@@ -61,7 +61,7 @@ namespace PBL
         public int totalAddedCase()
         {
             int total = 0;
-            StreamReader readTotal = new StreamReader(@"C:\Total-Cases.txt");
+            StreamReader readTotal = new StreamReader(@"D:\Total-Cases.txt");
             while (readTotal.Peek()!=-1)
             {
 
@@ -79,7 +79,7 @@ namespace PBL
       
         public void getTotalCase(string province, int sum)
          {
-            StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
+            StreamReader read = new StreamReader(@"D:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
                 
@@ -533,7 +533,7 @@ namespace PBL
                 totalCases.Text = totalCASE.ToString();
                 MessageBox.Show("Added Case");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
-                StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
+                StreamWriter addUser = new StreamWriter(@"D:\Total-Cases.txt", true);
                 addUser.WriteLine();
                 for (int i = 0; i < addedCase.Length; i++)
                 {
