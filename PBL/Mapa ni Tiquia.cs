@@ -45,19 +45,36 @@ namespace PBL
         // 80
         string[,] mindanaoRegions =
         {
-            {"Region IX", "Region X", "Region XI", "Region XII","Region XIII", "BARMM" },
-            {"Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay", "", "", "" }, //Zamboanga Peninsula Region 9
-            {"Misamis Oriental", "Misamis Occidental", "Bukidnon", "Camiguin", "Lanao del Norte", "" },         // region 10 northern mindanao
-            {"Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Davao Occidental",""},      // region 11 southern mindanao dabao region
-            {"South Cotabato", "Cotabato", "Sultan Kudarat", "Sarangani", "", "" },         //central mindanao sooccsargen 12
-            {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands", "" }, // region 13 caraga
-            {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", "", ""},                  // BARMM
+            {"Region IX", "Region X", "Region XI", "Region XII","Region XIII", "BARMM","" },
+            {"Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay", "", "", "" ,""}, //Zamboanga Peninsula Region 9
+            {"Misamis Oriental", "Misamis Occidental", "Bukidnon", "Camiguin", "Lanao del Norte", "","" },         // region 10 northern mindanao
+            {"Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Davao Occidental","",""},      // region 11 southern mindanao dabao region
+            {"South Cotabato", "Cotabato", "Sultan Kudarat", "Sarangani", "", "","" },         //central mindanao sooccsargen 12
+            {"Agusan del Norte", "Agusan del Sur", "Surigao del Norte", "Surigao del Sur", "Dinagat Islands", "","" }, // region 13 caraga
+            {"Lanao del Sur", "Maguindanao", "Sulu", "Tawi-tawi", "", "",""},                  // BARMM
         };
 
         List<string> provinceAndCase = new List<string>();
         
         string temporary = "";
-     
+        public int totalAddedCase()
+        {
+            int total = 0;
+            StreamReader readTotal = new StreamReader(@"C:\Total-Cases.txt");
+            while (readTotal.Peek()!=-1)
+            {
+
+                string input = readTotal.ReadLine();
+                string[] splitted = input.Split(',');
+                string a = splitted[2].Replace("TOTAL_CASES", "0");
+                total += int.Parse(a);
+              
+
+            }
+            return total;
+           
+
+        }
       
         public void getTotalCase(string province, int sum)
          {
@@ -90,7 +107,7 @@ namespace PBL
                     caseSaLugar = "0";
                     provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
                 }
-                if (sum > 501 && sum <= 1000)
+                if (sum > 500 && sum <= 1000)
                 {
                     caseSaLugar = "501";
                     provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
@@ -111,11 +128,7 @@ namespace PBL
 
             }
             read.Close();
-           
-        
-
-
-
+   
         }
         public Mapa_ni_Tiquia()
         {
@@ -438,7 +451,7 @@ namespace PBL
                 dimension = mindanaoRegions.GetLength(0);
                 for (int i = 0; i < dimension; i++)
                 {
-                    if (visayasRegionSixToEight[6, i] != string.Empty)
+                    if (mindanaoRegions[6, i] != string.Empty)
                     {
                         provinceComboBox.Items.Add(mindanaoRegions[6, i]);
                         provinceMapComboBox.Items.Add(mindanaoRegions[6, i]);
@@ -453,6 +466,11 @@ namespace PBL
         {
             hideMap();
             populateIsland();
+            Console.WriteLine(totalAddedCase());
+            totalCases.Text = totalAddedCase().ToString();
+            this.Refresh();
+           
+           
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -495,6 +513,7 @@ namespace PBL
             bool mayLamanIslandRegionAtProvince = islandComboBox.Text != string.Empty && regionComboBox.Text != string.Empty && provinceComboBox.Text != string.Empty;
             if (e.KeyCode == Keys.Enter && mayLamanIslandRegionAtProvince)
             {
+               
                 MessageBox.Show("Added user");
                 string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
                 StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
@@ -509,9 +528,10 @@ namespace PBL
                 islandComboBox.SelectedIndex = -1;
                 regionComboBox.SelectedIndex = -1;
                 provinceComboBox.SelectedIndex = -1;
-
-
-
+                this.Close();
+                Mapa_ni_Tiquia aForm = new Mapa_ni_Tiquia();
+                aForm.Show();
+                
             }
          
         }

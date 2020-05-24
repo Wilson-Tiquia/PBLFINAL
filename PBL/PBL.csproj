@@ -346,5 +346,32 @@
   <ItemGroup>
     <None Include="Resources\more.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74d89a98bc607c5ddb9ac8addf359f21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88e30448229cc6044ca1b29c0f100c0e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98427653_703744183532271_5253125541405392896_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c3fef6880d02a3b6793fe1556a7fd557.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce99f99bd558e1fbd91e364ca6566c60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce99f99bd558e1fbd91e364ca6566c601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce99f99bd558e1fbd91e364ca6566c602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c3a3db832386897bab824c95ed60461b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6d793418e3dc259c738c0b5897e053fa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

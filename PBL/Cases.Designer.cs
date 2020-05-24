@@ -32,7 +32,6 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cases));
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,6 +84,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.extend2 = new System.Windows.Forms.PictureBox();
             this.extend1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.recoveredDeathPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recoveredDeathChart)).BeginInit();
             this.deathCasesPanel.SuspendLayout();
@@ -104,12 +104,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.testButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // recoveredDeathPanel
             // 
-            this.recoveredDeathPanel.BackColor = System.Drawing.Color.DimGray;
-            this.recoveredDeathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022219;
+            this.recoveredDeathPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
             this.recoveredDeathPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recoveredDeathPanel.Controls.Add(this.recoveredDeathChart);
             this.recoveredDeathPanel.Controls.Add(this.label11);
@@ -133,7 +133,7 @@
             this.recoveredDeathChart.Legends.Add(legend2);
             this.recoveredDeathChart.Location = new System.Drawing.Point(952, 8);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
-            this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Deaths";
@@ -159,7 +159,7 @@
             // 
             // deathCasesPanel
             // 
-            this.deathCasesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deathCasesPanel.BackgroundImage")));
+            this.deathCasesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(56)))), ((int)(((byte)(93)))));
             this.deathCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.deathCasesPanel.Controls.Add(this.deathNumber);
             this.deathCasesPanel.Controls.Add(this.deathCasesLabel);
@@ -197,7 +197,7 @@
             // 
             // recoveredCasesPanel
             // 
-            this.recoveredCasesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("recoveredCasesPanel.BackgroundImage")));
+            this.recoveredCasesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(56)))), ((int)(((byte)(93)))));
             this.recoveredCasesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.recoveredCasesPanel.Controls.Add(this.recoveredNumber);
             this.recoveredCasesPanel.Controls.Add(this.recoveredCasesLabel);
@@ -323,7 +323,7 @@
             // 
             // deathPanel
             // 
-            this.deathPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.deathPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.deathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.deathPanel.Location = new System.Drawing.Point(16, 423);
             this.deathPanel.Name = "deathPanel";
@@ -332,7 +332,7 @@
             // 
             // provinceCityPanel
             // 
-            this.provinceCityPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.provinceCityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.provinceCityPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.provinceCityPanel.Location = new System.Drawing.Point(16, 296);
             this.provinceCityPanel.Name = "provinceCityPanel";
@@ -341,8 +341,7 @@
             // 
             // regionPanel
             // 
-            this.regionPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.regionPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
+            this.regionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.regionPanel.Controls.Add(this.panel8);
             this.regionPanel.Location = new System.Drawing.Point(16, 180);
             this.regionPanel.Name = "regionPanel";
@@ -407,7 +406,7 @@
             // 
             // recoveredPanel
             // 
-            this.recoveredPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.recoveredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.recoveredPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.recoveredPanel.Location = new System.Drawing.Point(18, 547);
             this.recoveredPanel.Name = "recoveredPanel";
@@ -433,11 +432,11 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
-            this.listView2.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.ForeColor = System.Drawing.SystemColors.Info;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(400, 103);
+            this.listView2.Location = new System.Drawing.Point(394, 103);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(867, 466);
             this.listView2.TabIndex = 35;
@@ -643,11 +642,11 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(400, 103);
+            this.listView1.Location = new System.Drawing.Point(394, 104);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(867, 466);
             this.listView1.TabIndex = 38;
@@ -678,10 +677,11 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.DimGray;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(249, 562);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 38);
             this.btnSave.TabIndex = 39;
@@ -715,6 +715,17 @@
             this.extend1.TabStop = false;
             this.extend1.Click += new System.EventHandler(this.extend1_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
+            this.pictureBox3.Location = new System.Drawing.Point(388, 105);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(934, 494);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
             // Cases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -724,6 +735,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
+            this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.border);
@@ -743,7 +755,7 @@
             this.Controls.Add(this.recoveredDeathPanel);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.extend1);
-            this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.pictureBox3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cases";
@@ -773,6 +785,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.testButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -831,5 +844,6 @@
         private System.Windows.Forms.Label deathNumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

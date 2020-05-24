@@ -47,30 +47,30 @@ namespace PBL
 
         private void extend1_Click(object sender, EventArgs e)
         {
-            panel16.Visible = true;
-            map.Visible = true;
-            casess.Visible = true;
-            tests.Visible = true;
-            pictureBox2.Visible = true;
-            label3.Visible = true;
-            label4.Visible = true;
-            label5.Visible = true;
-            label6.Visible = true;
+            menuPanel.Visible = true;
+            mapButton.Visible = true;
+            casesButton.Visible = true;
+            testButton.Visible = true;
+            equipmentsButton.Visible = true;
+            mapLabel.Visible = true;
+            casesLabel.Visible = true;
+            testLabel.Visible = true;
+            equipmentsLabel.Visible = true;
             extend2.Visible = true;
             extend1.Visible = false;
         }
 
         private void extend2_Click(object sender, EventArgs e)
         {
-            panel16.Visible = false;
-            map.Visible = false;
-            casess.Visible = false;
-            tests.Visible = false;
-            pictureBox2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
-            label6.Visible = false;
+            menuPanel.Visible = false;
+            mapButton.Visible = false;
+            casesButton.Visible = false;
+            testButton.Visible = false;
+            equipmentsButton.Visible = false;
+            mapLabel.Visible = false;
+            casesLabel.Visible = false;
+            testLabel.Visible = false;
+            equipmentsLabel.Visible = false;
             extend2.Visible = false;
             extend1.Visible = true;
         }
@@ -93,35 +93,7 @@ namespace PBL
             testsForms.Show();
         }
 
-        private void extend2_Click_1(object sender, EventArgs e)
-        {
-            topPanel.Visible = false;
-            map.Visible = false;
-            casess.Visible = false;
-            tests.Visible = false;
-            pictureBox2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
-            label6.Visible = false;
-            extend2.Visible = false;
-            extend1.Visible = true;
-        }
-
-        private void extend1_Click_1(object sender, EventArgs e)
-        {
-            topPanel.Visible = true;
-            map.Visible = true;
-            casess.Visible = true;
-            tests.Visible = true;
-            pictureBox2.Visible = true;
-            label3.Visible = true;
-            label4.Visible = true;
-            label5.Visible = true;
-            label6.Visible = true;
-            extend2.Visible = true;
-            extend1.Visible = false;
-        }
+        
 
         //private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         //{
@@ -435,6 +407,24 @@ namespace PBL
             
             MessageBox.Show("Saved!!!");
 
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            listViewPanel.Visible = false;
+            listView1.Visible = false;
+            listView2.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox3.Visible = true;
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            listViewPanel.Visible = true;
+            listView1.Visible = true;
+            listView2.Visible = true;
+            pictureBox7.Visible = true;
+            pictureBox3.Visible = false;
         }
     }
 }
