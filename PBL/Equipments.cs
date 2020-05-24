@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
 
 namespace PBL
 {
@@ -97,107 +98,6 @@ namespace PBL
             Tests testsForms = new Tests();
             testsForms.Show();
         }
-
-        
-
-        //private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void Equipments_Load(object sender, EventArgs e)
-        //{
-
-
-            
-        //}
-
-        //private void label15_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void label19_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void label16_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-           
-
-        //}
-
-        //private void panel7_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void panel6_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void textBox2_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void label2_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBox1_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void panel1_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void textBox3_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void panel3_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void label7_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void label8_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBox4_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void panel4_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
-
-        //private void textBox12_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -397,6 +297,10 @@ namespace PBL
             sw.Write(sw.NewLine);
             sw.Close();
 
+            WebClient client = new WebClient();
+            client.Credentials = new NetworkCredential("JeonLana", "lana0316");
+            client.UploadFile("ftp://66.220.9.50/My Documents/PPE.txt", "D://PPE.txt");
+
             //Clear text boxes
             txtcoverall.Text = "";
             txtfaceshield.Text = "";
@@ -431,23 +335,7 @@ namespace PBL
 
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            listViewPanel.Visible = false;
-            //listView1.Visible = false;
-            listView2.Visible = false;
-            pictureBox7.Visible = false;
-            pictureBox3.Visible = true;
-        }
-
-        private void pictureBox3_Click_1(object sender, EventArgs e)
-        {
-            listViewPanel.Visible = true;
-            //listView1.Visible = true;
-            listView2.Visible = true;
-            pictureBox7.Visible = true;
-            pictureBox3.Visible = false;
-        }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -516,6 +404,11 @@ namespace PBL
 
             }
             sw.Close();
+
+            WebClient client = new WebClient();
+            client.Credentials = new NetworkCredential("JeonLana", "lana0316");
+            client.UploadFile("ftp://66.220.9.50/My Documents/Equipments.txt", "D://Equipments.txt");
+
             //Clear textbox inputs
             txticubeds.Text = "";
             txtisolationbeds.Text = "";
