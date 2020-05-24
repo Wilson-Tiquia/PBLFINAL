@@ -232,7 +232,7 @@
             this.hospitalComboBox.IntegralHeight = false;
             this.hospitalComboBox.ItemHeight = 37;
             this.hospitalComboBox.Items.AddRange(new object[] {
-            "PHILIPPINE RED CROSS",
+            "PHILIPPINE RED CROSS (PRC)",
             "RESEARCH INSTITUTE FOR TROPICAL MEDICINE",
             "VICENTE SOTTO MEMORIAL MEDICAL CENTER",
             "MAKATI MEDICAL CENTER",
@@ -266,6 +266,7 @@
             this.hospitalComboBox.Name = "hospitalComboBox";
             this.hospitalComboBox.Size = new System.Drawing.Size(612, 45);
             this.hospitalComboBox.TabIndex = 27;
+            this.hospitalComboBox.DropDown += new System.EventHandler(this.hospitalComboBox_DropDown);
             this.hospitalComboBox.SelectedIndexChanged += new System.EventHandler(this.hospitalComboBox_SelectedIndexChanged);
             // 
             // uniqueLabel
@@ -296,7 +297,6 @@
             // positiveTextBox
             // 
             this.positiveTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.positiveTextBox.Enabled = false;
             this.positiveTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positiveTextBox.ForeColor = System.Drawing.Color.Gray;
             this.positiveTextBox.Location = new System.Drawing.Point(168, 222);
@@ -322,7 +322,6 @@
             // negativeTextBox
             // 
             this.negativeTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.negativeTextBox.Enabled = false;
             this.negativeTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.negativeTextBox.ForeColor = System.Drawing.Color.Gray;
             this.negativeTextBox.Location = new System.Drawing.Point(285, 222);
@@ -348,7 +347,6 @@
             // equivocalTextBox
             // 
             this.equivocalTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.equivocalTextBox.Enabled = false;
             this.equivocalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equivocalTextBox.ForeColor = System.Drawing.Color.Gray;
             this.equivocalTextBox.Location = new System.Drawing.Point(424, 222);
@@ -374,7 +372,6 @@
             // invalidTextBox
             // 
             this.invalidTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.invalidTextBox.Enabled = false;
             this.invalidTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidTextBox.ForeColor = System.Drawing.Color.Gray;
             this.invalidTextBox.Location = new System.Drawing.Point(556, 222);
@@ -400,7 +397,6 @@
             // totalTextBox
             // 
             this.totalTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.totalTextBox.Enabled = false;
             this.totalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalTextBox.ForeColor = System.Drawing.Color.Gray;
             this.totalTextBox.Location = new System.Drawing.Point(36, 363);
@@ -426,7 +422,6 @@
             // remainingTextBox
             // 
             this.remainingTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.remainingTextBox.Enabled = false;
             this.remainingTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingTextBox.ForeColor = System.Drawing.Color.Gray;
             this.remainingTextBox.Location = new System.Drawing.Point(330, 363);
@@ -521,7 +516,7 @@
             this.dailyTestChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.dailyTestChart.Legends.Add(legend1);
-            this.dailyTestChart.Location = new System.Drawing.Point(140, 992);
+            this.dailyTestChart.Location = new System.Drawing.Point(388, 929);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -1066,6 +1061,7 @@
             this.saveButtonTest.TabIndex = 68;
             this.saveButtonTest.Text = "Save";
             this.saveButtonTest.UseVisualStyleBackColor = false;
+            this.saveButtonTest.Click += new System.EventHandler(this.saveButtonTest_Click);
             // 
             // Tests
             // 

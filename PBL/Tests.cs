@@ -178,7 +178,7 @@ namespace PBL
             openAdd.Visible = false;
             closeAdd.Visible = true;
         }
-        public void clearEntriesAndDisableTextBox()
+        public void clearEntries()
         {
             // clear laman
             hospitalComboBox.Text = string.Empty;
@@ -189,19 +189,12 @@ namespace PBL
             invalidTextBox.Text = string.Empty;
             totalTextBox.Text = string.Empty;
             remainingTextBox.Text = string.Empty;
-            // disable
-            uniqueTextBox.Enabled = false;
-            positiveTextBox.Enabled = false;
-            negativeTextBox.Enabled = false;
-            equivocalTextBox.Enabled = false;
-            invalidTextBox.Enabled = false;
-            totalTextBox.Enabled = false;
-            remainingTextBox.Enabled = false;
+         
 
         }
         private void closeAdd_Click(object sender, EventArgs e)
         {
-            clearEntriesAndDisableTextBox();
+            clearEntries();
             cumulativePanel.Visible = false;
             hospitalLabel.Visible = false;
             hospitalPanel.Visible = false;
@@ -234,7 +227,7 @@ namespace PBL
 
         private void openTest_Click(object sender, EventArgs e)
         {
-            clearEntriesAndDisableTextBox();
+            clearEntries();
             testPanel.Visible = true;
             hospitalLabel.Visible = true;
             hospitalComboBox.Visible = true;
@@ -267,53 +260,90 @@ namespace PBL
 
         private void remainingTextBox_TextChanged(object sender, EventArgs e)
         {
-            //if (remainingTextBox.Text != string.Empty)
-            //{
-            //    StreamWriter moveToTxt = new StreamWriter(@"C:\TESTS\test.txt",true);
             
-            
-            //    string hospital = hospitalComboBox.Text;
-            //    string unique = uniqueTextBox.Text;
-            //    string positive = positiveTextBox.Text;
-            //    string negative = negativeTextBox.Text;
-            //    string equivocal = equivocalTextBox.Text;
-            //    string invalid = invalidTextBox.Text;
-            //    string total = totalTextBox.Text;
-            //    string remaining = remainingTextBox.Text;
-            //    ListViewItem lvi = new ListViewItem(hospital);
-            //    lvi.SubItems.Add(unique);
-            //    lvi.SubItems.Add(positive);
-            //    lvi.SubItems.Add(negative);
-            //    lvi.SubItems.Add(equivocal);
-            //    lvi.SubItems.Add(invalid);
-            //    lvi.SubItems.Add(total);
-            //    lvi.SubItems.Add(remaining);
-            //    listView1.Items.Add(lvi);
-            //    // lagay mo sa txt
-            //    moveToTxt.WriteLine($"{hospital},{unique},{positive},{negative},{equivocal},{invalid},{total},{remaining}");
-            //    moveToTxt.Close();
-            //    clearEntriesAndDisableTextBox();
-            //    hospitalComboBox.Focus();
-            //}
            
+        }
+        public void sort()
+        {
+            string hospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
+            StreamReader sorter = new StreamReader(@"C:/Cumulative-Tests.txt");
+            while (sorter.Peek() != -1)
+            {
+                string read = sorter.ReadLine();
+                string[] splitRead = read.Split(',');
+                string hospitalName = splitRead[0];
+                string unique = splitRead[1];
+                string positive = splitRead[2];
+                string negative = splitRead[3];
+                string equivocal = splitRead[4];
+                string invalid = splitRead[5];
+                string total = splitRead[6];
+                string remaining = splitRead[7];
+                if (hospitalName == hospital)
+                {
+                    
+                    ListViewItem lvi = new ListViewItem(hospitalName);
+                    lvi.SubItems.Add(unique);
+                    lvi.SubItems.Add(positive);
+                    lvi.SubItems.Add(negative);
+                    lvi.SubItems.Add(equivocal);
+                    lvi.SubItems.Add(invalid);
+                    lvi.SubItems.Add(total);
+                    lvi.SubItems.Add(remaining);
+                    listView1.Items.Add(lvi);
+                }
+
+
+            }
+            sorter.Close();
+
+
         }
 
         private void hospitalComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (hospitalComboBox.Text != string.Empty)
-            {
-                uniqueTextBox.Enabled = true;
-            }
+            listView1.Items.Clear();
+            sort();
+        }
+        public void allHospitals()
+        {
+            StreamReader allHospitals = new StreamReader(@"C:\Cumulative-Tests.txt");
+            allHospitals.ReadLine();
             
+            while (allHospitals.Peek()!=-1)
+            {
+                string allDetails = allHospitals.ReadLine();
+                string[] splitDetails = allDetails.Split(',');
+                string hospitalName = splitDetails[0];
+                string unique = splitDetails[1];
+                string positive = splitDetails[2];
+                string negative = splitDetails[3];
+                string equivocal = splitDetails[4];
+                string invalid = splitDetails[5];
+                string total = splitDetails[6];
+                string remaining = splitDetails[7];
+                ListViewItem hospitals = new ListViewItem(hospitalName);
+                hospitals.SubItems.Add(unique);
+                hospitals.SubItems.Add(positive);
+                hospitals.SubItems.Add(negative);
+                hospitals.SubItems.Add(equivocal);
+                hospitals.SubItems.Add(invalid);
+                hospitals.SubItems.Add(total);
+                hospitals.SubItems.Add(remaining);
+                listView1.Items.Add(hospitals);
+
+            }
         }
 
         private void Tests_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-            if (hospitalComboBox.Text == string.Empty)
+            string selectedHospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
+            if (selectedHospital == string.Empty)
             {
-                uniqueTextBox.Enabled = false;
+                MessageBox.Show("ALA PA LAMAN");
+                allHospitals();
             }
            
         }
@@ -347,6 +377,75 @@ namespace PBL
         private void totalTextBox_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void saveButtonTest_Click(object sender, EventArgs e)
+        {
+            if (hospitalComboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("input hospital");
+            }
+            else
+            {
+                StreamWriter addTests = new StreamWriter(@"C:/Cumulative-Tests.txt", true);
+                string hospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
+                string empty = "0";
+                if (uniqueTextBox.Text == string.Empty)
+                {
+                    uniqueTextBox.Text = empty;
+                }
+                if (positiveTextBox.Text == string.Empty)
+                {
+                    positiveTextBox.Text = empty;
+                }
+                if (negativeTextBox.Text == string.Empty)
+                {
+                    negativeTextBox.Text = empty;
+                }
+                if (equivocalTextBox.Text == string.Empty)
+                {
+                    equivocalTextBox.Text = empty;
+                }
+                if (invalidTextBox.Text == string.Empty)
+                {
+                    invalidTextBox.Text = empty;
+                }
+                if (totalTextBox.Text == string.Empty)
+                {
+                    totalTextBox.Text = empty;
+                }
+                if (remainingTextBox.Text == string.Empty)
+                {
+                    remainingTextBox.Text = empty;
+                }
+              
+                MessageBox.Show("ADDED TESTS");
+                string [] all = {hospital,",",uniqueTextBox.Text,",",positiveTextBox.Text,",",negativeTextBox.Text,",",equivocalTextBox.Text,",",invalidTextBox.Text,",",totalTextBox.Text,",",remainingTextBox.Text};
+                addTests.WriteLine();
+                for (int i = 0; i <all.Length;i++)
+                {
+                    addTests.Write(all[i]);
+                }
+                addTests.Close();
+                listView1.Items.Clear();
+                allHospitals();
+                hospitalComboBox.SelectedIndex = -1;
+                uniqueTextBox.Text = string.Empty;
+                positiveTextBox.Text = string.Empty;
+                negativeTextBox.Text = string.Empty;
+                equivocalTextBox.Text = string.Empty;
+                invalidTextBox.Text = string.Empty;
+                totalTextBox.Text = string.Empty;
+                remainingTextBox.Text = string.Empty;
+                hospitalComboBox.Focus();
+
+
+            }
+        }
+
+        private void hospitalComboBox_DropDown(object sender, EventArgs e)
+        {
+            
         }
     }
 }
