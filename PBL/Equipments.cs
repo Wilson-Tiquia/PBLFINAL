@@ -127,8 +127,8 @@ namespace PBL
 
         private void map_Click_1(object sender, EventArgs e)
         {
-            Mapa_ni_Tiquia mapForm = new Mapa_ni_Tiquia();
-            mapForm.Show();
+            //Form1 mapForm = new Form1();
+            //mapForm.Show();
         }
 
         private void casess_Click(object sender, EventArgs e)
