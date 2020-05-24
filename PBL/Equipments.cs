@@ -16,7 +16,7 @@ namespace PBL
 
         StreamReader equipments = new StreamReader("D://Equipments.txt");
         StreamReader ppe = new StreamReader("D://PPE.txt");
-
+        //variable process for ppe
         int coverall = 0;
         int faceshield = 0;
         int goggles = 0;
@@ -25,7 +25,7 @@ namespace PBL
         int shoecover = 0;
         int headcover = 0;
         int surgicalmask = 0;
-
+        //variable for ppe
         int val1 = 0;
         int val2 = 0;
         int val3 = 0;
@@ -34,6 +34,11 @@ namespace PBL
         int val6 = 0;
         int val7 = 0;
         int val8 = 0;
+        //variable for equipments
+        int equipval1 = 0;
+        int equipval2 = 0;
+        int equipval3 = 0;
+        int equipval4 = 0;
 
         public Equipments()
         {
@@ -246,6 +251,13 @@ namespace PBL
 
         private void Equipments_Load_1(object sender, EventArgs e)
         {
+
+            chart1.Visible = true;
+            listView2.Visible = false;
+            listViewPanel.Visible = false;
+
+            //comboBox1.SelectedIndex = 0;
+
             while (equipments.Peek() != -1)
             {
                 string x = equipments.ReadLine();
@@ -262,7 +274,17 @@ namespace PBL
                 lvi.SubItems.Add(xe[7]);
                 lvi.SubItems.Add(xe[8]);
                 listView2.Items.Add(lvi);
-               
+                if (xe[0] == "ABRA") 
+                {
+                    chart1.Series["Total"].Points.AddXY("ICU Beds", xe[1]);
+                    chart1.Series["Occupied"].Points.AddXY("ICU Beds", xe[2]);
+                    chart1.Series["Total"].Points.AddXY("Isolation Beds", xe[3]);
+                    chart1.Series["Occupied"].Points.AddXY("Isolation beds", xe[4]);
+                    chart1.Series["Total"].Points.AddXY("Ward Beds", xe[5]);
+                    chart1.Series["Occupied"].Points.AddXY("Ward Beds", xe[6]);
+                    chart1.Series["Total"].Points.AddXY("Mechanical Ventilators", xe[7]);
+                    chart1.Series["Occupied"].Points.AddXY("Mechanical Ventilators", xe[8]);
+                }
 
             }
             equipments.Close();
@@ -412,7 +434,7 @@ namespace PBL
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             listViewPanel.Visible = false;
-            listView1.Visible = false;
+            //listView1.Visible = false;
             listView2.Visible = false;
             pictureBox7.Visible = false;
             pictureBox3.Visible = true;
@@ -421,10 +443,233 @@ namespace PBL
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             listViewPanel.Visible = true;
-            listView1.Visible = true;
+            //listView1.Visible = true;
             listView2.Visible = true;
             pictureBox7.Visible = true;
             pictureBox3.Visible = false;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StreamReader equipments = new StreamReader("D://Equipments.txt");
+            string tofind = "";
+            if (comboBox1.Text != "")
+            {
+                tofind = comboBox1.Text;
+                while (equipments.Peek() != -1)
+                {
+                    string x = equipments.ReadLine();
+                    string[] xe = x.Split(',');
+                    ListViewItem lvi = new ListViewItem(xe[0]);
+
+
+                    lvi.SubItems.Add(xe[1]);
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                    lvi.SubItems.Add(xe[4]);
+                    lvi.SubItems.Add(xe[5]);
+                    lvi.SubItems.Add(xe[6]);
+                    lvi.SubItems.Add(xe[7]);
+                    lvi.SubItems.Add(xe[8]);
+                    listView2.Items.Add(lvi);
+                    if (xe[0] == tofind)
+                    {
+                        chart1.Series["Total"].Points.Clear();
+                        chart1.Series["Occupied"].Points.Clear();
+                        chart1.Series["Total"].Points.AddXY("ICU Beds", xe[1]);
+                        chart1.Series["Occupied"].Points.AddXY("ICU Beds", xe[2]);
+                        chart1.Series["Total"].Points.AddXY("Isolation Beds", xe[3]);
+                        chart1.Series["Occupied"].Points.AddXY("Isolation beds", xe[4]);
+                        chart1.Series["Total"].Points.AddXY("Ward Beds", xe[5]);
+                        chart1.Series["Occupied"].Points.AddXY("Ward Beds", xe[6]);
+                        chart1.Series["Total"].Points.AddXY("Mechanical Ventilators", xe[7]);
+                        chart1.Series["Occupied"].Points.AddXY("Mechanical Ventilators", xe[8]);
+                    }
+
+                }
+                equipments.Close();
+
+            }
+        }
+
+        private void btnSave2_Click(object sender, EventArgs e)
+        {
+           //save to listview function
+            savetolvi();
+
+            StreamWriter sw = new StreamWriter("D://Equipments.txt", false);
+
+            foreach (ListViewItem itemRow in listView2.Items)
+            {
+                for (int i = 0; i < itemRow.SubItems.Count; i++)
+                {
+                    sw.Write(itemRow.SubItems[i].Text);
+
+                    if (i < listView2.Columns.Count - 1)
+                    {
+                        sw.Write(",");
+
+                    }
+
+                }
+                sw.Write(sw.NewLine);
+
+            }
+            sw.Close();
+            //Clear textbox inputs
+            txticubeds.Text = "";
+            txtisolationbeds.Text = "";
+            txtwardbeds.Text = "";
+            txtmechanicalventilators.Text = "";
+               
+            MessageBox.Show("Saved!!!");
+
+            //Load chart with current combo text box selection
+            StreamReader equipments = new StreamReader("D://Equipments.txt", false);
+            while (equipments.Peek() != -1)
+            {
+                string x = equipments.ReadLine();
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+
+
+                lvi.SubItems.Add(xe[1]);
+                lvi.SubItems.Add(xe[2]);
+                lvi.SubItems.Add(xe[3]);
+                lvi.SubItems.Add(xe[4]);
+                lvi.SubItems.Add(xe[5]);
+                lvi.SubItems.Add(xe[6]);
+                lvi.SubItems.Add(xe[7]);
+                lvi.SubItems.Add(xe[8]);
+                listView2.Items.Add(lvi);
+                if (xe[0] == comboBox1.Text)
+                {
+                    chart1.Series["Total"].Points.Clear();
+                    chart1.Series["Occupied"].Points.Clear();
+
+                    chart1.Series["Total"].Points.AddXY("ICU Beds", xe[1]);
+                    chart1.Series["Occupied"].Points.AddXY("ICU Beds", xe[2]);
+                    chart1.Series["Total"].Points.AddXY("Isolation Beds", xe[3]);
+                    chart1.Series["Occupied"].Points.AddXY("Isolation beds", xe[4]);
+                    chart1.Series["Total"].Points.AddXY("Ward Beds", xe[5]);
+                    chart1.Series["Occupied"].Points.AddXY("Ward Beds", xe[6]);
+                    chart1.Series["Total"].Points.AddXY("Mechanical Ventilators", xe[7]);
+                    chart1.Series["Occupied"].Points.AddXY("Mechanical Ventilators", xe[8]);
+                }
+
+            }
+            equipments.Close();
+
+        }
+
+        private void savetolvi()
+        {
+            //Validation for text box it should accept numeric only
+
+            StreamReader equipments = new StreamReader("D://Equipments.txt");
+
+            listView2.Items.Clear();
+
+
+            string tofind = comboBox1.Text;
+
+
+            while (equipments.Peek() != -1)
+            {
+                string x = equipments.ReadLine();
+
+                string[] xe = x.Split(',');
+                ListViewItem lvi = new ListViewItem(xe[0]);
+                lvi.SubItems.Add(xe[1]);
+                if (xe[0] == tofind)
+                {
+
+                    //lvi.SubItems.Add(xe[1]);
+                    //val1 = Convert.ToInt32(xe[2]) + val1;
+                    //val2 = Convert.ToInt32(xe[4]) + val2;
+                    //val3 = Convert.ToInt32(xe[6]) + val3;
+                    //val4 = Convert.ToInt32(xe[8]) + val4;
+                    //lvi.SubItems.Add(xe[1]);
+                    if (txticubeds.Text == "")
+                    {
+                        lvi.SubItems.Add(xe[2]);
+                    }
+                    else
+                    {
+                        lvi.SubItems.Add(txticubeds.Text); //data from icu beds
+                    }
+                    lvi.SubItems.Add(xe[3]);
+                    if (txtisolationbeds.Text == "")
+                    {
+                        lvi.SubItems.Add(xe[4]);
+                    }
+                    else
+                    {
+                        lvi.SubItems.Add(txtisolationbeds.Text); //data from isolation beds
+                    }
+                    lvi.SubItems.Add(xe[5]);
+                    if (txtwardbeds.Text == "")
+                    {
+                        lvi.SubItems.Add(xe[6]);
+                    }
+                    else
+                    {
+                        lvi.SubItems.Add(txtwardbeds.Text); //data from ward beds
+
+                    }
+                    lvi.SubItems.Add(xe[7]);
+                    if (txtmechanicalventilators.Text == "")
+                    {
+                        lvi.SubItems.Add(xe[8]);
+                    }
+                    else
+                    {
+                        lvi.SubItems.Add(txtmechanicalventilators.Text); //data from mechanical ventilators
+                    }
+
+                }
+                else
+                {
+                    lvi.SubItems.Add(xe[2]);
+                    lvi.SubItems.Add(xe[3]);
+                    lvi.SubItems.Add(xe[4]);
+                    lvi.SubItems.Add(xe[5]);
+                    lvi.SubItems.Add(xe[6]);
+                    lvi.SubItems.Add(xe[7]);
+                    lvi.SubItems.Add(xe[8]);
+
+                }
+
+                listView2.Items.Add(lvi);
+            }
+            equipments.Close();
+
+            //Clean up Input box
+            txticubeds.Text = "";
+            txtisolationbeds.Text = "";
+            txtwardbeds.Text = "";
+            txtmechanicalventilators.Text = "";
+
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            if (btnView.Text == "View Data")
+            {
+                chart1.Visible = false;
+                listView2.Visible = true;
+                listViewPanel.Visible = true;
+                btnView.Text = "View Chart";
+            }
+            else if (btnView.Text == "View Chart")
+            {
+                chart1.Visible = true;
+                listView2.Visible = false;
+                listViewPanel.Visible = false;
+                btnView.Text = "View Data";
+            }
+            
+
         }
     }
 }
