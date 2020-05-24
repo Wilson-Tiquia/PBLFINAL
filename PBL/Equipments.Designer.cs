@@ -28,38 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtwardbeds = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtmechanicalventilators = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtisolationbeds = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txticubeds = new System.Windows.Forms.TextBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.txtcoverall = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -104,8 +95,6 @@
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.listViewPanel = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.extend2 = new System.Windows.Forms.PictureBox();
@@ -119,6 +108,8 @@
             this.equipmentsButton = new System.Windows.Forms.PictureBox();
             this.testButton = new System.Windows.Forms.PictureBox();
             this.extend1 = new System.Windows.Forms.PictureBox();
+            this.btnSave2 = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -128,8 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.listViewPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
@@ -147,7 +136,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(916, 91);
+            this.label8.Location = new System.Drawing.Point(872, 91);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(278, 25);
             this.label8.TabIndex = 34;
@@ -159,21 +148,21 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(728, 91);
+            this.label7.Location = new System.Drawing.Point(684, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(179, 25);
             this.label7.TabIndex = 35;
             this.label7.Text = "Occupied Ward Beds";
             // 
-            // textBox3
+            // txtwardbeds
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(730, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 32);
-            this.textBox3.TabIndex = 42;
+            this.txtwardbeds.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtwardbeds.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwardbeds.ForeColor = System.Drawing.Color.Gray;
+            this.txtwardbeds.Location = new System.Drawing.Point(686, 118);
+            this.txtwardbeds.Name = "txtwardbeds";
+            this.txtwardbeds.Size = new System.Drawing.Size(177, 32);
+            this.txtwardbeds.TabIndex = 42;
             // 
             // label2
             // 
@@ -181,7 +170,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(515, 92);
+            this.label2.Location = new System.Drawing.Point(471, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(207, 25);
             this.label2.TabIndex = 36;
@@ -282,11 +271,12 @@
             "ZAMBOANGA DEL NORTE",
             "ZAMBOANGA DEL SUR ",
             "ZAMBOANGA SIBUGAY"});
-            this.comboBox1.Location = new System.Drawing.Point(94, 119);
+            this.comboBox1.Location = new System.Drawing.Point(50, 119);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(247, 33);
             this.comboBox1.TabIndex = 33;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -294,7 +284,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(345, 93);
+            this.label16.Location = new System.Drawing.Point(301, 93);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(163, 25);
             this.label16.TabIndex = 37;
@@ -303,26 +293,26 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
-            this.panel6.Location = new System.Drawing.Point(347, 160);
+            this.panel6.Location = new System.Drawing.Point(303, 160);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(161, 10);
             this.panel6.TabIndex = 38;
             // 
-            // textBox4
+            // txtmechanicalventilators
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Gray;
-            this.textBox4.Location = new System.Drawing.Point(918, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 32);
-            this.textBox4.TabIndex = 43;
+            this.txtmechanicalventilators.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtmechanicalventilators.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmechanicalventilators.ForeColor = System.Drawing.Color.Gray;
+            this.txtmechanicalventilators.Location = new System.Drawing.Point(874, 118);
+            this.txtmechanicalventilators.Name = "txtmechanicalventilators";
+            this.txtmechanicalventilators.Size = new System.Drawing.Size(276, 32);
+            this.txtmechanicalventilators.TabIndex = 43;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(94, 160);
+            this.panel7.Location = new System.Drawing.Point(50, 160);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(247, 10);
             this.panel7.TabIndex = 32;
@@ -338,7 +328,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
-            this.panel1.Location = new System.Drawing.Point(517, 159);
+            this.panel1.Location = new System.Drawing.Point(473, 159);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 10);
             this.panel1.TabIndex = 39;
@@ -346,7 +336,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
-            this.panel3.Location = new System.Drawing.Point(730, 158);
+            this.panel3.Location = new System.Drawing.Point(686, 158);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(177, 10);
             this.panel3.TabIndex = 40;
@@ -357,109 +347,39 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(93, 91);
+            this.label15.Location = new System.Drawing.Point(49, 91);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(83, 25);
             this.label15.TabIndex = 31;
             this.label15.Text = "Province";
             // 
-            // textBox1
+            // txtisolationbeds
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(517, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 32);
-            this.textBox1.TabIndex = 44;
+            this.txtisolationbeds.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtisolationbeds.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtisolationbeds.ForeColor = System.Drawing.Color.Gray;
+            this.txtisolationbeds.Location = new System.Drawing.Point(473, 119);
+            this.txtisolationbeds.Name = "txtisolationbeds";
+            this.txtisolationbeds.Size = new System.Drawing.Size(205, 32);
+            this.txtisolationbeds.TabIndex = 44;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(141)))), ((int)(((byte)(148)))));
-            this.panel4.Location = new System.Drawing.Point(918, 158);
+            this.panel4.Location = new System.Drawing.Point(874, 158);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(276, 10);
             this.panel4.TabIndex = 41;
             // 
-            // textBox2
+            // txticubeds
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(347, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 32);
-            this.textBox2.TabIndex = 45;
-            // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.Color.SlateGray;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.listView1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.ForeColor = System.Drawing.Color.Gray;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1224, 217);
-            this.listView1.TabIndex = 46;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.Visible = false;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Province";
-            this.columnHeader1.Width = 153;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Total ICU Beds";
-            this.columnHeader2.Width = 94;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Occupied ICU Beds";
-            this.columnHeader3.Width = 116;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Total Isolation Beds";
-            this.columnHeader4.Width = 122;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Occupied Isolation Beds";
-            this.columnHeader5.Width = 146;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Total Ward Beds";
-            this.columnHeader6.Width = 104;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Occupied Ward Beds";
-            this.columnHeader7.Width = 124;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Total Mechanical Ventilation";
-            this.columnHeader8.Width = 172;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Occupied Mechinal Ventilator";
-            this.columnHeader9.Width = 181;
+            this.txticubeds.BackColor = System.Drawing.Color.Gainsboro;
+            this.txticubeds.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txticubeds.ForeColor = System.Drawing.Color.Gray;
+            this.txticubeds.Location = new System.Drawing.Point(305, 122);
+            this.txticubeds.Name = "txticubeds";
+            this.txticubeds.Size = new System.Drawing.Size(161, 32);
+            this.txticubeds.TabIndex = 45;
             // 
             // chart1
             // 
@@ -468,19 +388,23 @@
             this.chart1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
             this.chart1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            chartArea13.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea13);
-            legend13.Name = "Legend1";
-            this.chart1.Legends.Add(legend13);
-            this.chart1.Location = new System.Drawing.Point(126, 185);
+            chartArea11.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chart1.Legends.Add(legend11);
+            this.chart1.Location = new System.Drawing.Point(76, 192);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            this.chart1.Series.Add(series13);
-            this.chart1.Size = new System.Drawing.Size(1029, 217);
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series16.Legend = "Legend1";
+            series16.Name = "Total";
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "Occupied";
+            this.chart1.Series.Add(series16);
+            this.chart1.Series.Add(series17);
+            this.chart1.Size = new System.Drawing.Size(1094, 217);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
             // 
@@ -729,17 +653,17 @@
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.chart2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.chart2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(194)))), ((int)(((byte)(205)))));
-            chartArea14.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea14);
-            legend14.Name = "Legend1";
-            this.chart2.Legends.Add(legend14);
+            chartArea12.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chart2.Legends.Add(legend12);
             this.chart2.Location = new System.Drawing.Point(98, 532);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Personal Protective Equipment";
-            this.chart2.Series.Add(series14);
+            series18.ChartArea = "ChartArea1";
+            series18.Legend = "Legend1";
+            series18.Name = "Personal Protective Equipment";
+            this.chart2.Series.Add(series18);
             this.chart2.Size = new System.Drawing.Size(1091, 223);
             this.chart2.TabIndex = 49;
             this.chart2.Text = "chart2";
@@ -750,7 +674,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Impact", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(439, 33);
+            this.label19.Location = new System.Drawing.Point(469, 33);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(378, 42);
             this.label19.TabIndex = 37;
@@ -829,12 +753,12 @@
             this.columnHeader17,
             this.columnHeader18});
             this.listView2.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.ForeColor = System.Drawing.Color.Gray;
+            this.listView2.ForeColor = System.Drawing.Color.White;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(0, 0);
+            this.listView2.Location = new System.Drawing.Point(0, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1224, 217);
+            this.listView2.Size = new System.Drawing.Size(1243, 225);
             this.listView2.TabIndex = 54;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -892,7 +816,7 @@
             this.button1.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(1154, 464);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 38);
             this.button1.TabIndex = 56;
@@ -904,46 +828,19 @@
             // 
             this.listViewPanel.BackColor = System.Drawing.Color.SlateGray;
             this.listViewPanel.Controls.Add(this.listView2);
-            this.listViewPanel.Controls.Add(this.listView1);
-            this.listViewPanel.Location = new System.Drawing.Point(15, 186);
+            this.listViewPanel.Location = new System.Drawing.Point(35, 190);
             this.listViewPanel.Name = "listViewPanel";
-            this.listViewPanel.Size = new System.Drawing.Size(1224, 222);
+            this.listViewPanel.Size = new System.Drawing.Size(1219, 237);
             this.listViewPanel.TabIndex = 57;
             this.listViewPanel.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::PBL.Properties.Resources.more__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(1158, 397);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 58;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::PBL.Properties.Resources.more__1_;
-            this.pictureBox7.Location = new System.Drawing.Point(1158, 397);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(55, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 59;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox8.Location = new System.Drawing.Point(126, 188);
+            this.pictureBox8.Location = new System.Drawing.Point(74, 196);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(1063, 230);
+            this.pictureBox8.Size = new System.Drawing.Size(1159, 230);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 60;
             this.pictureBox8.TabStop = false;
@@ -964,7 +861,7 @@
             this.extend2.BackColor = System.Drawing.Color.Transparent;
             this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(8, 47);
+            this.extend2.Location = new System.Drawing.Point(10, 42);
             this.extend2.Name = "extend2";
             this.extend2.Size = new System.Drawing.Size(38, 32);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -983,9 +880,9 @@
             this.menuPanel.Controls.Add(this.casesButton);
             this.menuPanel.Controls.Add(this.equipmentsButton);
             this.menuPanel.Controls.Add(this.testButton);
-            this.menuPanel.Location = new System.Drawing.Point(18, 64);
+            this.menuPanel.Location = new System.Drawing.Point(24, 52);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(372, 164);
+            this.menuPanel.Size = new System.Drawing.Size(376, 173);
             this.menuPanel.TabIndex = 64;
             this.menuPanel.Visible = false;
             // 
@@ -1086,13 +983,43 @@
             this.extend1.BackColor = System.Drawing.Color.Transparent;
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(8, 47);
+            this.extend1.Location = new System.Drawing.Point(10, 42);
             this.extend1.Name = "extend1";
             this.extend1.Size = new System.Drawing.Size(38, 32);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend1.TabIndex = 63;
             this.extend1.TabStop = false;
             this.extend1.Click += new System.EventHandler(this.extend1_Click);
+            // 
+            // btnSave2
+            // 
+            this.btnSave2.BackColor = System.Drawing.Color.DimGray;
+            this.btnSave2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave2.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave2.Location = new System.Drawing.Point(1165, 108);
+            this.btnSave2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(64, 23);
+            this.btnSave2.TabIndex = 68;
+            this.btnSave2.Text = "Save";
+            this.btnSave2.UseVisualStyleBackColor = false;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.DimGray;
+            this.btnView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnView.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnView.Location = new System.Drawing.Point(1156, 135);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(84, 23);
+            this.btnView.TabIndex = 69;
+            this.btnView.Text = "View Data";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // Equipments
             // 
@@ -1104,14 +1031,14 @@
             this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.menuPanel);
-            this.Controls.Add(this.extend1);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.btnView);
+            this.Controls.Add(this.btnSave2);
             this.Controls.Add(this.listViewPanel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
             this.Controls.Add(this.label18);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
@@ -1120,7 +1047,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtShoeCover);
             this.Controls.Add(this.txtgoggles);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtwardbeds);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
@@ -1133,7 +1060,7 @@
             this.Controls.Add(this.txtSurgicalMask);
             this.Controls.Add(this.txtHeadCover);
             this.Controls.Add(this.txtgown);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtmechanicalventilators);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel7);
@@ -1147,13 +1074,13 @@
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtisolationbeds);
             this.Controls.Add(this.txtcoverall);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.txticubeds);
             this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.extend1);
+            this.Controls.Add(this.pictureBox8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Equipments";
             this.Text = "Equipments";
@@ -1167,8 +1094,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.listViewPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
@@ -1187,30 +1112,20 @@
         #endregion
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtwardbeds;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtmechanicalventilators;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtisolationbeds;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.TextBox txticubeds;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.TextBox txtcoverall;
         private System.Windows.Forms.Panel panel5;
@@ -1255,8 +1170,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel listViewPanel;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox extend2;
@@ -1270,5 +1183,7 @@
         private System.Windows.Forms.PictureBox equipmentsButton;
         private System.Windows.Forms.PictureBox testButton;
         private System.Windows.Forms.PictureBox extend1;
+        private System.Windows.Forms.Button btnSave2;
+        private System.Windows.Forms.Button btnView;
     }
 }

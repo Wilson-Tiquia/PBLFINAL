@@ -73,9 +73,29 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _72969fd2668e33d52f215a3573b485a0 {
+            get {
+                object obj = ResourceManager.GetObject("72969fd2668e33d52f215a3573b485a0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _74d89a98bc607c5ddb9ac8addf359f21 {
             get {
                 object obj = ResourceManager.GetObject("74d89a98bc607c5ddb9ac8addf359f21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7d235144ec8b8059c6e0b23c23425222 {
+            get {
+                object obj = ResourceManager.GetObject("7d235144ec8b8059c6e0b23c23425222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap ce99f99bd558e1fbd91e364ca6566c602 {
             get {
                 object obj = ResourceManager.GetObject("ce99f99bd558e1fbd91e364ca6566c602", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e8087638e98d19ee1da7934ffa9f6591 {
+            get {
+                object obj = ResourceManager.GetObject("e8087638e98d19ee1da7934ffa9f6591", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
