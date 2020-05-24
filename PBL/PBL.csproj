@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8EF7D935-806C-4613-A9F4-B2DF3334E9B9}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>PBL</RootNamespace>
     <AssemblyName>PBL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -372,6 +372,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6d793418e3dc259c738c0b5897e053fa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luzon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luzon map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visayas map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mindanao map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
