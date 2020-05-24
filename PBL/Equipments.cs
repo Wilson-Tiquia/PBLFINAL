@@ -156,7 +156,7 @@ namespace PBL
             listView2.Visible = false;
             listViewPanel.Visible = false;
 
-            //comboBox1.SelectedIndex = 0;
+            
 
             while (equipments.Peek() != -1)
             {
@@ -188,8 +188,7 @@ namespace PBL
 
             }
             equipments.Close();
-            //while (ppe.Peek() != -1)
-            //{
+            
                 string x1 = ppe.ReadLine();
                 string[] xe1 = x1.Split(',');
 
@@ -211,7 +210,7 @@ namespace PBL
                 chart2.Series["Personal Protective Equipment"].Points.AddXY("Head Cover", headcover);
                 chart2.Series["Personal Protective Equipment"].Points.AddXY("Surgical Mask", surgicalmask);
 
-            //}
+            
             ppe.Close();
 
 
@@ -477,12 +476,7 @@ namespace PBL
                 if (xe[0] == tofind)
                 {
 
-                    //lvi.SubItems.Add(xe[1]);
-                    //val1 = Convert.ToInt32(xe[2]) + val1;
-                    //val2 = Convert.ToInt32(xe[4]) + val2;
-                    //val3 = Convert.ToInt32(xe[6]) + val3;
-                    //val4 = Convert.ToInt32(xe[8]) + val4;
-                    //lvi.SubItems.Add(xe[1]);
+                    
                     if (txticubeds.Text == "")
                     {
                         lvi.SubItems.Add(xe[2]);
