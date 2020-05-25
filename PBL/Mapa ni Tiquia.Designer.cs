@@ -204,7 +204,6 @@
             this.regionComboBox.Name = "regionComboBox";
             this.regionComboBox.Size = new System.Drawing.Size(596, 59);
             this.regionComboBox.TabIndex = 4;
-
             this.regionComboBox.SelectedIndexChanged += new System.EventHandler(this.regionComboBox_SelectedIndexChanged);
             // 
             // provinceComboBox
@@ -218,7 +217,6 @@
             this.provinceComboBox.Name = "provinceComboBox";
             this.provinceComboBox.Size = new System.Drawing.Size(598, 59);
             this.provinceComboBox.TabIndex = 5;
-            
             // 
             // caseInputTextBox
             // 
@@ -229,7 +227,6 @@
             this.caseInputTextBox.Name = "caseInputTextBox";
             this.caseInputTextBox.Size = new System.Drawing.Size(596, 57);
             this.caseInputTextBox.TabIndex = 6;
-        
             this.caseInputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.caseInputTextBox_KeyDown);
             // 
             // regionMap
@@ -342,7 +339,6 @@
             this.provinceName.Size = new System.Drawing.Size(212, 39);
             this.provinceName.TabIndex = 4;
             this.provinceName.Text = "Province Name";
-         
             // 
             // label2
             // 
@@ -356,7 +352,6 @@
             this.label2.Size = new System.Drawing.Size(74, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "2000+";
-        
             // 
             // label1
             // 
@@ -370,7 +365,6 @@
             this.label1.Size = new System.Drawing.Size(114, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "1000-2000";
-           
             // 
             // range501To1k
             // 
@@ -384,7 +378,6 @@
             this.range501To1k.Size = new System.Drawing.Size(99, 30);
             this.range501To1k.TabIndex = 3;
             this.range501To1k.Text = "501-1000";
-        
             // 
             // range0To500
             // 
@@ -398,7 +391,6 @@
             this.range0To500.Size = new System.Drawing.Size(69, 30);
             this.range0To500.TabIndex = 3;
             this.range0To500.Text = "0-500";
-          
             // 
             // case1
             // 
@@ -408,7 +400,6 @@
             this.case1.Size = new System.Drawing.Size(50, 35);
             this.case1.TabIndex = 2;
             this.case1.TabStop = false;
-          
             // 
             // case2
             // 
@@ -418,7 +409,6 @@
             this.case2.Size = new System.Drawing.Size(50, 35);
             this.case2.TabIndex = 2;
             this.case2.TabStop = false;
-         
             // 
             // case3
             // 
@@ -428,7 +418,6 @@
             this.case3.Size = new System.Drawing.Size(50, 35);
             this.case3.TabIndex = 2;
             this.case3.TabStop = false;
-            
             // 
             // case4
             // 
@@ -438,7 +427,6 @@
             this.case4.Size = new System.Drawing.Size(50, 35);
             this.case4.TabIndex = 2;
             this.case4.TabStop = false;
-           
             // 
             // provincePicture
             // 
@@ -461,7 +449,6 @@
             this.currentIsland.Size = new System.Drawing.Size(395, 68);
             this.currentIsland.TabIndex = 0;
             this.currentIsland.Text = "CURRENT ISLAND";
-        
             // 
             // panel2
             // 

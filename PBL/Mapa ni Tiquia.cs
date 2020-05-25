@@ -82,7 +82,9 @@ namespace PBL
             StreamReader read = new StreamReader(@"C:\Total-Cases.txt");
             while (read.Peek ()!=-1)
             {
-                
+
+               
+
                 string input = read.ReadLine();
                 string[] splitInput = input.Split(',');
                 string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
@@ -103,25 +105,31 @@ namespace PBL
                 string selectedPlace = provinceMapComboBox.Text.ToLower();
                 string caseSaLugar = "0";
                 provincePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+                var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+                string filePath = Path.Combine(projectPath, "Resources");
+                
+               
                 if (sum >= 0 && sum <= 500)
                 {
                     caseSaLugar = "0";
-                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                    provincePicture.Image = Image.FromFile($@"{filePath}\{selectedPlace}{caseSaLugar}.png");
                 }
                 if (sum > 500 && sum <= 1000)
                 {
                     caseSaLugar = "501";
-                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                    provincePicture.Image = Image.FromFile($@"{filePath}\{selectedPlace}{caseSaLugar}.png");
                 }
                 if (sum >1000 && sum <= 2000)
                 {
                     caseSaLugar = "1k";
-                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                    provincePicture.Image = Image.FromFile($@"{filePath}\{selectedPlace}{caseSaLugar}.png");
                 }
                 if (sum > 2000 )
                 {
                     caseSaLugar = "2k";
-                    provincePicture.Image = Image.FromFile($"C:\\Places\\ALLPLACES\\{selectedPlace}{caseSaLugar}.png");
+                    provincePicture.Image = Image.FromFile($@"{filePath}\{selectedPlace}{caseSaLugar}.png");
                 }
             }
             read.Close();
@@ -492,8 +500,8 @@ namespace PBL
             WindowState = FormWindowState.Maximized;
             totalCASE += totalAddedCase();
             totalCases.Text = totalCASE.ToString();
-            
-           
+          
+
         }
 
         private void islandComboBox_SelectedIndexChanged(object sender, EventArgs e)

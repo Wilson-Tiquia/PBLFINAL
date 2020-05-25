@@ -139,8 +139,8 @@
   <data name="case" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="first-aid-kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\first-aid-kit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled2_202005230228171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled2_202005230228171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="final option" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\final option.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +151,11 @@
   <data name="splashscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashscreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="98427653_703744183532271_5253125541405392896_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\98427653_703744183532271_5253125541405392896_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sky.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ce99f99bd558e1fbd91e364ca6566c601" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ce99f99bd558e1fbd91e364ca6566c601.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="more (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +163,14 @@
   <data name="red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\red-circle-button-blank-web-internet-icon-vector-13228666-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="option_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\option 4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="philippine flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\philippine flag.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shapes-and-symbols" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shapes-and-symbols.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="more" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +223,8 @@
   <data name="Untitled2_20200523022150" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled2_20200523022150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="98427653_703744183532271_5253125541405392896_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\98427653_703744183532271_5253125541405392896_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shapes-and-symbols" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shapes-and-symbols.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="option2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\option2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +238,8 @@
   <data name="medical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="option_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\option 4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="first-aid-kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first-aid-kit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="c3a3db832386897bab824c95ed60461b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c3a3db832386897bab824c95ed60461b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +256,9 @@
   <data name="option 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\option 1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ce99f99bd558e1fbd91e364ca6566c602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ce99f99bd558e1fbd91e364ca6566c602.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Untitled2_20200523022202" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled2_20200523022202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,8 +271,8 @@
   <data name="Untitled2_20200523022155" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled2_20200523022155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ce99f99bd558e1fbd91e364ca6566c602" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ce99f99bd558e1fbd91e364ca6566c602.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ce99f99bd558e1fbd91e364ca6566c601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ce99f99bd558e1fbd91e364ca6566c601.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled2_20200523022153" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled2_20200523022153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,7 +292,7 @@
   <data name="tests in hospitals" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tests in hospitals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled2_202005230228171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled2_202005230228171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ilocos norte0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ilocos norte0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
