@@ -37,6 +37,7 @@
             this.headerPicture = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.TestsPicture = new System.Windows.Forms.PictureBox();
             this.testButton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@
             this.testShadow = new System.Windows.Forms.PictureBox();
             this.caseShadow = new System.Windows.Forms.PictureBox();
             this.headerShadow = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.border.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
@@ -186,6 +186,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(288, 261);
             this.panel5.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.Location = new System.Drawing.Point(63, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 28);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Tests in Hospitals";
             // 
             // TestsPicture
             // 
@@ -450,18 +462,6 @@
             this.headerShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.headerShadow.TabIndex = 12;
             this.headerShadow.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
-            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(63, 214);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 28);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Tests in Hospitals";
             // 
             // Homepage
             // 

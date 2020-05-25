@@ -80,6 +80,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dailyTestLabel = new System.Windows.Forms.Label();
             this.cumulativePanel = new System.Windows.Forms.Panel();
+            this.saveButtonTest = new System.Windows.Forms.Button();
             this.equivocalPanel = new System.Windows.Forms.Panel();
             this.invalidPanel = new System.Windows.Forms.Panel();
             this.negativePanel = new System.Windows.Forms.Panel();
@@ -91,8 +92,8 @@
             this.uniquePanel = new System.Windows.Forms.Panel();
             this.conductedLabel = new System.Windows.Forms.Label();
             this.conductedTextBox = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.testPanel = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.conductedPanel = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -105,8 +106,9 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.openAdd = new System.Windows.Forms.PictureBox();
             this.openTest = new System.Windows.Forms.PictureBox();
-            this.saveButtonTest = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.mapShadow = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -129,6 +131,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.openAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.openTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,7 +142,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(555, 34);
+            this.label1.Location = new System.Drawing.Point(506, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(318, 48);
             this.label1.TabIndex = 8;
@@ -159,9 +164,9 @@
             this.listView1.ForeColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(93, 87);
+            this.listView1.Location = new System.Drawing.Point(49, 91);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1185, 179);
+            this.listView1.Size = new System.Drawing.Size(1185, 263);
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -403,7 +408,7 @@
             this.totalLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.totalLabel.Location = new System.Drawing.Point(22, 209);
+            this.totalLabel.Location = new System.Drawing.Point(23, 199);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(189, 25);
             this.totalLabel.TabIndex = 28;
@@ -488,7 +493,7 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dateLabel.Location = new System.Drawing.Point(28, 120);
+            this.dateLabel.Location = new System.Drawing.Point(28, 119);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(49, 25);
             this.dateLabel.TabIndex = 25;
@@ -496,12 +501,14 @@
             // 
             // dailyTestChart
             // 
-            this.dailyTestChart.BackColor = System.Drawing.Color.SlateGray;
+            this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
+            this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
             chartArea1.Name = "ChartArea1";
             this.dailyTestChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.dailyTestChart.Legends.Add(legend1);
-            this.dailyTestChart.Location = new System.Drawing.Point(93, 645);
+            this.dailyTestChart.Location = new System.Drawing.Point(2, 5);
             this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
@@ -509,7 +516,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.dailyTestChart.Series.Add(series1);
-            this.dailyTestChart.Size = new System.Drawing.Size(584, 104);
+            this.dailyTestChart.Size = new System.Drawing.Size(1191, 305);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
             // 
@@ -689,8 +696,8 @@
             this.dailyTestLabel.AutoSize = true;
             this.dailyTestLabel.BackColor = System.Drawing.Color.Transparent;
             this.dailyTestLabel.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dailyTestLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dailyTestLabel.Location = new System.Drawing.Point(1022, 645);
+            this.dailyTestLabel.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.dailyTestLabel.Location = new System.Drawing.Point(549, 381);
             this.dailyTestLabel.Name = "dailyTestLabel";
             this.dailyTestLabel.Size = new System.Drawing.Size(207, 48);
             this.dailyTestLabel.TabIndex = 8;
@@ -724,11 +731,26 @@
             this.cumulativePanel.Controls.Add(this.remainingTextBox);
             this.cumulativePanel.Controls.Add(this.totalTextBox);
             this.cumulativePanel.Controls.Add(this.hospitalComboBox);
-            this.cumulativePanel.Location = new System.Drawing.Point(29, 272);
+            this.cumulativePanel.Location = new System.Drawing.Point(54, 77);
             this.cumulativePanel.Name = "cumulativePanel";
             this.cumulativePanel.Size = new System.Drawing.Size(460, 342);
             this.cumulativePanel.TabIndex = 58;
             this.cumulativePanel.Visible = false;
+            // 
+            // saveButtonTest
+            // 
+            this.saveButtonTest.BackColor = System.Drawing.Color.DimGray;
+            this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveButtonTest.Location = new System.Drawing.Point(24, 305);
+            this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2);
+            this.saveButtonTest.Name = "saveButtonTest";
+            this.saveButtonTest.Size = new System.Drawing.Size(411, 25);
+            this.saveButtonTest.TabIndex = 68;
+            this.saveButtonTest.Text = "Save";
+            this.saveButtonTest.UseVisualStyleBackColor = false;
+            this.saveButtonTest.Visible = false;
             // 
             // equivocalPanel
             // 
@@ -828,40 +850,44 @@
             this.conductedTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.conductedTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conductedTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.conductedTextBox.Location = new System.Drawing.Point(32, 237);
+            this.conductedTextBox.Location = new System.Drawing.Point(32, 239);
             this.conductedTextBox.Name = "conductedTextBox";
             this.conductedTextBox.Size = new System.Drawing.Size(292, 32);
             this.conductedTextBox.TabIndex = 63;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.GrayText;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(33, 149);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(290, 24);
-            this.dateTimePicker1.TabIndex = 64;
-            // 
             // testPanel
             // 
             this.testPanel.BackColor = System.Drawing.Color.SlateGray;
+            this.testPanel.Controls.Add(this.dateTimePicker1);
             this.testPanel.Controls.Add(this.label12);
             this.testPanel.Controls.Add(this.conductedLabel);
             this.testPanel.Controls.Add(this.conductedPanel);
-            this.testPanel.Controls.Add(this.dateTimePicker1);
             this.testPanel.Controls.Add(this.conductedTextBox);
             this.testPanel.Controls.Add(this.panel11);
             this.testPanel.Controls.Add(this.comboBox2);
             this.testPanel.Controls.Add(this.dateLabel);
             this.testPanel.Controls.Add(this.datePanel);
-            this.testPanel.Location = new System.Drawing.Point(883, 324);
+            this.testPanel.Location = new System.Drawing.Point(865, 433);
             this.testPanel.Name = "testPanel";
             this.testPanel.Size = new System.Drawing.Size(368, 316);
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
+            this.testPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.testPanel_Paint);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.BackColor = System.Drawing.Color.Gainsboro;
+            this.dateTimePicker1.BorderRadius = 0;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.ForeColor = System.Drawing.Color.Gray;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateTimePicker1.FormatCustom = null;
+            this.dateTimePicker1.Location = new System.Drawing.Point(31, 148);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(293, 36);
+            this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 25, 13, 35, 49, 408);
             // 
             // conductedPanel
             // 
@@ -877,7 +903,7 @@
             this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(29, 102);
+            this.panel11.Location = new System.Drawing.Point(29, 98);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(295, 10);
             this.panel11.TabIndex = 26;
@@ -895,7 +921,7 @@
             this.datePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.datePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("datePanel.BackgroundImage")));
             this.datePanel.Controls.Add(this.panel15);
-            this.datePanel.Location = new System.Drawing.Point(33, 181);
+            this.datePanel.Location = new System.Drawing.Point(33, 190);
             this.datePanel.Name = "datePanel";
             this.datePanel.Size = new System.Drawing.Size(290, 10);
             this.datePanel.TabIndex = 26;
@@ -913,7 +939,7 @@
             this.closeTest.BackColor = System.Drawing.Color.Transparent;
             this.closeTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeTest.Image = global::PBL.Properties.Resources.more;
-            this.closeTest.Location = new System.Drawing.Point(861, 303);
+            this.closeTest.Location = new System.Drawing.Point(1206, 413);
             this.closeTest.Name = "closeTest";
             this.closeTest.Size = new System.Drawing.Size(43, 42);
             this.closeTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -926,7 +952,7 @@
             this.closeAdd.BackColor = System.Drawing.Color.Transparent;
             this.closeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAdd.Image = global::PBL.Properties.Resources.more;
-            this.closeAdd.Location = new System.Drawing.Point(5, 256);
+            this.closeAdd.Location = new System.Drawing.Point(25, 323);
             this.closeAdd.Name = "closeAdd";
             this.closeAdd.Size = new System.Drawing.Size(43, 42);
             this.closeAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -974,7 +1000,7 @@
             this.openAdd.BackColor = System.Drawing.Color.Transparent;
             this.openAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAdd.Image = global::PBL.Properties.Resources.more;
-            this.openAdd.Location = new System.Drawing.Point(5, 256);
+            this.openAdd.Location = new System.Drawing.Point(25, 323);
             this.openAdd.Name = "openAdd";
             this.openAdd.Size = new System.Drawing.Size(43, 42);
             this.openAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -987,7 +1013,7 @@
             this.openTest.BackColor = System.Drawing.Color.Transparent;
             this.openTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openTest.Image = global::PBL.Properties.Resources.more;
-            this.openTest.Location = new System.Drawing.Point(861, 303);
+            this.openTest.Location = new System.Drawing.Point(1206, 413);
             this.openTest.Name = "openTest";
             this.openTest.Size = new System.Drawing.Size(43, 42);
             this.openTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -995,38 +1021,46 @@
             this.openTest.TabStop = false;
             this.openTest.Click += new System.EventHandler(this.openTest_Click);
             // 
-            // saveButtonTest
+            // mapShadow
             // 
-            this.saveButtonTest.BackColor = System.Drawing.Color.DimGray;
-            this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveButtonTest.Location = new System.Drawing.Point(24, 305);
-            this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2);
-            this.saveButtonTest.Name = "saveButtonTest";
-            this.saveButtonTest.Size = new System.Drawing.Size(411, 25);
-            this.saveButtonTest.TabIndex = 68;
-            this.saveButtonTest.Text = "Save";
-            this.saveButtonTest.UseVisualStyleBackColor = false;
-            this.saveButtonTest.Visible = false;
+            this.mapShadow.BackColor = System.Drawing.Color.Transparent;
+            this.mapShadow.Image = global::PBL.Properties.Resources.shadow;
+            this.mapShadow.Location = new System.Drawing.Point(7, 85);
+            this.mapShadow.Name = "mapShadow";
+            this.mapShadow.Size = new System.Drawing.Size(1326, 310);
+            this.mapShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mapShadow.TabIndex = 68;
+            this.mapShadow.TabStop = false;
             // 
-            // button2
+            // panel1
             // 
-            this.button2.Location = new System.Drawing.Point(658, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 70;
-            this.button2.Text = "hello";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.dailyTestChart);
+            this.panel1.Location = new System.Drawing.Point(38, 428);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1201, 318);
+            this.panel1.TabIndex = 70;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::PBL.Properties.Resources.Untitled2_202005230228171;
+            this.pictureBox7.Location = new System.Drawing.Point(20, 433);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1307, 355);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 69;
+            this.pictureBox7.TabStop = false;
             // 
             // Tests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
+            this.BackgroundImage = global::PBL.Properties.Resources._7d235144ec8b8059c6e0b23c23425222;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.closeTest);
             this.Controls.Add(this.testPanel);
             this.Controls.Add(this.closeAdd);
@@ -1034,16 +1068,18 @@
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.extend1);
             this.Controls.Add(this.topPanel);
-            this.Controls.Add(this.dailyTestChart);
             this.Controls.Add(this.dailyTestLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.openAdd);
             this.Controls.Add(this.openTest);
             this.Controls.Add(this.panel16);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.mapShadow);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox7);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tests";
@@ -1075,6 +1111,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.openAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.openTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1150,11 +1189,13 @@
         private System.Windows.Forms.Label conductedLabel;
         private System.Windows.Forms.Panel conductedPanel;
         private System.Windows.Forms.TextBox conductedTextBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel testPanel;
         private System.Windows.Forms.PictureBox openTest;
         private System.Windows.Forms.PictureBox closeTest;
         private System.Windows.Forms.Button saveButtonTest;
-        private System.Windows.Forms.Button button2;
+        private Bunifu.Framework.UI.BunifuDatepicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox mapShadow;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

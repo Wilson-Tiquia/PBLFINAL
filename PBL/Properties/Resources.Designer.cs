@@ -553,6 +553,26 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Untitled2_20200523022817 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled2_20200523022817", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled2_202005230228171 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled2_202005230228171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled2_20200523023050 {
             get {
                 object obj = ResourceManager.GetObject("Untitled2_20200523023050", resourceCulture);

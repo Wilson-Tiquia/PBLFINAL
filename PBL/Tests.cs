@@ -448,5 +448,10 @@ namespace PBL
         {
             
         }
+
+        private void testPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

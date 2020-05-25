@@ -78,14 +78,7 @@ namespace PBL
             Equipments equipmentsForm = new Equipments();
             equipmentsForm.Show();
         }
-
-
-
-        private void textBox3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
